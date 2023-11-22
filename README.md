@@ -9,3 +9,6 @@ git branch -M main
 git remote add origin git@github.com:ShenYT0/PPE1-2023-GROUPE.git
 git push -u origin main
 ```
+'''
+Test for git push
+'''
