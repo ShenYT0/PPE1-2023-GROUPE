@@ -1,0 +1,1401 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<script type="text/javascript">
+  var pvinsight_page_ancestors = '143746642;143746653;212846158;223864775;391849513';
+</script>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=gb2312" />
+<title>复旦教授：中国食品不安全是错觉-搜狐新闻</title>
+<meta name="keywords" content="食品 错觉">
+<meta name="description" content="点击进入数字之道满毒全席本报记者陆绮雯食品安全是关系人民健康和社会稳定的重要公共卫生问题。近年来，我国媒体将“三聚氰胺奶粉”、“塑化剂事件”、“血燕窝事件”等一">
+<link rel="canonical" href="https://news.sohu.com/20131216/n391849513.shtml"/>
+<meta name="robots" content="all">
+<!-- 购买url变量获取 -->
+<script type="text/javascript">
+ var shoppingCnf = {url:''};
+</script>
+<!-- 购买url变量获取end -->
+<script type="text/javascript">
+  var category =  '143746642;143746653;212846158;223864775;391849513';  var videoNum = 0;  var relate_from_sohu = true;
+</script>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<script src="https://www.sohu.com/sohuflash_1.js" type="text/javascript"></script>
+<script type="text/javascript" src="https://js.sohu.com/library/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="https://news.sohu.com/upload/article/2012/js/tongji_v2013110101.js"></script>
+
+<script type="text/javascript">
+jQuery(function(jq){
+	//标签
+	function changeTab(lis, divs, nums, nowCls){
+		lis.each(function(i){
+			var els = jq(this);
+			els.mouseenter(function(){
+				lis.removeClass(nowCls);
+				divs.stop().hide();
+				jq(this).addClass(nowCls);
+				divs.eq(i).show();
+			});
+		}).eq(nums).mouseenter();
+	}
+	
+	var divA = jq("#kind-video"); //视频菜单
+	changeTab(divA.find(".video-menu li"), divA.find(".video-cont"), videoNum, "video-menu-now");
+	
+	jq(".fontsize").hover(function(){
+		jq(".fontsize-layer").show();
+		},function(){
+		jq(".fontsize-layer").hide();
+	});
+	
+        jq(".print").hover(function(){
+                   jq(".print-layer").show();
+                   },function(){
+                   jq(".print-layer").hide();
+         });
+
+	var phoneNumInput = jq(".rightbar-wrapper .phoneNews .rssArea .Ftxt"),
+		phoneNumBtn = jq(".rightbar-wrapper .phoneNews .rssArea .Fbtn");
+	phoneNumInput.hover(function(){  // xlx
+		jq(this).parent().addClass("current");
+	},function(){
+		jq(this).parent().removeClass("current");
+	});
+	phoneNumInput.focus(function(){
+		var _this = $(this);
+		var val = _this.val();
+		if(val == '输入手机号码'||val == '手机号码输入错误！'||val == '此号码发送次数过多！'||val == '失败！'){
+			_this.val("");
+			_this.parent().removeClass("error");
+		}
+	}).blur(function(){
+		var _this = $(this);
+		if(_this.val() == ''){
+			_this.val('输入手机号码');
+			_this.parent().removeClass("error");
+		}
+	});
+	
+	jq(".rightbar-wrapper .phoneNews .Fbtn").click(function(){// 订阅按钮点击
+		var _mobile = phoneNumInput.val();	
+		if(!(/^1[3458]\d{9}$/.test(_mobile))){
+			phoneNumInput.val("手机号码输入错误！");
+			phoneNumInput.parent().addClass("current error");
+		}else{
+			var formData = {
+					"number" : _mobile
+					};
+			var submitUrl = "https://api.k.sohu.com/api/client/sendmsg.go?callback=?";
+			$.ajax({
+				url: submitUrl,
+				data: formData,
+				dataType:"jsonp",
+				success: function(data){
+					var _code = data.data;				
+					var _msg = "";
+					switch(_code){
+						case "1":
+							phoneNumInput.parent().addClass("current error succeed");
+							phoneNumInput.add(phoneNumBtn).hide();
+							break;
+						case "0":
+							_msg = "失败！";
+							break;
+						case "12001":
+							_msg = "手机号码输入错误！";	
+							break;
+						case "12003":
+							_msg = "此号码发送次数过多！";
+							break;			
+					};
+					phoneNumInput.val(_msg);
+					phoneNumInput.parent().addClass("current error");
+				},
+				error: function(XMLHttpRequest, textStatus, errorThrown){
+					alert("error");
+				}
+			});			
+		}
+	});
+});
+//去搜狐首页的检测
+function toHomePage(){
+                   var serverUrl = "https://www.n-s.cn/news.png";
+                   $.ajax({
+                type: "GET",
+                url: serverUrl,
+                dataType: "jsonp",
+                success:function(){}
+            });             
+}
+//转换字号
+function doZoom(size){	
+	jQuery("#contentText").css("fontSize",size);
+}
+var printArticle = function(){
+	jQuery.getScript("https://news.sohu.com/upload/article/2012/js/print_roll.js",function(){printer.print()},true)
+}
+var topicId = 334087882;
+var grobal_arg={};
+grobal_arg['topicId']=topicId;
+var jumpUrl=function(x){
+	var url = '', e = encodeURIComponent, s = screen, d = document, wd = 0, hg = 0, u = d.location , y = x,topicId =grobal_arg.topicId;
+	//缺个我的搜狐的分享的跳转URL
+	//topicId的确认方式
+	switch (y)
+	{
+	case 't':	url ="https://t.sohu.com/third/post.jsp?link="+e(u.href)+"&title="+e(d.title);wd = 660;hg = 470;break;
+	case 'bai':	url ="https://bai.sohu.com/share/blank/addbutton.do?link="+e(u.href)+"&title="+e(d.title);wd = 480;hg = 340;break;
+	case 'douban':	url ="https://www.douban.com/recommend/?url="+e(u.href)+"&title="+e(d.title);wd = 460;hg = 340;break;
+	case 'renren':	url ="https://share.renren.com/share/buttonshare?link="+e(u.href)+"&title="+e(d.title);wd = 590;hg = 430;break;
+	case 'kaixin':	url ="https://www.kaixin001.com/repaste/share.php?rurl="+e(u.href)+"&rtitle="+e(d.title);wd = 540;hg = 360;break;
+	case 'itb':     var ctxt = $('#contentText').length>0?$('#contentText').text().replace(/<[^>].*?>/g,'').substr(0,120):'';
+			url ="https://tieba.baidu.com/i/sys/share?link="+e(u.href)+"&type=text&title="+e(d.title)+"&content="+e(ctxt);wd = 626;hg = 436;
+			break;
+	case 'go139':	url ="https://go.139.com/ishare.do?shareUrl="+e(u.href)+"&title="+e(d.title)+"&sid=20dd04a99380c2e8d56cf187f6658169";wd = 630;hg = 500;break;
+	case 'qq':	url ="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url="+e(u.href);wd = 900;hg = 500;break;
+           case 'sohukan': url ="https://kan.sohu.com/share/?href="+e(u.href)+"&title="+e(d.title)+"&appkey=1550c1b2513a1461a4ea4914af8aa8fe";wd = 760;hg = 477;break;
+	default :	return false;
+	}
+	var a=function(){
+		if (!window.open(url, 'sohushare', ['toolbar=0,status=0,resizable=1,width='+ wd +',height='+ hg +',left='+ (s.width - wd) / 2+ ',top='+ (s.height - hg) / 2]))
+			u.href = [url].join('');
+	}
+	if (/Firefox/.test(navigator.userAgent)){
+		setTimeout(a, 0);
+	}else{
+		a();
+	}
+
+	var stat = (new Image);
+	try{stat.src = "https://219.234.82.222/zhuanfa/index.php?newsId=" + /http:\/\/(.*)(\.sohu.com\/.*\/n)(.{9})/g.exec(document.location)[3] + "&newsName=" + e(d.title) + "&newsUrl=" + d.location.href + "&postId=" + x;
+	}catch(e){}
+}
+//媒体来源
+function media_span_url(id_media_span_url) {
+    if(id_media_span_url) {
+        id_media_span = jQuery('#media_span');
+        if(!id_media_span.find('a').length) {
+            id_media_span.html('<a href=\'' + id_media_span_url + '\' target=\'_blank\'>' + id_media_span.html() + '</a>');			
+        }
+    }
+}
+ 
+</script>
+<script src="https://img.wan.sogou.com/cdn/ufo/fid/fid.js"></script>
+<script>
+    var fid;
+    Sogou_FID.get(function(sid){
+        fid = sid;       
+    });
+</script>
+<link type="text/css" rel="stylesheet" href="https://css.sohu.com/upload/global1.4.1.css" />
+<link type="text/css" rel="stylesheet" href="https://news.sohu.com/upload/article/2012/style.v20131203.css" />
+
+<script  type='text/javascript'>
+var sogou_is_brand = new Object();
+sogou_is_brand["pid"]  = 'sohu__brand';
+sogou_is_brand["charset"]   = 'gb2312';
+sogou_is_brand["sohuurl"] = document.location.href;
+</script>
+
+</head>
+
+<body>
+<div data-type="roll" data-appid="1079" id="isohu-topbar"></div>
+<link type="text/css" rel="stylesheet" href="https://news.sohu.com/upload/itoolbar/cms/itoolbar.201410281438.css" charset="UTF-8" />
+<style type="text/css"> 
+#innerToolBar{width:980px;}
+.mutu,.tagHotg,.mutualityNEW,.mutu-new{display:none}
+</style>
+<script src="https://news.sohu.com/upload/itoolbar/itoolbar.cms.loader.201410281438.js" charset="UTF-8"></script>
+
+<!-- 导航 st -->
+<div id="nav" class="area"><a class="first" href="https://www.sohu.com/">首页</a>-<a href="https://news.sohu.com/">新闻</a>-<a class="n3" href="https://mil.sohu.com/">军事</a>-<a href="https://cul.sohu.com/">文化</a>-<a href="https://history.sohu.com/">历史</a>-<a class="n3" href="https://sports.sohu.com/">体育</a>-<a href="https://sports.sohu.com/nba.shtml">NBA</a>-<a href="https://tv.sohu.com/">视频</a>-<a class="n3" href="https://soyule.sohu.com/">娱谈</a>-<a href="https://business.sohu.com/">财经</a>-<a href="https://view.sohu.com/">世相</a>-<a class="n3" href="https://it.sohu.com/">科技</a>-<a href="https://auto.sohu.com/">汽车</a>-<a href="https://www.focus.cn">房产</a>-<a class="n3" href="https://fashion.sohu.com/">时尚</a>-<a href="https://health.sohu.com/">健康</a>-<a href="https://learning.sohu.com/">教育</a>-<a class="n3" href="https://baobao.sohu.com/">母婴</a>-<a href="https://travel.sohu.com/">旅游</a>-<a href="https://chihe.sohu.com/">美食</a>-<a class="last" href="https://astro.sohu.com/">星座</a></div>
+<!-- 导航 end -->
+
+
+<!-- 翻牌广告 st -->
+<div id="turn-ad" class="area">
+	<div class="left">
+		<SOHUADCODE><script type="text/javascript" src="https://images.sohu.com/bill/s2012/gates/all/sohuad2012v15.js"></script>
+<script type="text/javascript" src="https://txt.go.sohu.com/ip/soip"></script>
+<script type="text/javascript" src="https://images.sohu.com/bill/tongyong/js/top/Topnewsthird950100V20140925.js" ></script><div>
+</div>
+</SOHUADCODE>
+	</div>
+	<div class="center">
+		<SOHUADCODE><script> var config = { passion:{ PAGEID : "news-article" , CHANNELID : "2"} }; </script>
+<script src="https://images.sohu.com/saf/static/0/1000060.shtml"></script>
+<script src="https://txt.go.sohu.com/ip/soip"></script>
+<script src="https://images.sohu.com/bill/s2013/gates/js/Sohu-0.3.8.min.js"></script>
+<script src="https://images.sohu.com/bill/default/sohu-require.js"></script><div class=TurnAD20> 
+<div id=TurnAD20 width=970 height=90>
+ <script language=javascript>
+try{
+var TurnAD20=new Cookie(document,"TurnAD20",24);
+TurnAD20.load();
+TurnAD20.visit=(TurnAD20.visit==null)?parseInt(Math.random()*2+1):TurnAD20.visit;
+if(TurnAD20.visit!=0)var intTurnAD20=TurnAD20.visit;
+TurnAD20.visit++;
+TurnAD20.visit=(TurnAD20.visit>2)?1:TurnAD20.visit;
+TurnAD20.store();
+function showTurnAD20(basenum){
+if (basenum==1){
+if (typeof has_topAd == "undefined" || has_topAd==0) {
+//topnews代码，投放时请带上，轮换代码从下面开始替换
+
+require(["sjs/matrix/ad/passion"], function (passion) {
+    var _C = "#TurnAD20",_ID = "10013",_W = 970,_H = 90,_T = 1,_F=201;
+    if(_C){jQuery(_C).attr('id','beans_'+_ID).css({'width' : _W + 'px', 'height' : _H + 'px'});}
+    passion.ones({itemspaceid : _ID,width:_W,height:_H,adsrc : _F,turn : _T,defbeans : !0});
+    });
+//轮换代码结束
+}}
+else{
+if (typeof has_topAd == "undefined" || has_topAd==0) {
+//topnews代码，投放时请带上，轮换代码从下面开始替换
+
+require(["sjs/matrix/ad/passion"], function (passion) {
+    var _C = "#TurnAD20",_ID = "10013",_W = 970,_H = 90,_T = 2,_F=201;
+    if(_C){jQuery(_C).attr('id','beans_'+_ID).css({'width' : _W + 'px', 'height' : _H + 'px'});}
+    passion.ones({itemspaceid : _ID,width:_W,height:_H,adsrc : _F,turn : _T,defbeans : !0});
+    });
+//轮换代码结束
+}}
+}
+showTurnAD20(intTurnAD20);
+}catch(e){}
+</script>
+</div>
+</div>
+</SOHUADCODE>
+	</div>
+	<div class="right">
+		<SOHUADCODE><div>
+</div>
+</SOHUADCODE>
+	</div>
+</div>
+<!-- 翻牌广告 end -->
+
+
+<!-- 频道导航 st -->
+<div id="channel-nav" class="area">
+	<div id="mypos" class="left" itemprop="mypos"><a href="https://news.sohu.com/" target="_blank"><img src="https://news.sohu.com/upload/pagerevision20090916/news_logo3.gif" width="110" height="24" alt="" /></a><span>&gt; <a href=https://news.sohu.com/1/0903/61/subject212846158.shtml>国内要闻</a> &gt; <a href=https://news.sohu.com/s2005/shishi.shtml>时事</a></span></div>
+	<div class="navigation" style="display:none" ><a href=https://news.sohu.com/>新闻中心</a> &gt; <a href=https://news.sohu.com/guoneixinwen.shtml>国内新闻</a> &gt; <a href=https://news.sohu.com/1/0903/61/subject212846158.shtml>国内要闻</a> &gt; <a href=https://news.sohu.com/s2005/shishi.shtml>时事</a></div>
+	<div class="right"><a href="https://news.sohu.com/guoneixinwen.shtml" target="_blank">国内</a> | <a href="https://news.sohu.com/guojixinwen.shtml" target="_blank">国际</a> | <a href="https://news.sohu.com/shehuixinwen.shtml" target="_blank">社会</a> | <a href="https://mil.news.sohu.com/" target="_blank">军事</a> | <a href="https://star.sohu.com/" target="_blank">评论</a>
+
+
+<style>
+
+                   #channel-nav{position:relative;}
+
+                   #channel-nav .logo-ad{position:absolute; left:490px; top:5px;}
+
+         </style>
+
+         <div class="logo-ad">
+
+                   
+         </div></div>
+</div>
+<!-- 频道导航 end -->
+<div id="container" class="area" itemscope itemtype="https://schema.org/NewsArticle" itemref="mypos">
+	<div class="content-wrapper grid-675">
+		<!-- 广告 -->
+		<div class="ad675">
+			<SOHUADCODE>
+</SOHUADCODE>
+		</div>		
+		<div class="content-box clear">
+			<!-- 文章标题 -->
+			
+			<h1 itemprop="headline">复旦教授：中国食品不安全是错觉</h1>
+            
+			<!-- 正文标签 -->
+			<div class="label-ad clear" id="commentTab">
+				<div class="label">
+					<ul>
+						<li class="text-label" itemprop="isHot" content="true"><em>正文</em></li>
+						<li class="com-label"><em><a href="https://pinglun.sohu.com/s391849513.html" itemprop="discussionUrl">我来说两句<span class="f12">(<span class="red" id="changyan_parti_unit"><img src="https://comment.news.sohu.com/upload/comment4/images/loading_blue.gif" width="16px" height="16px" /></span>人参与)</span></a></em></li>
+					</ul>
+				</div>
+				
+				<div class="ad">
+					<div class="adFrag"><SOHUADCODE>
+</SOHUADCODE></div>
+					<div class="scan-handset" id="scan-handset"><a class="scan-icon" href="javascript:void(0)">扫描到手机</a></div>
+				</div>
+				<div class="scan-layer" id="scan-layer-id">
+					<div class="scan-pic"><img width="99" height="99" alt="" src="https://news.sohu.com/upload/article/2012/images/pic/scan_pic_98x98.gif"></div>
+					<div class="scan-layer-close"><a href="javascript:void(0)">关闭</a></div>
+				</div>
+				<script type="text/javascript">
+					jQuery(function(jq){
+					    if(jq("#scan-layer-id .scan-pic img").length > 0){
+	                           var theU = "https://s1.rr.itc.cn/qrcode/m/n/"+391849513+".png";
+	                           jq("#scan-layer-id .scan-pic img").attr("src",theU);
+	                    }
+						jq("#scan-handset").click(function(){
+							jq("#scan-layer-id").show();
+						});
+						jq("#scan-layer-id .scan-layer-close a").click(function(){
+							jq("#scan-layer-id").hide();
+						});
+					});
+				</script>
+				
+			</div>				
+			<!-- 时间 来源 -->
+		
+			<div class="time-fun clear">
+				<div class="time-source">
+					<div class="time" itemprop="datePublished" content="2013-12-16T13:13:21+08:00">2013年12月16日13:13</div>						
+					<div class="source">
+						
+						<span class="sc">来源：<span id="media_span" itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><span itemprop="name">解放网-解放日报</span></span></span>
+						
+						
+					</div>				
+				</div>
+                <div class="function">
+					<ul>
+						<li class="phone-ctcp"><a href="https://k.sohu.com/" target="_blank">手机客户端</a></li>
+						<li class="transmit_txt"><a href="javascript:void(0)">保存到博客</a></li>
+						<li class="fontsize"><a href="javascript:void(0)"></a>
+							<div class="fontsize-layer"><a href="javascript:doZoom(16)">大</a>|<a href="javascript:doZoom(14)">中</a>|<a href="javascript:doZoom(12)">小</a></div>
+						</li>
+						<li class="print"><a href="javascript:printArticle()"></a>
+							<div class="print-layer"><a href="javascript:printArticle()">打印</a></div>
+						</li>                                      
+					</ul>
+				</div>
+			</div>
+           
+			<SOHUADCODE>
+</SOHUADCODE>			
+			<!-- 正文 -->
+			<div class="text clear" id="contentText">
+				<div itemprop="articleBody"><div class="text-pic">
+<table class="tableImg" border="0" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td style="text-align: center;"><a href="https://news.sohu.com/s2013/dushipin/" target="_blank"><img src="https://photocdn.sohu.com/20131216/Img391853965.jpg" alt="点击进入数字之道满毒全席" align="middle" /></a></td>
+</tr>
+<tr>
+<td class="text-pic-tt" style="text-align: center;"><a href="https://news.sohu.com/s2013/dushipin/" target="_blank">点击进入数字之道满毒全席</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>　　本报记者 陆绮雯</p>
+<p>　　食品安全是关系人民健康和社会稳定的重要公共卫生问题。近年来，我国媒体将 “三聚氰胺奶粉”、“塑化剂事件”、“血燕窝事件”等一系列重大食品安全事件曝光于公众视野，有人用“井喷”来形容我国目前食品安全事件频发的现状，并无奈地调侃 “中国人在食品中完成了化学扫盲”。食品安全问题的影响力和受关注程度可见一斑。</p>
+<p>　　那么我国食品安全的状况究竟如何？复旦大学公共卫生学院厉曙光教授、陈莉莉等研究人员组成的课题组（国家社科基金重点项目）以数据为事实，对2004年至2012年期间，我国各类媒体对大陆 （包括香港、澳门）曝光的所有食品安全事件进行了全面的解读及总结。</p>
+<p>　　<strong>“食品不安全，天下不太平”，是错觉也是误解</strong></p>
+<p>　　据统计，2004年 1月 1日-2012年12月31日，9年时间里，我国被各类媒体曝光的食品安全事件共计2489起，平均每年276起。从地域上来看，华北地区曝光的食品安全事件数量最多，约占总数的1/3；其次为华南地区，所占比例为19%；华东地区排在第三，占总数的18%。数据还显示，2005年和2011年，各类食品安全事件相对高发。</p>
+<p>　　厉曙光分析，这样的分布情况和经济发达程度有关。如果把北京、上海、广东、山东以及苏浙等国内经济相对较发达的六大省市的食品安全事件总数相加，达到1179起，占全国总数近一半。其中原因，一方面是发达地区的食品生产企业和餐饮服务企业相对较多，各环节可能产生的食品安全问题亦相应较多；另一方面是当地民众对食品安全关注度相对较高，加之各类媒体对食品安全这一民生问题相对更为敏感。</p>
+<p>　　厉曙光说，平均每年276起，意味着几乎每一天半就有食品安全事件被媒体报道，在信息发达、传播迅捷的当今，以致消费者会有“食品越来越不安全”的感觉，再加上社会上难免“以讹传讹”，很多消费者都会对食品安全产生恐慌、紧张、纠结的心理——不知道什么可以吃？吃什么安全？但是课题组对数据分析后发现，仅有413起（16.5%）食品安全事件同时涉及多个地区，北京、上海、广东、山东、江苏、浙江等六省市或更多，平均每年45.9起，而其余的2076起食品安全事件散发在各地，都为小概率，小范围、小数量事件。</p>
+<p>　　为了更清楚地进行个案梳理和分析，研究人员还随机在2489起事件清单中，选择了2011年3月30日至4月1日的20条新闻报道，就这20条新闻的性质分类；造假的有7起，属于“添加剂”的5起，其余为“卫生不达标、产品不合格”等。由此不难看出，这些事件都是散的、点状的、局限的，其中大多数事件对人体健康的危害性质都无法判断或者定性，但当这些报道在一家媒体发出后，其他媒体会跟进，重复、交叉、跟踪性地进行报道，其产生的负面“涟漪效应”不容小觑。因而，“全社会和消费者会逐渐产生&lsquo;食品不安全，天下不太平&rsquo;的感受，这既是一种错觉也是一种误解。 ”厉曙光这样认为。</p>
+<p>　　<strong>食品不安全存在“三宗最”</strong></p>
+<p>　　当然，食品安全问题确确实实存在，而课题组的研究也发现了危害最严重的三大方面。</p>
+<p>　　第一，食品生产加工环节问题最为严重。厉曙光告诉记者，食品不安全因素贯穿食品供应全过程，从原料生产、产品加工，到流通销售、餐饮消费各个环节。“我们的研究发现，</p>
+<p>　　被曝光问题中64%产生于食品生产加工环节，其中相当一部分要&lsquo;归功&rsquo;于食品添加剂之&lsquo;过&rsquo;。 13.4%涉及初级农产品的生产；10.5%与流通销售相关；餐饮消费所占比例约为9.2%。</p>
+<p>　　这是与目前我国市场发育不充分、现代企业组织不发达、市场体系不健全、价格和竞争机制不完善、社会监管不到位、食品安全法律法规体系相对滞后等原因有关。因此，要求全社会形成合力，同时监督、监管，执法关口前移，提高执法监管力度，加大法律惩罚强度。从现有数据分析，如果严格控制初级、次级食品的生产加工环节就可以减少80%的食品安全事件的发生。 ”</p>
+<p>　　第二，畜禽肉、鱼虾、蛋类和零食类食品，安全问题最高发。统计数据显示，在2004年-2012年媒体报道的食品安全事件中，畜、禽肉、鱼虾及蛋类所占比例最高，达到22.1%；其次为零食类（蜜饯、膨化食品等），约为15.7%；谷类薯类杂豆和奶及奶制品、豆及豆制品分别为 13.1%、10.7%；9.2%与蔬菜水果有关；饮料和调味品各占6%-7%，保健食品所占比例仅为2.4%。在厉曙光看来，这些数据表明，我国的食品安全状况并非人们想象中那么可怕，按大类分；畜、禽肉、鱼、虾及蛋类为22.1%，如果很粗略地按小类分，这四大类食品的不安全情况分别不到5%，“这从反面可以说明，我国95%的畜、禽肉、鱼、虾及蛋类都是安全的，而其他各类食品的安全情况则更好。 ”厉曙光分析说，“我国饲养业和食品加工业中添加抗生素、色素、激素等现象时有发生，致使其常残留于禽、兽、水产品等食品中，所以，从媒体的报道频率来看，这些产品的安全问题最为高发。 ”</p>
+<p>　　第三，违反食品添加剂管理规定等问题最突出。2489起媒体报道的食品安全事件中，近1/3为违反食品添加剂管理规定；农药/兽药残留、重金属等有害化学物超标所占比例约为15.8%；微生物超标及非食品原料生产/添加非食品用化学物分别为11.5%左右；掺杂掺假则占10%；约4.7%的食品因过期而被曝光。厉曙光特别强调了对农药/兽药残留、重金属等有害化学物超标问题的认知，他说，消费者往往关注风险的 “有或者无”，尚缺乏“剂量决定毒性”的科学认识。农药/兽药残留超标、重金属等有害化学物对人体健康的影响常表现为慢性毒性，评价该类食物所致健康风险，一般是建立在食品中有害物质监测的基础上结合食物消费量对其可能所致风险进行科学的风险评估。厉曙光指出，食品安全不可能是“零”风险，但是我们可以而且应该做到“零容忍”，因此如何提高消费者科学素质，认识将食品安全的风险控制在“可接受”水平是合理且科学的非常重要。</p>
+<p>　　<strong>沟通交流有缺位，专家要讲百姓听得懂的话</strong></p>
+<p>　　面对当前的食品安全现状，我们应该怎么做？做什么？厉曙光认为，最重要、最主要、最需要、最有效的工作是：开展和加强食品安全风险交流。</p>
+<p>　　从专业角度来理解，风险交流就是在风险分析全过程中，风险评估专业人员、风险管理行政人员、消费者、企业、学术界和其他利益相关方就某项风险、风险所涉及的因素和风险认知相互交换信息和意见的过程，其内容包括风险管理决策的依据和风险评估结果的解释。对公众而言，就是要让专家用公众能听懂的通俗语言，将比较复杂的科学专业知识讲清楚与消费者沟通，让老百姓心服口服。</p>
+<p>　　“风险交流是食品安全风险分析工作的重要组成部分，但我国食品安全监管仍存在&lsquo;交流缺位&rsquo;的状态。 ”厉曙光说，良好的风险交流工作可以避免大多数食品安全问题的失真和夸大，建议开展以下工作——</p>
+<p>　　首先，应大力加强食品安全方面的科普和宣传工作。让公众了解诸如含致癌物质的食品不等同于致癌食品（烤鸭的焦黑皮里含有致癌物质，如多环芳烃等，但烤鸭不是致癌食品）；不合格食品不等同于有毒食品（上海的“染色馒头”并不是毒馒头）等基本概念，提高全社会的科学认知和素养，纠正和消除广大消费者对食品安全问题的误区和盲区。</p>
+<p>　　其次，要开展广泛、深入、可持续的科普教育和培训，对媒体工作者、政府官员和监督人员、食品生产经营者，以及其行业协会等进行泛专业的培训和教育。让他们掌握一定的基本营养知识和食品安全知识，防止发生在相关专业上的“以偏概全、以小见大、以点代面”等现象，避免产生低级的和原则性的错误。</p>
+<p>　　第三，需要建立有效的信息发布制度。一旦发生食品安全事件，当地、当时、当事者应该在第一时间对社会做出负责任的回复，有与该专业密切相关的专家出来为消费者答疑解惑，向公众提供清晰、全面、专业而又通俗的相关信息，在第一时间平息和缓解社会的紧张、不满和恐慌。</p><script type="text/javascript">// <![CDATA[
+media_span_url('https://www.jfdaily.com/a/7563972.htm')
+//]]></script></div>
+				<!-- seo标签描述 -->
+				<div style="display:none;">
+					<span id="url" itemprop="url">https://news.sohu.com/20131216/n391849513.shtml</span>
+					<span id="indexUrl" itemprop="indexUrl">news.sohu.com</span>
+					<span id="isOriginal" itemprop="isOriginal">false</span>
+					<span id="sourceOrganization" itemprop="sourceOrganization" itemscope itemtype="https://schema.org/Organization"><span itemprop="name">解放网-解放日报</span></span>
+					<span id="author" itemprop="author" itemscope itemtype="https://schema.org/Organization"><span itemprop="name"></span></span>
+					<span id="isBasedOnUrl" itemprop="isBasedOnUrl">https://www.jfdaily.com/a/7563972.htm</span>
+					<span id="genre" itemprop="genre">report</span>
+					<span id="wordCount" itemprop="wordCount">4088</span>
+					<span id="description" itemprop="description">点击进入数字之道满毒全席本报记者陆绮雯食品安全是关系人民健康和社会稳定的重要公共卫生问题。近年来，我国媒体将“三聚氰胺奶粉”、“塑化剂事件”、“血燕窝事件”等一</span>
+				</div>
+			</div>	
+            <div class="original-title"><span class="editer">(责任编辑：刘华清)</span>
+					
+				    原标题：解放周一：我国食品安全状况究竟如何？
+			         
+			</div>						
+			<!-- 分享 -->
+			<div class="share clear" id="share">
+				
+				
+				
+              <ul>
+                                               <li class="share-tt">分享：</li>
+                                               <li class="blg"><a href="javascript:void(0)" onclick="jumpUrl('t')" title="分享到搜狐微博"></a><em></em></li>
+                                               <li class="qq"><a href="javascript:void(0)" onclick="jumpUrl('qq')" title="分享给QQ好友"></a><em></em></li>
+                                               <li class="rrw"><a href="javascript:void(0)" onclick="jumpUrl('renren')" title="分享到人人网"></a></li>
+                                               <li class="sohukan"><a href="javascript:void(0)" onclick="jumpUrl('sohukan')" title="收藏到搜狐随身看"></a><em></em></li>
+                                               <li class="transmit_txt"><a href="javascript:void(0)">[保存到博客]</a></li>
+                                     </ul>
+<div class="go_sohu_home"><a href="https://www.sohu.com" target="_blank" onclick="toHomePage();"></a></div>
+				     				
+                
+				
+            </div>			
+			<!-- 相关 -->
+			<!-- 本文相关推荐-->
+            <!-- 其它频道 -->
+<style>
+#container .tagHotg .tagIntg li a{color:#000}
+#container .tagHotg .tagIntg li a:hover{color:#c00}
+</style>
+			<style>
+/* 相关热点 2010-09-09 */
+#contentA .tagHotg{clear:both;margin:10px auto 0;text-align:left}
+#contentA .tagHotg h3{height:24px;font:600 14px/24px "宋体";color:#333}
+#contentA .tagHotg .tagIntg{display: block;overflow:hidden;zoom:1;clear:both;width:100%;margin:3px auto 0}
+#contentA .tagHotg .tagIntg li{float:left;width:205px;font:14px/24px "宋体"}
+#contentA .tagHotg .tagIntg li a{ text-decoration:none !important;}
+#contentA .tagHotg .tagIntg li a:hover{text-decoration:underline !important;}
+#contentA .text .line{width:100%}
+</style>
+<div class="tagHotg">
+  <h3>本文相关推荐</h3>
+  <div class="tagIntg">
+    <ul>
+                        <li><a class="hot-icon" href="https://www.sogou.com/web?query=食品安全图片大全&p=02210102&fhintidx=0" onclick="return sogouRelateWeb(this);" target="_blank" onclick="return sogouRelateWeb(this);" len
+="12" ind="1">食品安全图片大全</a></li>
+                                <li><a href="https://www.sogou.com/web?query=上海复旦大学教授名单&p=02210102&fhintidx=1" onclick="return sogouRelateWeb(this);" target="_blank" onclick="return sogouRelateWeb(this);" len="12" ind="2">
+上海复旦大学教授名单</a></li>
+                                <li><a href="https://www.sogou.com/web?query=关于食品安全的图片&p=02210102&fhintidx=2" onclick="return sogouRelateWeb(this);" target="_blank" onclick="return sogouRelateWeb(this);" len="12" ind="3">
+关于食品安全的图片</a></li>
+                                <li><a href="https://www.sogou.com/web?query=什么是食品安全&p=02210102&fhintidx=3" onclick="return sogouRelateWeb(this);" target="_blank" onclick="return sogouRelateWeb(this);" len="12" ind="4">
+什么是食品安全</a></li>
+                                <li><a href="https://www.sogou.com/web?query=食品安全图片&p=02210102&fhintidx=4" onclick="return sogouRelateWeb(this);" target="_blank" onclick="return sogouRelateWeb(this);" len="12" ind="5">
+食品安全图片</a></li>
+                                <li><a href="https://www.sogou.com/web?query=中国食品安全现状&p=02210102&fhintidx=5" onclick="return sogouRelateWeb(this);" target="_blank" onclick="return sogouRelateWeb(this);" len="12" ind="6">
+中国食品安全现状</a></li>
+                                <li><a href="https://www.sogou.com/web?query=不安全食品有哪些&p=02210102&fhintidx=6" onclick="return sogouRelateWeb(this);" target="_blank" onclick="return sogouRelateWeb(this);" len="12" ind="7">
+不安全食品有哪些</a></li>
+                                <li><a href="https://www.sogou.com/web?query=中国食品安全现状看法&p=02210102&fhintidx=7" onclick="return sogouRelateWeb(this);" target="_blank" onclick="return sogouRelateWeb(this);" len="12" ind="8">
+中国食品安全现状看法</a></li>
+                                <li><a href="https://www.sogou.com/web?query=食品安全宣传图片&p=02210102&fhintidx=8" onclick="return sogouRelateWeb(this);" target="_blank" onclick="return sogouRelateWeb(this);" len="12" ind="9">
+食品安全宣传图片</a></li>
+                                <li><a href="https://www.sogou.com/web?query=2013中国食品安全事件&p=02210102&fhintidx=9" onclick="return sogouRelateWeb(this);" target="_blank" onclick="return sogouRelateWeb(this);" len="12" ind="10">
+2013中国食品安全事件</a></li>
+                                <li><a href="https://www.sogou.com/web?query=中国食品安全事件&p=02210102&fhintidx=10" onclick="return sogouRelateWeb(this);" target="_blank" onclick="return sogouRelateWeb(this);" len="12" ind="11">
+中国食品安全事件</a></li>
+                                <li><a href="https://www.sogou.com/web?query=兽药在动物性食品中的残留&p=02210102&fhintidx=11" onclick="return sogouRelateWeb(this);" target="_blank" onclick="return sogouRelateWeb(this);" len="12" ind="12">
+兽药在动物性食品中的残留</a></li>
+                                </ul>
+  </div>
+</div>
+			<script type="text/javascript">var entityId = 391849513;</script>	
+			
+				<div id="SOHUCS" sid=""></div>
+<script>
+document.domain = "sohu.com";
+if(typeof entityId != 'undefined'){
+    document.getElementById('SOHUCS').setAttribute('sid',entityId); 
+    var category = typeof category != 'undefined' ? category :'';                 
+    var _config = {
+                   hideList: true,               
+                   hideSubList: true,            
+                    jumpUrl: 'https://pinglun.sohu.com/s[topicId].html',
+                    varName: entityId, 
+                    customSohu: true,
+                    cyanTitle : '我来说两句',
+                    commentHide : true ,
+                    pageSize: 10,
+                    categoryId: category
+                }
+    }
+    window.SCS_NO_IFRAME = true;
+</script>
+
+<script src="https://assets.changyan.sohu.com/upload/changyan.js?appid=cyqemw6s1&conf=prod_0266e33d3f546cb5436a10798e657d97" charset="utf-8"></script>
+<script type="text/javascript" src="https://assets.changyan.sohu.com/upload/plugins/plugins.count.js"></script>
+				
+			<!--图文转载-->
+			<script type="text/javascript" src="https://news.sohu.com/upload/article/2012/js/pubPicTextV6_20130926.js"></script>
+			<script type="text/javascript">
+				var newsId = 391849513;
+				jQuery.picText.init();
+			</script>
+			<!--图文转载 end-->
+			<!-- 广告 -->
+			<div class="ad590">
+				<div><SOHUADCODE><div>
+<div id=beans_10631 width=590 height=105 align="center"></div>
+<script type="text/javascript">
+require(["sjs/matrix/ad/passion"], function (passion) {
+    var _ID = "10631",_W = 590,_H = 105,_T =1,_F=201;
+    if(_ID){jQuery('#beans_'+_ID).css({'width' : _W + 'px', 'height' : _H + 'px','margin' : '0 auto'});}
+    passion.ones({itemspaceid : _ID,width:_W,height:_H,adsrc : _F,turn : _T,defbeans : !0});
+    });
+</script></div>
+</SOHUADCODE></div>
+			</div>
+			<!-- 20130121 st -->
+			<div class="lottery-box clear" id="sougocaipiao1"><a href="https://caipiao.sohu.com/20181219/n558625553.shtml" target="_blank" rel="nofollow">彩民车牌号投注中3.9万</a>&nbsp;&nbsp;<a href="https://caipiao.sohu.com/20181219/n558623240.shtml" target="_blank" rel="nofollow">双色球148期开奖:头奖11注666万</a>&nbsp;&nbsp;<a href="https://caipiao.sohu.com/20181219/n558626104.shtml" target="_blank" rel="nofollow">徐州小伙中得639万大奖</a>&nbsp;&nbsp;<a href="https://caipiao.sohu.com/tycpkj1/index.shtml" target="_blank" rel="nofollow">体彩摇奖</a></div>	
+			<!-- 20130121 end -->
+			<div class="mutu clear">
+				<div class="mutu-title">
+					<div class="mutu-news-tt">
+                   <h2><span>相关新闻</span></h2>
+                    </div>
+					<div class="mutu-keyWord-tt">
+                   <h2><span>相关推荐</span></h2>
+                    </div>
+				</div>
+				<div class="mutu-news">
+						<div class="list14">
+							
+
+			 <ul> 		<li><span>13-12-16</span><a href="https://news.sohu.com/20131216/n391826261.shtml" onclick="return sogouRelateNews(this);" len="6"  ind="1" target="_blank">上海两校学生疑集体食物中毒 校方称系空气污染</a></li>
+								<li><span>13-12-15</span><a href="https://news.sohu.com/20131215/n391819806.shtml" onclick="return sogouRelateNews(this);" len="6"  ind="2" target="_blank">专家:2020年中国食品工业产值会达到20万亿元</a></li>
+								<li><span>13-12-15</span><a href="https://news.sohu.com/20131215/n391805837.shtml" onclick="return sogouRelateNews(this);" len="6"  ind="3" target="_blank">人民日报:高端餐饮政务宴从占九成到零</a></li>
+								<li><span>13-12-13</span><a href="https://news.sohu.com/20131213/n391733989.shtml" onclick="return sogouRelateNews(this);" len="6"  ind="4" target="_blank">南非“冒牌翻译”自称突发精神分裂 产生幻觉</a></li>
+								<li><span>13-12-13</span><a href="https://news.sohu.com/20131213/n391720083.shtml" onclick="return sogouRelateNews(this);" len="6"  ind="5" target="_blank">牡丹江地税官员建山庄“休养” 享专供食品(图)</a></li>
+								<li><span>13-12-10</span><a href="https://news.sohu.com/20131210/n391522209.shtml" onclick="return sogouRelateNews(this);" len="6"  ind="6" target="_blank">瘾君子吸毒过量生幻觉反锁门窗 自绑手脚等民警</a></li>
+		 </ul> 	
+
+							
+								<div class="more"><a href="https://news.sogou.com/news?query=食品 错觉&pid=31023101&md=listTopics&name=&mode=0&sort=0" rel="nofollow" target="_blank" >更多关于 <strong>食品 错觉</strong> 的新闻&gt;&gt;</a> </div>
+							
+						</div>
+				</div>
+				<div class="mutu-keyWord">
+						<div class="list14">
+							<ul>
+	<li><a href="https://www.sogou.com/web?query=复旦大学教授名单&p=31210100&fhintidx=0" onclick="return sogouRelateWeb(this);" target="_blank" len="6" ind="1">复旦大学教授名单</a></li>
+	<li><a href="https://www.sogou.com/web?query=食品安全漫画图片&p=31210100&fhintidx=1" onclick="return sogouRelateWeb(this);" target="_blank" len="6" ind="2">食品安全漫画图片</a></li>
+	<li><a href="https://www.sogou.com/web?query=食品安全现状&p=31210100&fhintidx=2" onclick="return sogouRelateWeb(this);" target="_blank" len="6" ind="3">食品安全现状</a></li>
+	<li><a href="https://www.sogou.com/web?query=食品安全视频&p=31210100&fhintidx=3" onclick="return sogouRelateWeb(this);" target="_blank" len="6" ind="4">食品安全视频</a></li>
+	<li><a href="https://www.sogou.com/web?query=中国食品安全报&p=31210100&fhintidx=4" onclick="return sogouRelateWeb(this);" target="_blank" len="6" ind="5">中国食品安全报</a></li>
+	<li><a href="https://www.sogou.com/web?query=近年来食品安全事件&p=31210100&fhintidx=5" onclick="return sogouRelateWeb(this);" target="_blank" len="6" ind="6">近年来食品安全事件</a></li>
+<script >
+try{    
+        var i=new Image();
+        i.src='https://pingback.sogou.com/rltpv.png?surl='+escape(window.location)+'&'+Math.random();
+}catch(err){
+}       
+</script></ul>
+						</div>
+				</div>
+			</div>
+	
+			<!-- 搜狗服务 -->
+			<div class="sogouService clear">
+            	<h2><span><a href="https://www.sogou.com/" target="_blank"><img src="https://news.sohu.com/upload/pagerevision20090916/sogou.png" width="74" height="22" alt="" /></a></span><a href="https://www.sogou.com/fuwu/" rel="nofollow" target="_blank"><strong>我要发布</strong></a></h2>
+                <script type="text/javascript">
+	                var sogou_ad_id=13273;
+	                var sogou_ad_height=90;
+	                var sogou_ad_width=580;
+                </script>
+                <script language='JavaScript' type='text/javascript' src='https://images.sohu.com/cs/jsfile/js/c.js'></script>
+            </div>
+		</div>
+	</div>	
+	<div class="rightbar-wrapper grid-300">
+		<!-- 搜索 热词 -->
+		<div class="search-hotword clear">
+			<div class="search">
+				<form action="https://news.sogou.com/news" method="get" target="_blank" id="searchform" name="searchform" onsubmit="return CheckKeyWord();" autocomplete="off"> 
+					<input type="text" name="query" id="query" class="search-in" value="食品 错觉" />
+					<input type="hidden" name="t" id="t" value="news" />
+					<input type="submit" class="search-btn" value="搜狗搜索" onmouseover="this.className='search-btn search-btn-over'" onmouseout="this.className='search-btn'" />
+				</form>
+			</div>
+			<div class="hotword">热词：
+<a href="https://www.sogou.com/sogou?pid=sogou-inse-c5ab6cebaca97f71&query=%E6%B5%B7%E8%88%AA%E5%BB%B6%E8%AF%AF%E6%8A%A2%E6%95%91%E6%97%B6%E9%97%B4" target="_blank" rel="nofollow">死亡航班</a>
+<a href="https://www.sogou.com/sogou?pid=sogou-inse-c5ab6cebaca97f71&query=%E8%9C%98%E8%9B%9B%E4%BE%A0%E5%9F%B9%E5%85%BB%E8%9C%98%E8%9B%9B" target="_blank" rel="nofollow">饲养蜘蛛侠</a>
+<a href="https://www.sogou.com/sogou?pid=sogou-inse-c5ab6cebaca97f71&query=%E6%88%BF%E4%B8%9C%E8%B8%B9%E5%BC%80%E6%B5%81%E6%B0%B4%E6%88%BF%E9%97%A8" target="_blank" rel="nofollow">夺命房间</a>
+<a href="https://www.sogou.com/sogou?pid=sogou-inse-c5ab6cebaca97f71&query=%E5%9C%B0%E7%90%83%E5%BC%95%E5%8A%9B%E7%9C%BC%E7%9A%AE%E4%B8%8B%E5%9E%82" target="_blank" rel="nofollow">引力双眼皮</a></div>
+		</div>
+        <script type="text/javascript">
+        function CheckKeyWord(){
+                 var sf = document.searchform;
+                 with(sf){
+          //if (query.value == "食品 错觉") {
+          //                query.value = "";
+          //                setTimeout("query.value='食品 错觉'", 1000);
+          //       }
+        }
+                 return true;
+        }
+        
+        // 改变提交的查询动作
+        function CheckFormAction(v){
+                 var sf = document.searchform;
+                 with(sf){
+          if (v=='web') {
+                          action = "https://www.sogou.com/web";
+            p.value = "02240100";                                 
+                 } else {
+                          p.value = "02240101";
+                          action = "https://news.sogou.com/news";
+                 }
+        }
+                 return true;
+        }
+
+        jQuery(function(jq){
+                 var searchValue = jq(".search-in").val();
+                 jq(".search-in").focus(function(){
+                          jq(this).val("").css("color","#333");
+                          jq(".search").addClass("search-act");
+                 }).blur(function(){
+                          if(jq(this).val() == ""){
+                                    jq(this).val(searchValue).css("color","#666");
+                                    jq(".search").removeClass("search-act");
+                          } 
+                 })
+        });
+        </script>
+		
+		<!-- 广告 -->
+		<SOHUADCODE><script type="text/javascript" src="https://txt.go.sohu.com/ip/soip"></script>
+<script type="text/javascript">
+if(typeof(document.pv)=="undefined") document.pv = new Array();var _a=new Image();
+_a.src="https://imp.optaim.com/201408/227508674023a85b81418b2fd35d3b5a.php?a=1";
+document.pv.push(_a);
+</script><script type="text/javascript">
+Passion.tclick=function(ctid){
+    Passion.pv.imp("https://xls.go.sohu.com/201301/dec6fec990dffa2804915cbc46fbefee.php?a="+ctid);
+}
+</script><div class="ad300">
+<table width=300 height=250 border=0 cellpadding=0 cellspacing=0>
+<tr>
+<td width=300 height=250 align=middle>
+<div id=TurnAD472 width=300 height=250>
+ <script type=text/javascript>
+var TurnAD472=new Cookie(document,"TurnAD472",24);
+TurnAD472.load();
+TurnAD472.visit=(TurnAD472.visit==null)?parseInt(Math.random()*3+1):TurnAD472.visit;
+if(TurnAD472.visit!=0)var intTurnAD472=TurnAD472.visit;
+TurnAD472.visit++;
+TurnAD472.visit=(TurnAD472.visit>3)?1:TurnAD472.visit;
+TurnAD472.store();
+function showTurnAD472(basenum){
+if (basenum==1){
+if (typeof has_topAd == "undefined" || has_topAd==0) {
+//topnews代码，投放时请带上，轮换代码从下面开始替换
+require(["sjs/matrix/ad/passion"], function (passion) {
+    var _C = "#TurnAD472",_ID = "10108",_W = 300,_H = 250,_T = 1,_F=201;
+    if(_C){jQuery(_C).attr('id','beans_'+_ID).css({'width' : _W + 'px', 'height' : _H + 'px','margin' : '0 auto'});}
+    passion.ones({itemspaceid : _ID,width:_W,height:_H,adsrc : _F,turn : _T,defbeans : !0});
+    });
+//轮换代码结束
+}}
+else if(basenum==2){
+if (typeof has_topAd == "undefined" || has_topAd==0) {
+//topnews代码，投放时请带上，轮换代码从下面开始替换
+require(["sjs/matrix/ad/passion"], function (passion) {
+    var _C = "#TurnAD472",_ID = "10108",_W = 300,_H = 250,_T = 2,_F=201;
+    if(_C){jQuery(_C).attr('id','beans_'+_ID).css({'width' : _W + 'px', 'height' : _H + 'px','margin' : '0 auto'});}
+    passion.ones({itemspaceid : _ID,width:_W,height:_H,adsrc : _F,turn : _T,defbeans : !0});
+    });
+//轮换代码结束
+}}
+else{
+if (typeof has_topAd == "undefined" || has_topAd==0) {
+//topnews代码，投放时请带上，轮换代码从下面开始替换
+require(["sjs/matrix/ad/passion"], function (passion) {
+    var _C = "#TurnAD472",_ID = "10108",_W = 300,_H = 250,_T = 3,_F=201;
+    if(_C){jQuery(_C).attr('id','beans_'+_ID).css({'width' : _W + 'px', 'height' : _H + 'px','margin' : '0 auto'});}
+    passion.ones({itemspaceid : _ID,width:_W,height:_H,adsrc : _F,turn : _T,defbeans : !0});
+    });
+//轮换代码结束
+}}
+}
+showTurnAD472(intTurnAD472);
+</script>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<script>var divid300500 = 'TurnAD472';</script>
+<script type="text/javascript" src="https://images.sohu.com/bill/tongyong/js/top/Topnewsthird300500V20140925.js" ></script></SOHUADCODE>		
+		<!-- 手机看新闻 -->
+		<script src="https://a1.itc.cn/pv/js/pvcode.1312101227.js"></script>
+<div class="phone_rss">
+   <a href="https://k.sohu.com" onclick="_pv.send('5af69b5503b22dd5')" target="_blank"><img src="https://i0.itc.cn/20160913/a75_6b415468_0160_9d9d_2462_6621521fdc30_1.jpg" width="300" height="92"></a></div>
+<div class="blank5B"></div>		
+		<!-- 相关微博 -->
+		
+		<div class="news-frag clear">
+		 <h2><span>数字之道</span></h2>
+		 <div class="clk-today clear">
+
+  <div class="pic-text">
+    <div><a target="_blank" href="https://www.sohu.com/a/143128644_157078"><img src="https://i3.itc.cn/20170524/35e6_ff2ec665_f635_8b74_9271_9f846bd226f2_1.jpg
+" height="75" border="0"></a></div>
+    <h4><a target="_blank" href="https://www.sohu.com/a/143128644_157078">
+中国人明明比日本人穷,为何看起来却更有钱?
+</a></h4>
+<p>中国人哪来这么多钱？[<a target="_blank" href="https://www.sohu.com/a/143128644_157078">详细</a>]</p>
+  </div>
+  <div class="list12">
+    <ul>
+      <li><span>神吐槽：</span><a href="https://mt.sohu.com/20170412/n487958555.shtml" target="_blank">美联航成全球公敌 卓伟放大招解围</a></li>
+
+
+
+
+    </ul>
+  </div>
+</div>
+<div class="rightbar-foot" style="margin-top:10px;"></div>
+		</div>
+			
+		<div class="rightbar-foot"></div>		
+		<!-- 广告 -->
+		<SOHUADCODE><div class="ad300">
+<table width=300 height=250 border=0 cellpadding=0 cellspacing=0>
+<tr>
+<td width=300 height=250 align=middle>
+<div id=TurnAD473 width=300 height=250>
+ <script type=text/javascript>
+var TurnAD473=new Cookie(document,"TurnAD473",24);
+TurnAD473.load();
+TurnAD473.visit=(TurnAD473.visit==null)?parseInt(Math.random()*2+1):TurnAD473.visit;
+if(TurnAD473.visit!=0)var intTurnAD473=TurnAD473.visit;
+TurnAD473.visit++;
+TurnAD473.visit=(TurnAD473.visit>2)?1:TurnAD473.visit;
+TurnAD473.store();
+function showTurnAD473(basenum){
+if (basenum==1){
+require(["sjs/matrix/ad/passion"], function (passion) {
+    var _C = "#TurnAD473",_ID = "10110",_W = 300,_H = 250,_T = 1,_F=201;
+    if(_C){jQuery(_C).attr('id','beans_'+_ID).css({'width' : _W + 'px', 'height' : _H + 'px','margin' : '0 auto'});}
+    passion.ones({itemspaceid : _ID,width:_W,height:_H,adsrc : _F,turn : _T,defbeans : !0});
+    });}
+else{
+require(["sjs/matrix/ad/passion"], function (passion) {
+    var _C = "#TurnAD473",_ID = "10110",_W = 300,_H = 250,_T = 2,_F=201;
+    if(_C){jQuery(_C).attr('id','beans_'+_ID).css({'width' : _W + 'px', 'height' : _H + 'px','margin' : '0 auto'});}
+    passion.ones({itemspaceid : _ID,width:_W,height:_H,adsrc : _F,turn : _T,defbeans : !0});
+    });}
+}
+showTurnAD473(intTurnAD473);
+</script>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</SOHUADCODE>		
+		<!-- 广告列表 a -->
+		<SOHUADCODE>
+</SOHUADCODE>		
+		<!-- 相关图片 -->
+		<style>
+.news-frag { border-bottom:5px solid #fff;padding-bottom:0;}
+</style>
+<div class="mutu-pic kind-video clear"  id="hotpicnew" style="height:auto">
+			<h2><span>热门图片</span></h2>
+			<style>
+			#container .mutu-pic .list12 ul{margin:0 auto 12px;width:272px}
+			</style>
+			<div class="pic-group">
+				<ul>
+
+					<li><a href="https://www.xixi123.com/yule/28741.html?zy" target="_blank" rel="nofollow"><img src="https://i1.itc.cn/20170419/2b6a_b45c1d34_0e6a_cfe3_158b_e670df0e5104_1.jpg"width="125" height="85" alt="" /><span>她出身豪门却拍三级片</span></a></li>
+
+					<li><a href="https://www.xixi123.com/yule/30155.html?zy" target="_blank" rel="nofollow"><img src="https://i1.itc.cn/20170511/938_8925407b_b934_f002_d20d_710f82e878da_2.jpg" width="125" height="85" alt="" /><span>戏精演三级片获影帝</span></a></li>
+
+					<li><a href="https://www.xixi123.com/yule/29558.html?zy" target="_blank" rel="nofollow"><img src="https://i3.itc.cn/20170420/2b6a_ce8bff07_bde1_14b5_10cf_236929c63286_1.jpg" width="125" height="85" alt="" /><span>他因嫖娼入狱现在复出</span></a></li>
+
+					<li><a href="https://www.xixi123.com/yule/25355.html?zy" target="_blank" rel="nofollow"><img src="https://i1.itc.cn/20170205/3643_b9083783_02cf_1e1a_cfb2_6d68838ce5c4_1.jpg"width="125" height="85" alt="" /><span>被孙红雷抛弃她入佛门</span></a></li>
+
+					<li><a href="https://www.xixi123.com/yule/30694.html?zy" target="_blank" rel="nofollow"><img src="https://i3.itc.cn/20170517/34a2_2529d739_a85f_f6e4_4353_2a26d77de74a_3.jpg" width="125" height="85" alt="" /><span>她曾做过9次试管婴儿</span></a></li>
+
+					<li><a href="https://www.xixi123.com/yule/30153.html?zy" target="_blank" rel="nofollow"><img src="https://i0.itc.cn/20170508/938_649a36da_4b16_7399_63ae_465b8e77fb27_1.jpg" width="125" height="85" alt="" /><span>张丰毅被网友骂人渣</span></a></li>
+
+					<li><a href="https://www.xixi123.com/yule/30241.html?zy" target="_blank" rel="nofollow"><img src="https://i1.itc.cn/20170516/332d_b605cbee_56b6_3142_0311_80189bde7398_1.jpg" width="125" height="85" alt="" /><span>卓伟眼中最清纯的女星</span></a></li>
+
+					<li><a href="https://www.xixi123.com/yule/30324.html?zy" target="_blank" rel="nofollow"><img src="https://i2.itc.cn/20170517/34a2_2529d739_a85f_f6e4_4353_2a26d77de74a_1.jpg" width="125" height="85" alt="" /><span>艳照门后张柏芝这么说</span></a></li>
+
+					
+			</ul>
+			</div>
+		</div>		
+		<!-- 广告列表 b -->
+		<SOHUADCODE>
+</SOHUADCODE>		
+		<div class="rightbar-foot"></div>		
+		<SOHUADCODE><div class="ad300">
+<table width=300 height=250 border=0 cellpadding=0 cellspacing=0>
+<tr>
+<td width=300 height=250 align=middle>
+<div id=TurnAD123 width=300 height=250>
+ <script type=text/javascript>
+var TurnAD123=new Cookie(document,"TurnAD123",24);
+TurnAD123.load();
+TurnAD123.visit=(TurnAD123.visit==null)?parseInt(Math.random()*2+1):TurnAD123.visit;
+if(TurnAD123.visit!=0)var intTurnAD123=TurnAD123.visit;
+TurnAD123.visit++;
+TurnAD123.visit=(TurnAD123.visit>2)?1:TurnAD123.visit;
+TurnAD123.store();
+function showTurnAD123(basenum){
+if (basenum==1){
+require(["sjs/matrix/ad/passion"], function (passion) {
+    var _C = "#TurnAD123",_ID = "10111",_W = 300,_H = 250,_T = 1,_F=201;
+    if(_C){jQuery(_C).attr('id','beans_'+_ID).css({'width' : _W + 'px', 'height' : _H + 'px','margin' : '0 auto'});}
+    passion.ones({itemspaceid : _ID,width:_W,height:_H,adsrc : _F,turn : _T,defbeans : !0});
+    });}
+else{
+require(["sjs/matrix/ad/passion"], function (passion) {
+    var _C = "#TurnAD123",_ID = "10111",_W = 300,_H = 250,_T = 2,_F=201;
+    if(_C){jQuery(_C).attr('id','beans_'+_ID).css({'width' : _W + 'px', 'height' : _H + 'px','margin' : '0 auto'});}
+    passion.ones({itemspaceid : _ID,width:_W,height:_H,adsrc : _F,turn : _T,defbeans : !0});
+    });}
+}
+showTurnAD123(intTurnAD123);
+</script>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</SOHUADCODE>		
+		<!-- 影视视频 -->
+		<div class="kind-video clear" id="kind-video">
+			<div class="video-menu">
+				<ul>
+					
+					<li>热点视频</li>
+					
+					<li>影视剧</li>
+					<li>综艺</li>
+					<li class="video-menu-end">原创</li>
+				</ul>
+			</div>
+			<div class="video-cont hot-video clear">
+				<div class="pic-group">
+<ul> 
+                           <li><a href="https://tv.sohu.com/20150316/n409834355.shtml?pvid=6de360dfc764657c" target="_blank"><img src="https://i1.itc.cn/20150316/303f_ff71c405_7624_4b35_7515_8f742c0878c2_1.jpg" width="130" height="75" alt="" /></a><span><a href="https://tv.sohu.com/20150316/n409834355.shtml?pvid=6de360dfc764657c" target="_blank">看黄片副局长已被停职</a></span></li>
+
+                           <li><a href="https://tv.sohu.com/20150316/n409838033.shtml?pvid=6de360dfc764657c" target="_blank"><img src="https://i2.itc.cn/20150316/303f_1048f05b_2acf_5848_8111_7d6a3be8aa7e_1.jpg" width="130" height="75" alt="" /></a><span><a href="https://tv.sohu.com/20150316/n409838033.shtml?pvid=6de360dfc764657c" target="_blank">小学开课教掼蛋合适吗</a></span></li>
+
+                          <li><a href="https://tv.sohu.com/20150316/n409835383.shtml?pvid=6de360dfc764657c" target="_blank"><img src="https://i0.itc.cn/20150316/303f_dfeaa20e_f90e_86d2_8e12_a8cbc16cd4cf_1.jpg" width="130" height="75" alt="" /></a><span><a href="https://tv.sohu.com/20150316/n409835383.shtml?pvid=6de360dfc764657c" target="_blank">空姐招聘现场美腿抢镜</a></span></li>
+
+                          <li><a href="https://tv.sohu.com/20150315/n409813255.shtml?pvid=6de360dfc764657c" target="_blank"><img src="https://i2.itc.cn/20150316/303f_52294433_eedd_318a_6784_819b76093f98_1.jpg" width="130" height="75" alt="" /></a><span><a href="https://tv.sohu.com/20150315/n409813255.shtml?pvid=6de360dfc764657c" target="_blank">准妈妈堕胎捐骨髓救妹</a></span></li>
+
+                          <li><a href="https://tv.sohu.com/20150315/n409803867.shtml?pvid=6de360dfc764657c" target="_blank"><img src="https://i2.itc.cn/20150316/303f_dbaae501_7d45_0fa4_1aeb_358073975ece_1.jpg" width="130" height="75" alt="" /></a><span><a href="https://tv.sohu.com/20150315/n409803867.shtml?pvid=6de360dfc764657c" target="_blank">辣条生产场地环境肮脏</a></span></li>
+
+                          <li><a href="https://tv.sohu.com/20150316/n409834326.shtml?pvid=6de360dfc764657c" target="_blank"><img src="https://i3.itc.cn/20150316/303f_652310c6_5c2d_ccc8_06d0_fae2b0438be5_1.jpg" width="130"height="75" alt="" /></a><span><a href="https://tv.sohu.com/20150316/n409834326.shtml?pvid=6de360dfc764657c" target="_blank">百岁老太高空跳伞庆生</a></span></li> 
+                         
+                        <li><a href="https://tv.sohu.com/20150312/n409662402.shtml?pvid=6de360dfc764657c" target="_blank"><img src="https://i1.itc.cn/20150312/3498_64839fc8_0c6a_8d85_3e9d_c1d582a97827_1.jpg" width="130" height="75" alt="" /></a><span><a href="https://tv.sohu.com/20150312/n409662402.shtml?pvid=6de360dfc764657c" target="_blank"><屌丝男士4>爆笑开机</a></span></li>
+
+                        <li><a href="https://tv.sohu.com/20150315/n409812870.shtml?pvid=6de360dfc764657c" target="_blank"><img src="https://i1.itc.cn/20150316/303f_dfe82e52_0c81_9775_86d5_9452f74be014_1.jpg" width="130" height="75" alt="" /></a><span><a href="https://tv.sohu.com/20150315/n409812870.shtml?pvid=6de360dfc764657c" target="_blank">刘欢回应二当冠军导师</a></span></li>
+
+                        <li><a href="https://tv.sohu.com/s2014/sdxlyz/?pvid=6de360dfc764657c" target="_blank"><img src="https://i1.itc.cn/20150311/3498_8dbb8eae_37e2_23bc_cd70_8acb874f9e62_1.jpg" width="130" height="75" alt="" /></a><span><a href="https://tv.sohu.com/s2014/sdxlyz/?pvid=6de360dfc764657c" target="_blank">神雕侠侣-大结局</a></span></li>                        
+
+                        <li><a href="https://tv.sohu.com/s2014/jxyhlmx/?pvid=6de360dfc764657c" target="_blank"><img src="https://i3.itc.cn/20150316/303f_0e8725c6_0849_7024_bbf9_185f922431f7_1.jpg" width="130" height="75" alt="" /></a><span><a href="https://tv.sohu.com/s2014/jxyhlmx/?pvid=6de360dfc764657c" target="_blank">同步热播-锦绣缘</a></span></li>
+      
+                   </ul></div>
+			</div>
+			<div class="video-cont tv-mv clear">
+				<script src=" https://tv.sohu.com/upload/static/plugin/count.js"></script>
+
+
+                                 <div class="video-box clear">
+					<div class="video-pic"><a href="https://tv.sohu.com/s2014/jxyhlmx?pvid=9e67c19acc243c17" target="_blank"><img src="https://i2.itc.cn/20150312/340a_3666a831_f282_da5d_9ac1_745d79f5bd33_1.jpg"  width="125" height="85" alt="锦绣缘" /></a><em class="floor"><a href="https://tv.sohu.com/s2014/jxyhlmx?pvid=9e67c19acc243c17" target="_blank"></a></em></div>
+					<div class="video-txt">
+						<h4><a href="https://tv.sohu.com/s2014/jxyhlmx?pvid=9e67c19acc243c17" target="_blank">同步热播-锦绣缘</a></h4>
+						<h5>主演：黄晓明/陈乔恩/乔任梁/谢君豪/吕佳容/戚迹</h5>
+						
+					</div>
+				</div>
+				
+				
+				<div class="broken-line"></div>
+
+								<div class="video-box clear">
+					<div class="video-pic"><a href="https://tv.sohu.com/s2014/sdxlyz?pvid=9e67c19acc243c17" target="_blank"><img src="https://i0.itc.cn/20150312/340a_e6c94874_1d62_3a17_7b87_41130e0ecdb2_1.jpg"    width="125" height="85" alt="神雕侠侣" /></a><em class="floor"><a href="https://tv.sohu.com/s2014/sdxlyz?pvid=9e67c19acc243c17" target="_blank"></a></em></div>
+					<div class="video-txt">
+						<h4><a href="https://tv.sohu.com/s2014/sdxlyz?pvid=9e67c19acc243c17" target="_blank">大结局-神雕侠侣</a></h4>
+						<h5>主演：陈晓/陈妍希/张馨予/杨明娜/毛晓彤/孙耀琦</h5>
+						
+					</div>	</div>
+				
+				<div class="broken-line"></div>
+
+				<div class="video-box clear">
+					<div class="video-pic"><a href="https://tv.sohu.com/s2015/fsyx?pvid=9e67c19acc243c17" target="_blank"><img src="https://i1.itc.cn/20150312/340a_5683baff_f82b_50ce_e3b4_15003d8f17e8_1.jpg"    width="125" height="85" alt="封神英雄榜" /></a><em class="floor"><a href="https://tv.sohu.com/s2015/fsyx?pvid=9e67c19acc243c17" target="_blank"></a></em></div>
+					<div class="video-txt">
+						<h4><a href="https://tv.sohu.com/s2015/fsyx?pvid=9e67c19acc243c17" target="_blank">同步热播-封神英雄榜</a></h4>
+						<h5>主演：陈键锋/李依晓/张迪/郑亦桐/张明明/何彦霓</h5>		
+</div> </div>
+<div class="broken-line"></div>
+
+<div class="video-box clear">
+					<div class="video-pic"><a href="https://tv.sohu.com/20140225/n395634904.shtml?spayid=220011&pvid=2de045044c8b9117" target="_blank"> <img src="https://i0.itc.cn/20150312/340a_0cbbceec_8372_e2f3_6d53_b326179090ac_1.jpg"   width="125" height="85" alt="六颗子弹" /></a><em class="floor"><a href="https://tv.sohu.com/20140225/n395634904.shtml?spayid=220011&pvid=2de045044c8b9117" target="_blank"></a></em></div>
+					<div class="video-txt">
+						<h4><a href="https://tv.sohu.com/20140225/n395634904.shtml?spayid=220011&pvid=2de045044c8b9117" target="_blank">六颗子弹</a></h4>
+						<h5>主演：尚格·云顿/乔·弗拉尼甘/Bianca Bree</h5>
+						
+					</div>
+								</div>
+				<div class="broken-line"></div>
+<div class="video-box clear">
+					<div class="video-pic"><a href="https://film.sohu.com/album/8409725.html?channeled=1200120000&pvid=2de045044c8b9117" target="_blank"><img src="https://i1.itc.cn/20150225/332e_b88fc379_0036_cfb4_d7eb_0d2882d2da71_1.jpg" width="125" height="85" alt="龙虎少年队2" /></a><em class="floor"><a href="https://film.sohu.com/album/8409725.html?channeled=1200120000&pvid=2de045044c8b9117" target="_blank"></a></em></div>
+					<div class="video-txt">
+						<h4><a href="https://film.sohu.com/album/8409725.html?channeled=1200120000&pvid=2de045044c8b9117" target="_blank">龙虎少年队2</a></h4>
+						<h5>主演：艾斯·库珀/ 查宁·塔图姆/ 乔纳·希尔</h5>
+						
+					</div>
+				</div>
+			</div>
+			<div class="video-cont zy clear">
+				<div class="video-box clear">
+					<div class="video-pic"><a href="https://tv.sohu.com/20150327/n410395671.shtml" target="_blank"><img 
+
+src="https://i3.itc.cn/20150327/302c_bdac395e_b317_62e9_89d2_1ee2cca62d91_1.jpg" width="125" height="85" alt="" /></a><em class="floor"><a 
+
+href="https://tv.sohu.com/20150327/n410395671.shtml" target="_blank"></a></em></div>
+					<div class="video-txt">
+						<h4><a href="https://tv.sohu.com/20150327/n410395671.shtml" target="_blank">《奔跑吧兄弟》
+
+</a></h4>
+						<h5>baby14岁写真曝光</h5>
+						
+                                        </div>    
+		</div>
+
+<div class="broken-line"></div>
+
+
+
+
+<div class="video-box clear">
+
+                                <div class="video-pic"><a href="https://tv.sohu.com/20150327/n410389926.shtml" target="_blank"><img 
+
+src="https://i0.itc.cn/20150327/302c_3a252901_b387_56f1_0dca_abbed524b034_1.jpg" width="125" height="85" alt="" /></a><em class="floor"><a 
+
+href="https://tv.sohu.com/20150327/n410389926.shtml" target="_blank"></a></em></div>
+					<div class="video-txt">
+						<h4><a href="https://tv.sohu.com/20150327/n410389926.shtml" target="_blank">《我看你有戏》
+
+</a></h4>
+						<h5>李冰冰向成龙撒娇争宠</h5>
+					</div>
+
+</div>
+
+<div class="broken-line"></div>
+
+
+
+
+<div class="video-box clear">
+									
+                   <div class="video-pic"><a href="https://tv.sohu.com/20150326/n410381650.shtml" target="_blank"><img 
+
+src="https://i0.itc.cn/20150327/302c_bd547e5d_20cd_3d1c_f94b_7571fa2ae7b7_1.jpg" width="125" height="85" alt="" /></a><em class="floor"><a 
+
+href="https://tv.sohu.com/20150326/n410381650.shtml" target="_blank"></a></em></div>
+					<div class="video-txt">
+						<h4><a href="https://tv.sohu.com/20150326/n410381650.shtml" target="_blank">《明星同乐会》
+
+</a></h4>
+						<h5>李湘遭闺蜜曝光旧爱</h5>
+					</div>
+				
+				</div>
+<div class="broken-line"></div>
+
+
+
+
+<div class="video-box clear">
+									
+                   <div class="video-pic"><a href="https://tv.sohu.com/20150330/n410557508.shtml" target="_blank"><img 
+
+src="https://i3.itc.cn/20150331/2ed3_2d8cfcb5_fe51_6b90_760a_bcccd53ab45f_1.jpg" width="125" height="85" alt="" /></a><em class="floor"><a 
+
+href="https://tv.sohu.com/20150330/n410557508.shtml" target="_blank"></a></em></div>
+					<div class="video-txt">
+						<h4><a href="https://tv.sohu.com/20150330/n410557508.shtml" target="_blank">《非你莫属》
+
+</a></h4>
+						<h5>美女模特教老板走秀</h5>
+					</div>
+		</div>
+
+<div class="broken-line"></div>
+
+
+
+
+<div class="video-box clear">
+
+                  <div class="video-pic"><a href="https://tv.sohu.com/20150331/n410558103.shtml" target="_blank"><img 
+
+src="https://i1.itc.cn/20150331/2ed3_22a28787_35e5_2577_3d10_ca4d5b761a71_1.jpg" width="125" height="85" alt="" /></a><em class="floor"><a 
+
+href="https://tv.sohu.com/20150331/n410558103.shtml" target="_blank"></a></em></div>
+					<div class="video-txt">
+						<h4><a href="https://tv.sohu.com/20150331/n410558103.shtml" target="_blank">《一站到底》
+
+</a></h4>
+						<h5>曝搬砖男神奇葩择偶观</h5>	
+						
+	    </div>
+		</div>
+             
+<div class="broken-line"></div>
+			</div>
+			<div class="video-cont ych clear">
+				<div class="video-box clear">
+<div class="video-pic"><a href="https://tv.sohu.com/20150319/n410013604.shtml?pvid=9e67c19acc243c17" target="_blank"><img src="https://i0.itc.cn/20150327/3324_d560f802_49ac_3757_a5a8_70d7cc8926eb_1.jpg" width="125" height="85" alt="" /></a><em class="floor"><a href="https://tv.sohu.com/20150319/n410013604.shtml?pvid=9e67c19acc243c17" target="_blank"></a></em></div>
+<div class="video-txt">
+<h4><a href="https://tv.sohu.com/20150319/n410013604.shtml?pvid=9e67c19acc243c17" target="_blank">搜狐视频娱乐播报</a></h4>
+<h5>柳岩被迫成赚钱工具</h5>
+</div>
+
+
+
+</div>				
+<div class="broken-line"></div>               
+<div class="video-box clear">
+<div class="video-pic"><a href="https://tv.sohu.com/20150326/n410326406.shtml?pvid=9e67c19acc243c17" target="_blank"><img src="https://i3.itc.cn/20150327/3324_d615c64a_2c91_beaa_99eb_94fe42750228_1.jpg" width="125" height="85" alt="" /></a><em class="floor"><a href="https://tv.sohu.com/20150326/n410326406.shtml?pvid=9e67c19acc243c17" target="_blank"></a></em></div>
+<div class="video-txt">
+<h4><a href="https://tv.sohu.com/20150326/n410326406.shtml?pvid=9e67c19acc243c17" target="_blank">大鹏嘚吧嘚</a></h4>
+<h5>大屁小P虐心恋</h5>
+</div>
+
+</div>
+<div class="broken-line"></div>
+<div class="video-box clear">
+<div class="video-pic"><a href="https://tv.sohu.com/20140929/n404763039.shtml?pvid=9e67c19acc243c17" target="_blank"><img src="https://i3.itc.cn/20141008/3324_7ea48c51_92e4_34c0_b159_49b270c3102e_1.jpg" width="125" height="85" alt="" /></a><em class="floor"><a href="https://tv.sohu.com/20140929/n404763039.shtml?pvid=9e67c19acc243c17" target="_blank"></a></em></div>
+<div class="video-txt">
+<h4><a href="https://tv.sohu.com/20140929/n404763039.shtml?pvid=9e67c19acc243c17" target="_blank">匆匆那年第16集</a></h4>
+<h5>匆匆那年大结局</h5>
+</div>
+
+</div>
+<div class="broken-line"></div>
+<div class="video-box clear">
+<div class="video-pic"><a href="https://tv.sohu.com/20140918/n404436802.shtml?pvid=9e67c19acc243c17" target="_blank"><img src="https://i1.itc.cn/20140919/3324_fd4e5c62_d401_93b9_3ede_04a060be2fdc_1.jpg" width="125" height="85" alt="" /></a><em class="floor"><a href="https://tv.sohu.com/20140918/n404436802.shtml?pvid=9e67c19acc243c17" target="_blank"></a></em></div>
+<div class="video-txt">
+<h4><a href="https://tv.sohu.com/20140918/n404436802.shtml?pvid=9e67c19acc243c17" target="_blank">隐秘而伟大第二季</a></h4>
+<h5>乔杉遭粉丝骚扰</h5>
+</div>
+
+
+</div>
+<div class="broken-line"></div>
+<div class="video-box clear">
+<div class="video-pic"><a href="https://tv.sohu.com/20141128/n406479410.shtml?pvid=9e67c19acc243c17" target="_blank"><img src="https://i1.itc.cn/20150313/3324_19604b98_5c63_aa71_9451_fefab7835efb_1.jpg" width="125" height="85" alt="" /></a><em class="floor"><a href="https://tv.sohu.com/20141128/n406479410.shtml?pvid=9e67c19acc243c17" target="_blank"></a></em></div>
+<div class="video-txt">
+<h4><a href="https://tv.sohu.com/20141128/n406479410.shtml?pvid=9e67c19acc243c17" target="_blank">The Kelly Show</a></h4>
+<h5>男闺蜜的尴尬初夜</h5>
+</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="rightbar-foot"></div>		
+		<!-- 广告 -->
+		<SOHUADCODE><div class="ad300">
+<table width=300 height=250 border=0 cellpadding=0 cellspacing=0>
+<tr>
+<td width=300 height=250 align=middle>
+<div id=TurnAD474 width=300 height=250>
+ <script type=text/javascript>
+var TurnAD474=new Cookie(document,"TurnAD474",24);
+TurnAD474.load();
+TurnAD474.visit=(TurnAD474.visit==null)?parseInt(Math.random()*2+1):TurnAD474.visit;
+if(TurnAD474.visit!=0)var intTurnAD474=TurnAD474.visit;
+TurnAD474.visit++;
+TurnAD474.visit=(TurnAD474.visit>2)?1:TurnAD474.visit;
+TurnAD474.store();
+function showTurnAD474(basenum){
+if (basenum==1){
+require(["sjs/matrix/ad/passion"], function (passion) {
+    var _C = "#TurnAD474",_ID = "10111",_W = 300,_H = 250,_T = 1,_F=201;
+    if(_C){jQuery(_C).attr('id','beans_'+_ID).css({'width' : _W + 'px', 'height' : _H + 'px','margin' : '0 auto'});}
+    passion.ones({itemspaceid : _ID,width:_W,height:_H,adsrc : _F,turn : _T,defbeans : !0});
+    });}
+else{
+require(["sjs/matrix/ad/passion"], function (passion) {
+    var _C = "#TurnAD474",_ID = "10111",_W = 300,_H = 250,_T = 2,_F=201;
+    if(_C){jQuery(_C).attr('id','beans_'+_ID).css({'width' : _W + 'px', 'height' : _H + 'px','margin' : '0 auto'});}
+    passion.ones({itemspaceid : _ID,width:_W,height:_H,adsrc : _F,turn : _T,defbeans : !0});
+    });}
+}
+showTurnAD474(intTurnAD474);
+</script>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</SOHUADCODE>		
+		<!-- 中视网盟 -->
+		<SOHUADCODE><div>
+<div id=beans_14174 width=300 height=250 align="center"></div>
+<script type="text/javascript">
+require(["sjs/matrix/ad/passion"], function (passion) {
+    var _ID = "14174",_W = 300,_H = 250,_T =1,_F=201;
+    if(_ID){jQuery('#beans_'+_ID).css({'width' : _W + 'px', 'height' : _H + 'px','margin' : '0 auto'});}
+    passion.ones({itemspaceid : _ID,width:_W,height:_H,adsrc : _F,turn : _T,defbeans : !0});
+    });
+</script>
+</div>
+</SOHUADCODE>
+		<!-- 彩票 st -->
+		
+		<!-- 彩票 end -->		
+		<!-- 我来说两句排行榜 -->
+		
+
+<div class="comment-rank clear">
+    <h2>
+        <span>我来说两句排行榜</span>
+    </h2>
+    
+</div>
+		<div class="rightbar-foot"></div>		
+		
+		
+		<!-- 广告 -->
+		<SOHUADCODE>
+</SOHUADCODE>		
+		<div class="rightbar-head"></div>				
+		<!-- 信息 -->
+		<div class="sohu-info clear" >
+			<div class="contact-icon"></div>
+			<div class="contact-txt">
+				<p>客服热线：86-10-58511234</p>
+				<p>客服邮箱：<a href="mailto:kf@vip.sohu.com" target="_blank">kf@vip.sohu.com</a></p>
+			</div>
+		</div>		
+	</div>
+	<div class="content-footer"></div>
+</div>
+
+<script type="text/javascript" src="https://stock.sohu.com/upload/stock/business_news_1.1.3.js"></script>
+<script type="text/javascript" src="https://stock.sohu.com/upload/stock/related_stock_1.0.1.js"></script>
+<script type="text/javascript" src="https://getip.js.sohu.com/ip/"></script>
+<script type="text/javascript"> 
+if (new_ip == null) var new_ip=2130706433;
+var dns_requrl="\<script type=\"text/javascript\" src=\"https://" + new_ip +".sohuns.com/ip/\"\>\</script\>";
+document.write(dns_requrl);
+</script>
+
+<!-- 标准尾 start -->
+<div collection="Y">
+<div class="clear"></div>
+	<div id="foot" class="Area area">
+		<a href="javascript:void(0)" onClick=this.style.behavior='url(#default#homepage)';this.setHomePage('https://www.sohu.com');return false;>设置首页</a>
+		- <a href=https://pinyin.sogou.com/ target=_blank rel="nofollow">搜狗输入法</a>
+		- <a href=https://pay.sohu.com/ target=_blank rel="nofollow">支付中心</a>
+		- <a href=https://hr.sohu.com target=_blank rel="nofollow">搜狐招聘</a>
+		- <a href=https://ad.sohu.com/ target=_blank rel="nofollow">广告服务</a>
+		- <a href=https://sohucallcenter.blog.sohu.com/ target=_blan rel="nofollow"k>客服中心</a>
+		- <a href=https://corp.sohu.com/s2006/contactus/ target=_blank rel="nofollow">联系方式</a>
+		- <a href=https://www.sohu.com/about/privacy.html target=_blank rel="nofollow">保护隐私权</a>
+		- <a href=https://investors.sohu.com/ target=_blank rel="nofollow">About SOHU</a>
+		- <a href=https://corp.sohu.com/indexcn.shtml target=_blank rel="nofollow">公司介绍</a>
+		- <a href=https://sitemap.sohu.com/ target=_blank>网站地图</a>
+		- <a href=https://roll.sohu.com/ target=_blank>全部新闻</a>
+		- <a href=https://blog.sohu.com/roll target=_blank>全部博文</a>
+		<br />Copyright <span class="fontArial">&copy;</span> 2018 Sohu.com Inc. All Rights Reserved. 搜狐公司 <span class="unline"><a href="https://corp.sohu.com/s2007/copyright/" target="_blank" rel="nofollow">版权所有</a></span>
+		<br />搜狐不良信息举报邮箱：<a href="mailto:jubao@contact.sohu.com">jubao@contact.sohu.com</a>
+	</div>
+	<SCRIPT language=JavaScript src="https://a1.itc.cn/pv/js/spv.1309051632.js"></SCRIPT>
+	<script language="javascript" src="https://js.sohu.com/wrating20120726.js"></script>
+	<script language="javascript"> 
+		var  _wratingId = null;
+		try{
+		_wratingId = _getAcc();
+		}catch(e){}
+		if(_wratingId !=null){
+		document.write('<scr'+'ipt type="text/javascript" src="https://sohu.wrating.com/a1.js"></scr'+'ipt>');
+		}
+		</script>
+		<script language="javascript"> 
+		if(_wratingId !=null){
+		document.write('<scr'+'ipt type="text/javascript">');
+		document.write('var vjAcc="'+_wratingId+'";');
+		document.write('var wrUrl="https://sohu.wrating.com/";');
+		document.write('try{vjTrack();}catch(e){}');
+		document.write('</scr'+'ipt>');
+		}
+	</script>
+	<!--SOHU:DIV_FOOT-->
+</div>
+<!-- 标准尾 end -->
+
+<script type="text/javascript">
+<!--
+	function sogouRelateNews(itm){
+		var i=new Image();
+        var len=itm.getAttribute("len");   var  ind= itm.getAttribute("ind");
+        len=(len==null)?"":len;   ind=(ind==null)?"":ind;
+        if(len == "" || ind == "" ) {
+           i.src='https://pingback.sogou.com/rltnews.png?durl='+escape(itm.href)+'&surl='+escape(window.location)+'&'+Math.random();
+        } else {
+           i.src='https://pingback.sogou.com/rltnews.png?durl='+escape(itm.href)+'&surl='+escape(window.location)+'&len='+len+'&ind='+ind+'&'+Math.random();
+        }
+	    return true;
+	}
+
+	function sogouRelateWeb(itm){
+		var i=new Image();
+        var len=itm.getAttribute("len");  var  ind= itm.getAttribute("ind");
+        len=(len==null)?"":len; ind=(ind==null)?"":ind;
+        if(len == "" || ind == "" ) {
+	 	     i.src='https://pingback.sogou.com/rltweb.png?durl='+escape(itm.href)+'&surl='+escape(window.location)+'&'+Math.random();
+        } else {
+		     i.src='https://pingback.sogou.com/rltweb.png?durl='+escape(itm.href)+'&surl='+escape(window.location)+'&len='+len+'&ind='+ind+'&'+Math.random();
+        }
+		return true;
+	}
+
+	function sogouRelateSaybar(itm){
+		var i=new Image();
+		i.src='https://pingback.sogou.com/rltsb.png?durl='+escape(itm.href)+'&surl='+escape(window.location)+'&'+Math.random();
+		return true;
+	}
+
+	function sogouRelateBlog(itm){
+		var i=new Image();
+		i.src='https://pingback.sogou.com/rltblog.png?durl='+escape(itm.href)+'&surl='+escape(window.location)+'&'+Math.random();
+		return true;
+	}
+	
+	function sogouHotSaybar(itm){
+		var i=new Image();
+		i.src='https://pingback.sogou.com/rlthotsb.png?durl='+escape(itm.href)+'&surl='+escape(window.location)+'&'+Math.random();
+		return true;
+	}
+
+    function sogouRelateVideoNews(itm){
+      var i=new Image();
+      var len=itm.getAttribute("len");  var  ind= itm.getAttribute("ind");
+      len=(len==null)?"":len;    ind=(ind==null)?"":ind;
+      if(len == "" || ind == "" ) {
+        i.src='https://pingback.sogou.com/rltvideonews.png?durl='+escape(itm.href)+'&surl='+escape(window.location)+'&'+Math.random();
+      } else {
+        i.src='https://pingback.sogou.com/rltvideonews.png?durl='+escape(itm.href)+'&surl='+escape(window.location)+'&len='+len+'&ind='+ind+'&'+Math.random();
+      }
+	  return true;
+    }
+
+
+//-->
+</script>
+<SOHUADCODE>																																																																																																																																																																								<Script language="Javascript">var cWidth=980;</script>
+
+<script type="text/javascript">
+	require(["sjs/matrix/ad/special"], function(special) {
+	special.ones({
+		itemspaceid : 10632,
+		adsrc : 201,
+		max_turn : 1,
+		order : 3,
+		options:{
+			pos : "left"
+		}
+	});
+//多媒体视窗
+special.wait({
+	itemspaceid :15026,
+	form : "mediapop",
+	adsrc : 200,	
+	max_turn : 2,
+	order : 5,
+	spec:{
+	time_limit:2//两个轮换时此处写2 单投时此处写要求的次数限制
+	}
+});	 
+//摩天楼
+special.wait({
+  itemspaceid :15076,
+  form:"skyscraper",
+  adsrc : 200,	
+  max_turn : 2,
+  order : 6,
+  spec:{
+	time_limit:2//两个轮换时此处写2 单投时此处写要求的次数限制
+	}
+});
+
+
+	
+special.start();
+});</script>
+
+
+<Script language="Javascript" src="https://images.sohu.com/bill/s2013/PVJS/adm2012-20130926min.js"></Script>
+<script src='https://images.sohu.com/bill/s2010/gates/sohucstech/javascript/954092d923b0e377f0a9d4d41a0937c4.js' type='text/javascript'></script>
+<!—不能删除 投飞行广告时也必须带上—>
+<script type="text/javascript">
+if(typeof(document.pv)=='undefined') document.pv = new Array();var _a=new Image();
+_a.src='https://xls.go.sohu.com/201012/ee970cf0f5c53c86014a16fd32d9629a.php?a=0';
+document.pv.push(_a);
+imp(urlpath,133);
+if(PVUV_CheckArticle("gn11",24,1)){imp(urlpath,134);}
+if(PVUV_CheckArticle("gn12",24*365,1)){imp(urlpath,135);}
+
+</script>
+
+<script type="text/javascript">
+if(typeof(document.pv)=='undefined') document.pv = new Array();var _a=new Image();
+_a.src='https://xls.go.sohu.com/201204/ba6906fb71bb9c0a5d72babe338483b9.php?a=9';
+document.pv.push(_a);
+</script>
+<!—不能删除—>
+<!--<Script language="Javascript">
+AD = new ADM("FLOAT", 2);
+    AD.src = "https://images.sohu.com/bill/s2009/shanbai/baojie/6yue/1001000602.swf";
+    AD.href="https://goto.sogou.com/200905/256711c20f526ea88028870e1a36e2cc.php";
+    AD.tag="";
+    AD.imp="";
+    AddSchedule(AD);
+</script>-->
+<script type="text/javascript">SohuAd.createScript("sohucsjs","https://imp.go.sohu.com/201111/ee4f7cebb2ef825bf6b3c8730c929929_31.js");</script>
+
+<script type="text/javascript">
+SohuAdPv_CPD   = {"#TurnAD472":"10108","#TurnAD20":"10013","#TurnAD473":"10110","#TurnAD474":"10111"};
+SohuAdFly_nCPD = {"float_r":"10632"};
+setpopslotid = '12409';
+</script><Script language="Javascript">if(jQuery){jQuery.getScript("https://images.sohu.com/bill/s2012/gates/all/map.2013040302.js");}</script>
+<Script language="Javascript" src="https://images.sohu.com/bill/s2013/gates/js/fad_v9.js"></Script>
+<Script language="Javascript" src="https://images.sohu.com/bill/default/auto/pop.1.4.js?t=168"></Script></SOHUADCODE>
+<SOHUADCODE></SOHUADCODE>
+<script type='text/javascript'>	
+	function q(s) {return s.replace(/%/g,"%25").replace(/&/g,"%26").replace(/#/g,"%23");}	
+	var sogou_is_brand_url = "https://cpc.brand.sogou.com/brand_ad_new";	
+	var brand_cnt = 0;	
+	for(var p in sogou_is_brand)	
+	{	           if(typeof(sogou_is_brand[p]) == "string")
+	               sogou_is_brand_url += (brand_cnt++ ? "&" : "?") + q(p) + "=" + q(sogou_is_brand[p]);	
+	}	
+	if (brand_cnt>3)	
+	{	
+	         var test= document.createElement('SCRIPT');	
+	         test.src=sogou_is_brand_url;	
+	         document.getElementsByTagName('head')[0].appendChild(test);	
+	}	
+</script>
+<div style="display:none" id="sohu-dt0220mine-tag">news</div><script src='https://news.sohu.com/upload/pop/mytag.min.js' type='text/javascript'></script>
+
+
+
+<script src="//statics.itc.cn/spm/prod/js/insert_spm.js"></script></body>
+</html>
