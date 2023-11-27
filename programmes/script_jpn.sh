@@ -28,10 +28,15 @@ echo "
 var=1
 while read -r line;
 do
-	curl -s -o "../aspirations/japonais/jp-$var.html" "$line" #asp
+    curl -s -o "../aspirations/japonais/jp-$var.html" "$line" #asp
     lynx -dump -nolist "$line" > "../dumps-text/japonais/jp-$var.txt" #dump
     
     grep -A 1 -B 1 --color "食の安全" "../dumps-text/japonais/jp-$var.txt" > "../contextes/japonais/jp-$var.txt"
+
+    if [ -f "../concordances/japonais/jp-$var.html" ];
+    then
+        rm "../concordances/japonais/jp-$var.html"
+    fi
 
     echo "
     <html>
@@ -48,7 +53,7 @@ do
                 <th>droite</th>
             </tr>
         ">>"../concordances/japonais/jp-$var.html"
-    grep -E -T -i "食の安全" ../contextes/japonais/jp-1.txt | sed -E 's/(.*)(食の安全)(.*)/<tr><td>\1<\/td><td>\2<\/td><td>\3<\/td><\/tr>/'>>"../concordances/japonais/jp-$var.html"
+    grep -E -T -i "食の安全" ../contextes/japonais/jp-$var.txt | sed -E 's/(.*)(食の安全)(.*)/<tr><td>\1<\/td><td>\2<\/td><td>\3<\/td><\/tr>/'>>"../concordances/japonais/jp-$var.html"
     echo "
         </table>
     </body>
@@ -70,7 +75,7 @@ do
             <td>$encodage</td>
             <td>$compte</td>
             <td><a href=\"../contextes/japonais/jp-$var.txt\">contexte</a></td>
-            <td><a href=\"../concordances/japonais/jp-$var.html\">contexte</a></td>
+            <td><a href=\"../concordances/japonais/jp-$var.html\">concordance</a></td>
         </tr>
 	">>"../tableaux/tableau_jpn.html"
 	
