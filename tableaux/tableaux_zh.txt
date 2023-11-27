@@ -1,0 +1,50 @@
+1	https://www.thepaper.cn/newsDetail_forward_25122233	200	utf-8
+2	http://news.foodmate.net/2023/11/675508.html	200	
+3	https://mp.weixin.qq.com/s?__biz=MzUxNjY5Mzc0MQ==&mid=2247547065&idx=2&sn=533de8a5a44f17ee7e7aa389c12c8eb4&chksm=f9a1f33bced67a2d3a6d2eb429b0afcdf56e1869b057ce72aa6f78679ab3130a9d91074857a3&scene=27	200	UTF-8
+4	https://www.thepaper.cn/newsDetail_forward_25429382	200	utf-8
+5	https://www.thepaper.cn/newsDetail_forward_22958794	200	utf-8
+6	https://qnzs.youth.cn/tsxq/202311/t20231125_14928240.htm	200	
+7	https://www.fao.org/animal-health/areas-of-work/food-safety/zh	200	utf-8
+8	https://www.gov.cn/zhengce/content/2019-10/31/content_5447142.htm	200	
+9	http://www.hntcmc.net/aqzt/info/1012/1178.htm	200	
+10	https://www.tetrapak.com/zh-cn/sustainability/focus-areas/food-safety-quality	200	utf-8
+11	http://www.hntcmc.net/aqzt/info/1012/1179.htm	200	
+12	http://www.hntcmc.net/aqzt/info/1012/1181.htm	200	
+13	http://www.moe.gov.cn/jyb_xwfb/s271/201903/t20190321_374577.html	200	
+14	http://www.ce.cn/cysc/sp/bwzg/202112/30/t20211230_37217591.shtml	200	
+15	http://www.news.cn/food/20230113/83ed03d5b7504951818edb0db16f7791/c.html	200	utf-8
+16	https://cdc.fuzhou.gov.cn/zz/jkjy/spaqfxjc/202306/t20230619_4623258.htm	200	
+17	https://www.gov.cn/xinwen/2019-11/13/content_5451447.htm	200	
+18	https://chinadialogue.net/zh/5/41468/	200	UTF-8
+19	http://fgw.panzhihua.gov.cn/zwgk/tzgg/4412666.shtml	200	
+20	https://www.iaea.org/zh/fu-wu/ya-zhou-shi-pin-an-quan-wang	200	utf-8
+21	https://blogs.worldbank.org/zh-hans/voices/why-we-re-standing-food-safety-world-health-day	200	UTF-8
+22	https://www.testo.com/zh-CN/applications/foodsafety	200	UTF-8
+23	https://www.dnv.com/cn/services/page-211642	200	utf-8
+24	https://www.tsinghua.edu.cn/smzx/	200	
+25	https://www.mcdonalds.com.cn/index/Food/food-safety-7	200	utf-8
+26	https://www.cdc.gov/foodsafety/cn/keep-food-safe-after-emergency.html	200	
+27	http://www.xinhuanet.com/legal/2022-09/05/c_1211682219.htm	200	utf-8
+28	http://www.news.cn/local/2023-06/17/c_1129701758.htm	200	utf-8
+29	https://www.sohu.com/a/727327161_121757009	200	UTF-8
+30	http://www.stdaily.com/index/kejixinwen/202310/13e70f9feed948f2bbb0f7dc1b2d6ac3.shtml	200	UTF-8
+31	https://zqb.cyol.com/html/2021-11/26/nw.D110000zgqnb_20211126_4-05.htm	200	
+32	https://zhuanlan.zhihu.com/p/340751828	200	utf-8
+33	https://www.walmartfoodsafetychina.com/fs%20spotlight/dr-yan-answered-questions-about-haidilao-hotpot-scandal	200	UTF-8
+34	https://wiki.antpedia.com/29/article-275029	200	
+35	https://cysdpx.com/news/538100.html	200	UTF-8
+36	https://www.msweekly.com/show.html?id=82584	200	UTF-8
+37	https://m.lu.com/h5-content/article/show?id=128095	200	utf-8
+38	https://blogs.worldbank.org/zh-hans/voices/food-safety-china-addressing-common-problems-requires-unusual-approaches	200	UTF-8
+39	https://news.cctv.com/2019/12/06/ARTIUep3R68KbYzSpdbi28dW191206.shtml	200	
+40	https://www.rfa.org/mandarin/yataibaodao/huanjing/kw-03162022114643.html	200	utf-8
+41	https://www.pwccn.com/zh/industries/food-supply-and-integrity/ten-global-trends-driving-change-in-the-food-industry.html	200	UTF-8
+42	https://www.tetrapak.com/zh-cn/insights/trends-and-insights/food-safety-and-industry-4	200	utf-8
+43	https://china.chinadaily.com.cn/2016-02/01/content_23332213.htm	200	
+44	https://news.sohu.com/20131216/n391849513.shtml	200	
+45	http://www.chnfn.com/xinwenzhongxin/guojixinwen/yazhouxinwen/2021/0523/23290.html	200	
+46	https://www.globalseafood.org/advocate/china_survey_translation/	200	UTF-8
+47	https://www.niaogebiji.com/article-114846-1.html	200	UTF-8
+48	https://hlj.rednet.cn/content/646755/60/13297115.html	200	utf-8
+49	https://www.edu.cn/ke_yan_yu_fa_zhan/gai_kuang/zhuan_jia_ping_shu/201206/t20120618_793053_1.shtml	200	
+50	https://www.lawtime.cn/zhishi/a4357516.html	200	utf-8
