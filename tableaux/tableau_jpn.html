@@ -2,16 +2,20 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <title>Tableau JPN</title>
 </head>
 <body>
-	<table class="table">
+    <div class=table-responsive>
+	<table class="table table-info table-hover table-sm">
         <tr>
             <th>num</th>
             <th>url</th>
             <th>requête</th>
             <th>encodage</th>
+            <th>aspiration</th>
+            <th>dump-text</th>
             <th>compte</th>
             <th>contexte</th>
             <th>concordance</th>
@@ -23,332 +27,16 @@
             <td><a href="https://ja.wikipedia.org/wiki/%E9%A3%9F%E3%81%AE%E5%AE%89%E5%85%A8">https://ja.wikipedia.org/wiki/%E9%A3%9F%E3%81%AE%E5%AE%89%E5%85%A8</a></td>
             <td>200</td>
             <td>UTF-8</td>
-            <td>56</td>
+            <td><a href="../aspirations/japonais/jp-1.html">aspiration</a></td>
+            <td><a href="../dumps-text/japonais/jp-1.txt">dump-text</a></td>
+            <td>61</td>
             <td><a href="../contextes/japonais/jp-1.txt">contexte</a></td>
             <td><a href="../concordances/japonais/jp-1.html">concordance</a></td>
         </tr>
 	
 
-		<tr>
-            <td>2</td>
-            <td><a href="https://elaws.e-gov.go.jp/document?lawid=415AC0000000048">https://elaws.e-gov.go.jp/document?lawid=415AC0000000048</a></td>
-            <td>200</td>
-            <td>utf-8</td>
-            <td>0</td>
-            <td><a href="../contextes/japonais/jp-2.txt">contexte</a></td>
-            <td><a href="../concordances/japonais/jp-2.html">concordance</a></td>
-        </tr>
-	
-
-		<tr>
-            <td>3</td>
-            <td><a href="https://www.caa.go.jp/policies/policy/consumer_safety/food_safety/food_safety_portal/safety_system/">https://www.caa.go.jp/policies/policy/consumer_safety/food_safety/food_safety_portal/safety_system/</a></td>
-            <td>200</td>
-            <td></td>
-            <td>0</td>
-            <td><a href="../contextes/japonais/jp-3.txt">contexte</a></td>
-            <td><a href="../concordances/japonais/jp-3.html">concordance</a></td>
-        </tr>
-	
-
-		<tr>
-            <td>4</td>
-            <td><a href="https://www.ueno-food.co.jp/foodsafety/protect/index.html">https://www.ueno-food.co.jp/foodsafety/protect/index.html</a></td>
-            <td>200</td>
-            <td></td>
-            <td>11</td>
-            <td><a href="../contextes/japonais/jp-4.txt">contexte</a></td>
-            <td><a href="../concordances/japonais/jp-4.html">concordance</a></td>
-        </tr>
-	
-
-		<tr>
-            <td>5</td>
-            <td><a href="https://www.alic.go.jp/chosa-c/joho01_002902.html">https://www.alic.go.jp/chosa-c/joho01_002902.html</a></td>
-            <td>200</td>
-            <td></td>
-            <td>0</td>
-            <td><a href="../contextes/japonais/jp-5.txt">contexte</a></td>
-            <td><a href="../concordances/japonais/jp-5.html">concordance</a></td>
-        </tr>
-	
-
-		<tr>
-            <td>6</td>
-            <td><a href="https://blog.benesse.ne.jp/chu5/mirainavi/job/2021/05/food-sanitation-inspector.html">https://blog.benesse.ne.jp/chu5/mirainavi/job/2021/05/food-sanitation-inspector.html</a></td>
-            <td>200</td>
-            <td></td>
-            <td>6</td>
-            <td><a href="../contextes/japonais/jp-6.txt">contexte</a></td>
-            <td><a href="../concordances/japonais/jp-6.html">concordance</a></td>
-        </tr>
-	
-
-		<tr>
-            <td>7</td>
-            <td><a href="https://www.n-shokuei.jp/eisei/sfs_5key.html">https://www.n-shokuei.jp/eisei/sfs_5key.html</a></td>
-            <td>200</td>
-            <td></td>
-            <td>3</td>
-            <td><a href="../contextes/japonais/jp-7.txt">contexte</a></td>
-            <td><a href="../concordances/japonais/jp-7.html">concordance</a></td>
-        </tr>
-	
-
-		<tr>
-            <td>8</td>
-            <td><a href="https://seikeidenron.jp/articles/722">https://seikeidenron.jp/articles/722</a></td>
-            <td>200</td>
-            <td>UTF-8</td>
-            <td>0</td>
-            <td><a href="../contextes/japonais/jp-8.txt">contexte</a></td>
-            <td><a href="../concordances/japonais/jp-8.html">concordance</a></td>
-        </tr>
-	
-
-		<tr>
-            <td>9</td>
-            <td><a href="https://www.zennoh.or.jp/sr/safesecure/index.html">https://www.zennoh.or.jp/sr/safesecure/index.html</a></td>
-            <td>200</td>
-            <td></td>
-            <td>5</td>
-            <td><a href="../contextes/japonais/jp-9.txt">contexte</a></td>
-            <td><a href="../concordances/japonais/jp-9.html">concordance</a></td>
-        </tr>
-	
-
-		<tr>
-            <td>10</td>
-            <td><a href="https://haccp.shokusan.or.jp/rules/howto/guide/">https://haccp.shokusan.or.jp/rules/howto/guide/</a></td>
-            <td>200</td>
-            <td>UTF-8</td>
-            <td>16</td>
-            <td><a href="../contextes/japonais/jp-10.txt">contexte</a></td>
-            <td><a href="../concordances/japonais/jp-10.html">concordance</a></td>
-        </tr>
-	
-
-		<tr>
-            <td>11</td>
-            <td><a href="https://www.pref.aichi.jp/soshiki/ama-nourin/20syokunoannzenn.html">https://www.pref.aichi.jp/soshiki/ama-nourin/20syokunoannzenn.html</a></td>
-            <td>200</td>
-            <td></td>
-            <td>4</td>
-            <td><a href="../contextes/japonais/jp-11.txt">contexte</a></td>
-            <td><a href="../concordances/japonais/jp-11.html">concordance</a></td>
-        </tr>
-	
-
-		<tr>
-            <td>12</td>
-            <td><a href="https://cigs.canon/article/20140811_2682.html">https://cigs.canon/article/20140811_2682.html</a></td>
-            <td>200</td>
-            <td></td>
-            <td>2</td>
-            <td><a href="../contextes/japonais/jp-12.txt">contexte</a></td>
-            <td><a href="../concordances/japonais/jp-12.html">concordance</a></td>
-        </tr>
-	
-
-		<tr>
-            <td>13</td>
-            <td><a href="https://www.pref.gunma.jp/site/shokunoanzen/8648.html">https://www.pref.gunma.jp/site/shokunoanzen/8648.html</a></td>
-            <td>200</td>
-            <td>UTF-8</td>
-            <td>24</td>
-            <td><a href="../contextes/japonais/jp-13.txt">contexte</a></td>
-            <td><a href="../concordances/japonais/jp-13.html">concordance</a></td>
-        </tr>
-	
-
-		<tr>
-            <td>14</td>
-            <td><a href="https://www.foods-ch.com/anzen/1688541631964/">https://www.foods-ch.com/anzen/1688541631964/</a></td>
-            <td>200</td>
-            <td>UTF-8</td>
-            <td>5</td>
-            <td><a href="../contextes/japonais/jp-14.txt">contexte</a></td>
-            <td><a href="../concordances/japonais/jp-14.html">concordance</a></td>
-        </tr>
-	
-
-		<tr>
-            <td>15</td>
-            <td><a href="https://prtimes.jp/main/html/rd/p/000000801.000008895.html">https://prtimes.jp/main/html/rd/p/000000801.000008895.html</a></td>
-            <td>200</td>
-            <td>utf-8</td>
-            <td>0</td>
-            <td><a href="../contextes/japonais/jp-15.txt">contexte</a></td>
-            <td><a href="../concordances/japonais/jp-15.html">concordance</a></td>
-        </tr>
-	
-
-		<tr>
-            <td>16</td>
-            <td><a href="https://newsdig.tbs.co.jp/articles/uty/690875?display=1">https://newsdig.tbs.co.jp/articles/uty/690875?display=1</a></td>
-            <td>200</td>
-            <td>utf-8</td>
-            <td>1</td>
-            <td><a href="../contextes/japonais/jp-16.txt">contexte</a></td>
-            <td><a href="../concordances/japonais/jp-16.html">concordance</a></td>
-        </tr>
-	
-
-		<tr>
-            <td>17</td>
-            <td><a href="https://www.jc-press.com/?p=9509">https://www.jc-press.com/?p=9509</a></td>
-            <td>200</td>
-            <td>UTF-8</td>
-            <td>5</td>
-            <td><a href="../contextes/japonais/jp-17.txt">contexte</a></td>
-            <td><a href="../concordances/japonais/jp-17.html">concordance</a></td>
-        </tr>
-	
-
-		<tr>
-            <td>18</td>
-            <td><a href="https://globe.asahi.com/article/14953192">https://globe.asahi.com/article/14953192</a></td>
-            <td>200</td>
-            <td>UTF-8</td>
-            <td>4</td>
-            <td><a href="../contextes/japonais/jp-18.txt">contexte</a></td>
-            <td><a href="../concordances/japonais/jp-18.html">concordance</a></td>
-        </tr>
-	
-
-		<tr>
-            <td>19</td>
-            <td><a href="https://www.chunichi.co.jp/article/812016">https://www.chunichi.co.jp/article/812016</a></td>
-            <td>200</td>
-            <td>UTF-8</td>
-            <td>4</td>
-            <td><a href="../contextes/japonais/jp-19.txt">contexte</a></td>
-            <td><a href="../concordances/japonais/jp-19.html">concordance</a></td>
-        </tr>
-	
-
-		<tr>
-            <td>20</td>
-            <td><a href="https://monoist.itmedia.co.jp/mn/articles/2311/24/news068.html">https://monoist.itmedia.co.jp/mn/articles/2311/24/news068.html</a></td>
-            <td>200</td>
-            <td></td>
-            <td>4</td>
-            <td><a href="../contextes/japonais/jp-20.txt">contexte</a></td>
-            <td><a href="../concordances/japonais/jp-20.html">concordance</a></td>
-        </tr>
-	
-
-		<tr>
-            <td>21</td>
-            <td><a href="https://prtimes.jp/main/html/rd/p/000004686.000052467.html">https://prtimes.jp/main/html/rd/p/000004686.000052467.html</a></td>
-            <td>200</td>
-            <td>utf-8</td>
-            <td>6</td>
-            <td><a href="../contextes/japonais/jp-21.txt">contexte</a></td>
-            <td><a href="../concordances/japonais/jp-21.html">concordance</a></td>
-        </tr>
-	
-
-		<tr>
-            <td>22</td>
-            <td><a href="https://realsound.jp/book/2023/11/post-1493886.html">https://realsound.jp/book/2023/11/post-1493886.html</a></td>
-            <td>200</td>
-            <td>UTF-8</td>
-            <td>4</td>
-            <td><a href="../contextes/japonais/jp-22.txt">contexte</a></td>
-            <td><a href="../concordances/japonais/jp-22.html">concordance</a></td>
-        </tr>
-	
-
-		<tr>
-            <td>23</td>
-            <td><a href="https://www.jacom.or.jp/column/2023/11/231125-70837.php">https://www.jacom.or.jp/column/2023/11/231125-70837.php</a></td>
-            <td>200</td>
-            <td>UTF-8</td>
-            <td>2</td>
-            <td><a href="../contextes/japonais/jp-23.txt">contexte</a></td>
-            <td><a href="../concordances/japonais/jp-23.html">concordance</a></td>
-        </tr>
-	
-
-		<tr>
-            <td>24</td>
-            <td><a href="https://www.maff.go.jp/kinki/photo/kekka/230628.html">https://www.maff.go.jp/kinki/photo/kekka/230628.html</a></td>
-            <td>200</td>
-            <td>UTF-8</td>
-            <td>2</td>
-            <td><a href="../contextes/japonais/jp-24.txt">contexte</a></td>
-            <td><a href="../concordances/japonais/jp-24.html">concordance</a></td>
-        </tr>
-	
-
-		<tr>
-            <td>25</td>
-            <td><a href="https://www.chuohoki.co.jp/concierge/">https://www.chuohoki.co.jp/concierge/</a></td>
-            <td>200</td>
-            <td>UTF-8</td>
-            <td>1</td>
-            <td><a href="../contextes/japonais/jp-25.txt">contexte</a></td>
-            <td><a href="../concordances/japonais/jp-25.html">concordance</a></td>
-        </tr>
-	
-
-		<tr>
-            <td>26</td>
-            <td><a href="https://www.city.hiroshima.lg.jp/site/syokuhin-eisei/346907.html">https://www.city.hiroshima.lg.jp/site/syokuhin-eisei/346907.html</a></td>
-            <td>200</td>
-            <td></td>
-            <td>1</td>
-            <td><a href="../contextes/japonais/jp-26.txt">contexte</a></td>
-            <td><a href="../concordances/japonais/jp-26.html">concordance</a></td>
-        </tr>
-	
-
-		<tr>
-            <td>27</td>
-            <td><a href="https://www.newsweekjapan.jp/stories/sdgs/2023/11/sl-creations-4x.php">https://www.newsweekjapan.jp/stories/sdgs/2023/11/sl-creations-4x.php</a></td>
-            <td>200</td>
-            <td>utf-8</td>
-            <td>2</td>
-            <td><a href="../contextes/japonais/jp-27.txt">contexte</a></td>
-            <td><a href="../concordances/japonais/jp-27.html">concordance</a></td>
-        </tr>
-	
-
-		<tr>
-            <td>28</td>
-            <td><a href="https://www.sankei.com/article/20230809-NT7OMVECOJIZ5CO7HYRVKH4HQU/">https://www.sankei.com/article/20230809-NT7OMVECOJIZ5CO7HYRVKH4HQU/</a></td>
-            <td>200</td>
-            <td>utf-8</td>
-            <td>0</td>
-            <td><a href="../contextes/japonais/jp-28.txt">contexte</a></td>
-            <td><a href="../concordances/japonais/jp-28.html">concordance</a></td>
-        </tr>
-	
-
-		<tr>
-            <td>29</td>
-            <td><a href="https://www.jacom.or.jp/column/2023/07/230715-68107.php">https://www.jacom.or.jp/column/2023/07/230715-68107.php</a></td>
-            <td>200</td>
-            <td>UTF-8</td>
-            <td>2</td>
-            <td><a href="../contextes/japonais/jp-29.txt">contexte</a></td>
-            <td><a href="../concordances/japonais/jp-29.html">concordance</a></td>
-        </tr>
-	
-
-		<tr>
-            <td>30</td>
-            <td><a href="https://times.abema.tv/articles/-/10075327?page=1">https://times.abema.tv/articles/-/10075327?page=1</a></td>
-            <td>200</td>
-            <td>utf-8</td>
-            <td>9</td>
-            <td><a href="../contextes/japonais/jp-30.txt">contexte</a></td>
-            <td><a href="../concordances/japonais/jp-30.html">concordance</a></td>
-        </tr>
-	
-
 	</table>
+    </div>
 </body>
 </html>
 
