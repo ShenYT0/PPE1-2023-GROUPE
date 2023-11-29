@@ -39,14 +39,14 @@ do
     
     ASPIR=$(curl $URL) 
     DUMP=$(w3m $URL) 
-    echo "$ASPIR" > ../../aspirations/chinois/zh_$lineno.html
-    echo "$DUMP" > ../../dumps-text/chinois/zh_$lineno.txt 
+    echo "$ASPIR" > ../aspirations/chinois/zh_$lineno.html
+    echo "$DUMP" > ../dumps-text/chinois/zh_$lineno.txt 
     
-    OCCU=$(cat ../../dumps-text/chinois/zh_$lineno.txt | egrep -o "食品安全" | wc -l)
+    OCCU=$(cat ../dumps-text/chinois/zh_$lineno.txt | egrep -o "食品安全" | wc -l)
     echo "$lineno\t$URL\t$CODE\t$ENCODAGE\t$OCCU" >> tableaux_zh.txt
 
-    CONTEXTE=$(cat ../../dumps-text/chinois/zh_$lineno.txt | egrep -B2 -A2 "食品安全" )
-    echo "$CONTEXTE" > ../../contextes/chinois/zh_$lineno.txt
+    CONTEXTE=$(cat ../dumps-text/chinois/zh_$lineno.txt | egrep -B2 -A2 "食品安全" )
+    echo "$CONTEXTE" > ../contextes/chinois/zh_$lineno.txt
 
     echo "
             <tr>
@@ -54,10 +54,10 @@ do
                 <td><a href="$URL">$URL</a></td>
                 <td>$CODE</td>
                 <td>$ENCODAGE</td>
-                <td><a href="../../aspirations/chinois/zh_$lineno.html">html</a></td>
-                <td><a href="../../dumps-text/chinois/zh_$lineno.txt">text</a></td>
+                <td><a href="../aspirations/chinois/zh_$lineno.html">html</a></td>
+                <td><a href="../dumps-text/chinois/zh_$lineno.txt">text</a></td>
                 <td>$OCCU</td>
-                <td><a href="../../contextes/chinois/zh_$lineno.txt">contexte</a></td>
+                <td><a href="../contextes/chinois/zh_$lineno.txt">contexte</a></td>
             </tr>
     " >> tableau_zh.html
 
