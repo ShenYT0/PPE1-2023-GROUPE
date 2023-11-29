@@ -23,34 +23,37 @@ echo -e "
             <th>requête</th>
             <th>encodage</th>
 			<th>nombre d'occurence</th>
-        </tr>" > tableau_fr.html
+        </tr>" > ../tableaux/tableau_fr.html
 
 #Read fr.txt line by line; output order number, website URL, HTTP response code, encoding and number of occurence
 while read -r line;
 do
 	#Fetch encoding of websites
-	web_encodage=$(curl -s "$line" | grep -Eo 'charset=".*"' | cut -d'"' -f2)
+	web_encodage=$(curl -s "$line" | grep -Eo 'charset=".*"' | cut -d'"' -f2 | tr '[:lower:]' '[:upper:]' | uniq )
 	#Fetch HTTP response code from websites
 	web_response=$(curl -Ils "$line" | grep "HTTP/" | grep -Eo "[0-9]{3}")
 	#Fetch number of occurence of word 注意这段代码只能在mac上跑，windows要修改iconv那一行(37)
 	lynx -dump -nolist "$line" > web_content.txt
-	iconv -f macroman -t UTF-8 web_content.txt > web_content_UTF.txt
-	occurence_NB=$(cat web_content_UTF.txt | tr '[:upper:]' '[:lower:]' | grep -o "robot" | wc -l)
+	iconv -f WINDOWS-1252 -t UTF-8 web_content.txt > web_content_UTF.txt
+	occurence_NB=$(cat web_content_UTF.txt | tr '[:upper:]' '[:lower:]' | grep -o "sécurité alimentaire" | wc -l)
 	rm web_content.txt web_content_UTF.txt
-	echo -e "$count\t${line}\t$web_response\t$web_encodage\t$occurence_NB" >> temp.txt
+	#Print results into tableau_fr.html
+	echo "		<tr>
+			<td>$count</td><td>$line</td><td>$web_encodage</td><td>$web_response</td><td>$occurence_NB</td>
+		</tr>" >> ../tableaux/tableau_fr.html
 	count=$((count+1))
 done < "$chemin_fichier"
 
 #Read temp.txt line by line, convert each line to a HTML body line
-while read -r line;
-do
+#while read -r line;
+#do
 #Convert each line to HTML body
-mod_line=$(echo -e "$line" | sed 's/\t/<\/td><td>/g')
-echo -e "
-		<tr>
-			<td>${mod_line}</td>
-		</tr>" >> tableau_fr.html
-done < temp.txt
+#mod_line=$(echo -e "$line" | sed 's/\t/<\/td><td>/g')
+#echo -e "
+#		<tr>
+#			<td>${mod_line}</td>
+#		</tr>" >> ../tableaux/tableau_fr.html
+#done < temp.txt
 
 
 
@@ -59,7 +62,7 @@ echo "
 	</table>
 </body>
 </html>
-" >> tableau_fr.html
+" >> ../tableaux/tableau_fr.html
 
 #Remove temporary files
-rm temp.txt
+#rm temp.txt
