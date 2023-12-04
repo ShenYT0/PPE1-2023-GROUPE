@@ -33,7 +33,7 @@ do
 	#Fetch HTTP response code from websites
 	web_response=$(curl -Ils "$line" | grep "HTTP/" | grep -Eo "[0-9]{3}")
 	#Fetch number of occurence of word
-	occurence_NB=$(lynx -dump -nolist -assume_charset=utf-8 --display_charset=utf-8 "$line" | tr '[:upper:]' '[:lower:]' | grep -o "sécurité alimentaire" | wc -l)
+	occurence_NB=$(lynx --dump --nolist -assume_charset=utf-8 --display_charset=utf-8 "$line" | LC_CTYPE=C tr '[:upper:]' '[:lower:]' | grep -o "sécurité alimentaire" | wc -l)
 	#Print results into tableau_fr.html
 	echo "		<tr>
 			<td>$count</td><td>$line</td><td>$web_encodage</td><td>$web_response</td><td>$occurence_NB</td>

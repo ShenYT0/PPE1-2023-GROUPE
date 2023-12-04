@@ -1,8 +1,12 @@
     #alternate
 
+   IFRAME:
+   https://obseu.forseasky.com/ns/ea41da31f3bf04bb3a32f8b233024ce4.html?ch
+   =cfcCHEQ
+
    IFRAME: https://www.googletagmanager.com/ns.html?id=GTM-5H2XS26
 
-   Couverture Le Point N°2677 - Jeudi 23 novembre 2023
+   Couverture Le Point N°2678 - Jeudi 30 novembre 2023
 
    Lire le numéro
    Le Point Le Point
@@ -353,12 +357,13 @@ Commentaires (2)
 
 L'info en continu
 
-     * 18H34 Le Niger fait le pari du solaire
-     * 18H30 Mozambique : dans l’archipel de Bazaruto, le dugong est
-       surveillé...
-     * 11H48 Fally Ipupa : de roi de la rumba à emblème d’une génération
-     * 19H02 L’accord franco-algérien de 1968 continue de faire parler de
-       lui
+     * 16H00 Climat : les COP sont-elles encore utiles ?
+     * 15H00 « En tant que premier aéroport africain, Addis-Abeba doit
+       éviter...
+     * 11H00 COP28 : le fonds « pertes et dommages » accueilli en
+       demi-teinte en...
+     * 09H01 COP28 : la France et le Kenya à l’initiative d’une taxe
+       internationale
 
    Toute l'actualité Afrique
 
@@ -366,34 +371,37 @@ L'info en continu
 
 La sélection de la rédaction
 
-  L’accord franco-algérien de 1968 continue de faire parler de lui
+  Christian de Perthuis : « Sur le climat, les économistes doivent écouter les
+  scientifiques ! »
 
-  La France risque de devenir le pays de l’insécurité permanente
+  Faut-il « canceller » Henry Kissinger ?
 
-  Mort de Thomas à Crépol : en finir avec l’infâme accusation de récupération
+  Nadine Strossen : « Censurer ceux qui veulent votre mort revient à se tirer
+  une balle dans le pied »
 
 Les plus lus
 
     1.
 
-  Comment Karine Le Marchand humilie les paysans
+  Manifestation à Paris contre la loi immigration
     2.
 
-  « L’effet des arbres sur le changement climatique est peut-être
-  plus important » que prévu
+  Logement, embouteillages, bunkérisation du centre-ville... Faut-il quitter
+  Strasbourg ?
     3.
 
-  Fortes pluies et « mégabassines » : le cruel paradoxe
+  Jeanne Barseghian : « J’espère que d’ici à 2027 Jean-Luc Mélenchon aura passé
+  la main »
     4.
 
-  Nucléaire : vent de folie autour des petits réacteurs SMR
+  Pourquoi le pénis humain a-t-il cette forme ?
     5.
 
-  Pays-Bas : Geert Wilders empêché de gouverner
+  « Cette fanatique » : après les invectives de Mélenchon, Ruth Elkrief placée
+  sous protection policière
     6.
 
-  Lycée musulman Averroès de Lille : la communauté éducative « déterminée à se
-  défendre »
+  Emmanuel Macron, le président qui n’a pas d’amis
 
 Nos Hors-Séries
 
