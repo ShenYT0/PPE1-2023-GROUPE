@@ -1,3 +1,5 @@
+#sudachipy
+#pip install pyvi
 from sudachipy import Dictionary, SplitMode
 from pyvi import ViTokenizer
 import errno

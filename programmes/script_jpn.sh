@@ -47,6 +47,7 @@ do
     if [ $code == "200" ] #-eq 200
     then
         lynx -dump -nolist "../aspirations/japonais/jp-$var.html" > "../dumps-text/japonais/jp-$var.txt" #dump
+        cat "../dumps-text/japonais/jp-$var.txt" | python3 ./tokenize_japanese.py > "../dumps-text/japonais/jp-$var.txt"
         compte=$(grep -i -o "食の安全" "../dumps-text/japonais/jp-$var.txt" | wc -l)
         dump="<a href=\"../dumps-text/japonais/jp-$var.txt\">dump-text</a>"
 
