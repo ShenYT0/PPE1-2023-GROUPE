@@ -29,6 +29,7 @@ echo "
                 <th>dump-text</th>
                 <th>occurrences</th>
                 <th>contextes</th>
+                <th>concordances</th>
             </tr>
 " > tableau_zh.html
 
@@ -49,6 +50,31 @@ do
     echo "$CONTEXTE" > ../contextes/chinois/zh_$lineno.txt
 
     echo "
+        <html>
+            <head>
+              <meta charset=\"utf-8\">
+		        <meta name="viewport" content="width=device-width, initial-scale=1">
+		        <title>Concordances</title>
+		        <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css\">
+	        </head>
+		    <body>
+			    <table class=\"table\">
+				    <tr>
+				        <th>gauche</th>
+					    <th>cible</th>
+					    <th>droit</th>
+				    </tr>
+	    " >> ../concordances/chinois/zh_$lineno.html
+
+    ggrep -E -T -i "食品安全" ../contextes/chinois/zh_$lineno.txt | sed -E "s/(.*)(食品安全)(.*)/<tr><td>\1<\/td><td>\2<\/td><td>\3<\/td><\/tr>/">>"../concordances/chinois/zh_$lineno.html"
+    echo "
+                </table>
+            </body>
+        </html>
+        " >> ../concordances/chinois/zh_$lineno.html
+
+
+    echo "
             <tr>
                 <td>$lineno</td>
                 <td><a href="$URL">$URL</a></td>
@@ -58,6 +84,7 @@ do
                 <td><a href="../dumps-text/chinois/zh_$lineno.txt">text</a></td>
                 <td>$OCCU</td>
                 <td><a href="../contextes/chinois/zh_$lineno.txt">contexte</a></td>
+                <td><a href="../concordances/chinois/zh_$lineno.html">condordances</a></td>
             </tr>
     " >> tableau_zh.html
 
