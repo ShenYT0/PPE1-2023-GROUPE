@@ -48,10 +48,7 @@ Sommaire
 
      3Qualité des aliments et sécurité sanitaire
 
-
-
-   4Facteurs d'insécurité alimentaire
-
+     4Facteurs d'insécurité alimentaire
    (BUTTON) Afficher / masquer la sous-section Facteurs d'insécurité
    alimentaire
      * 4.1Pénurie d'eau

@@ -8,7 +8,7 @@ disponibilité, accès et utilisation adéquate des aliments, soutenue dans le
    inacceptable que 820 millions de personnes souffrent de la faim ou, ce
    qui revient au même, n’aient pas leur sécurité alimentaire garantie.
 
-   sécurité alimentaire
+   sÉcuritÉ alimentaire
 
    la disponibilité, l’accès et la consommation d’aliments nutritifs
    garantissent la sécurité alimentaire.
@@ -47,4 +47,21 @@ sécurité alimentaire et moyens d'existence
 --
        l'analyse de la situation, nous identifions les connaissances et
        les moyens traditionnels de gestion de crise afin d'assurer que les
-       activités de sécurité alimentaire mises en œuvre s'adaptent bien 
+       activités de sécurité alimentaire mises en œuvre s'adaptent bien �
+       cette communauté.
+     * de l'urgence à l'autosuffisance
+       parfois, les activités de sécurité alimentaire commencent dès les
+       premières étapes d'une crise, lorsque l'infrastructure et
+       l'approvisionnement d'aliments d'une communauté ont été détruits.
+--
+     * analyse du contexte
+
+   ​les activités de sécurité alimentaire doivent prendre en compte le
+   climat, la géographie, les systèmes socioéconomiques, ou les structures
+   politiques. voilà pourquoi les programmes sont conçus pour répondre aux
+--
+   populations les plus vulnérables en garantissant leur sécurité
+   alimentaire à court, à moyen et à long terme.
+     * Évaluation et suivi de l’état de sécurité alimentaire
+     * aide alimentaire
+     * aide monétaire

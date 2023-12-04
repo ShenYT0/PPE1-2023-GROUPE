@@ -32,3 +32,564 @@ directeurs
    pas que les personnes en situation d’insécurité alimentaire et qui
    contribuent aux inégalités sociales de santé.
 
+   l’objectif de ce rapport est de clarifier les enjeux liés �
+   l’insécurité alimentaire en france et d’élaborer des principes
+   directeurs pour promouvoir des dispositifs et un contexte politique
+   favorables à une sécurité alimentaire durable, que nous définissons
+   ainsi : la sécurité alimentaire durable[2] existe lorsque tous les
+   individus ont un accès (économique, physique et social) égalitaire �
+   une alimentation durable[3] de manière coordonnée et pérenne. pour
+--
+   limites de l’aide alimentaire en analysant leurs causes et, d’autre
+   part, nous explorons les potentiels de différents dispositifs au regard
+   de leur capacité à promouvoir une sécurité alimentaire durable. ce
+   rapport se situe à la croisée de plusieurs disciplines : nutrition et
+   santé publique, environnement et sciences économiques et de gestion.
+--
+   chapitre pose les éléments de contexte ; le second décrit les limites
+   structurelles du système actuel d’aide alimentaire pour lutter contre
+   l’insécurité alimentaire en france ; le troisième présente notre
+   analyse du potentiel des dispositifs existants, conventionnels ou
+   alternatifs, pour promouvoir une sécurité alimentaire durable ; et le
+   quatrième propose des principes directeurs pour des dispositifs et un
+   contexte favorables à une sécurité alimentaire durable, avec un focus
+   sur la proposition d’une sécurité sociale de l’alimentation (ssa) comme
+   piste répondant à ces principes directeurs.
+
+   en france, le traitement de l’insécurité alimentaire est l’objet des
+   politiques dites « de lutte contre la précarité alimentaire », qui
+   s’appuient sur la filière de l’aide alimentaire et la soutiennent
+--
+   caritatif induit ou renforce des effets négatifs qui limitent la
+   capacité du système à résoudre réellement et durablement le problème de
+   l’insécurité alimentaire en france. parmi ces effets négatifs, on peut
+   noter : la dépendance paradoxale des gisements de denrées disponibles
+   pour l’aide alimentaire (attendues élevées) au gaspillage alimentaire
+--
+   des déductions fiscales. un autre effet négatif majeur est le
+   non-recours à l’aide alimentaire par une partie importante des
+   personnes en situation d’insécurité alimentaire, et ceci pour de
+   multiples raisons incluant les difficultés d’accès à cette aide et/ou
+   la volonté de ne pas porter atteinte à sa dignité en devant faire
+--
+
+   finalement, les politiques publiques existantes s’attachent
+   uniquement aux symptômes de l’insécurité alimentaire et jamais à ses
+   causes profondes : à savoir le niveau de pauvreté et son intensité pour
+   une partie de la population. le choix d’y répondre par de la
+--
+   dispositifs existants en france (conventionnels et alternatifs) au
+   regard d’une liste de critères que nous avons identifiés comme
+   susceptibles de promouvoir une sécurité alimentaire durable, sur la
+   base des définitions internationales de la sécurité alimentaire et de
+   l’alimentation durable. cette analyse a mis en avant trois cibles
+   principales d’action des dispositifs : action sur l’accessibilité
+--
+   l’ensemble de cette analyse a permis de proposer des principes
+   directeurs pour des dispositifs et un contexte favorables à une
+   sécurité alimentaire durable. ces principes directeurs sont proposés
+   sur trois niveaux : i) les cibles d’actions du dispositif, ii)
+   l’organisation interne et externe du dispositif, et iii) le contexte
+--
+   offre permettant une alimentation durable, la résilience du dispositif
+   et la pérennité de son impact positif. selon ces principes directeurs,
+   un dispositif favorable à une sécurité alimentaire durable garantit
+   l’accès (économique, physique et social) égalitaire à une alimentation
+   durable, l’empowerment (individuel, collectif, politique) et
+--
+   analyse nous conduit à plaider pour un changement de paradigme afin de
+   passer d’une politique ciblée sur la lutte contre l’insécurité
+   alimentaire à une politique de promotion de la sécurité alimentaire
+   durable pour l’ensemble de la population, qui doit s’intégrer à la
+   prévention plus globale des inégalités sociales, territoriales et
+--
+   [1] en france, le secteur associatif et les textes de loi font
+   référence à la notion de précarité alimentaire. dans ce rapport nous
+   utilisons aussi les termes de sécurité et insécurité alimentaires,
+   issus du domaine de la nutrition et de la santé publique, car ils ont
+   une existence officielle à l’échelon international, et que des méthodes
+   de mesure validées ont été développées pour en évaluer la prévalence.
+   il y a insécurité alimentaire « lorsque la disponibilité d’aliments
+   sûrs et adéquats sur le plan nutritionnel ou la possibilité d’acquérir
+   des aliments appropriés par des moyens socialement acceptables est
+--
+
+   [2] il n’existe pas, à notre connaissance, de définition officielle de
+   la sécurité alimentaire durable, même si l’expression est utilisée
+   depuis longtemps (déclaration de rome sur la sécurité alimentaire
+   mondiale en 1996 : https://www.fao.org/3/w3613f/w3613f00.htm) et que
+   des propositions visent à intégrer la durabilité au concept de sécurité
+--
+   ses pouvoirs d’être, de décider, d’agir, et ainsi, de s’émanciper (voir
+   annexe 7).
+   synthèse à télécharger du rapport "vers une sécurité alimentaire
+   durable"
+   lire la réaction des banques alimentaires
+--
+
+
+   encadré 1 : crise sanitaire et insécurité alimentaire en france
+
+   (synthèse des constats de l’avis n° 89 du conseil national de
+--
+
+   selon le récent avis du cna (juillet 2021), la crise sanitaire du
+   covid-19 a rendu visible et aggravé l’insécurité alimentaire en france.
+   elle a mis en évidence de fortes inégalités, territoriales et
+   socio-économiques, dans l’accès à « une alimentation compatible avec un
+--
+
+
+insécurité alimentaire et précarité alimentaire
+
+   les termes de sécurité et insécurité alimentaires sont issus du domaine
+   de la nutrition et de la santé publique. il y a insécurité alimentaire
+   « lorsque la disponibilité d’aliments sûrs et adéquats sur le plan
+   nutritionnel ou la possibilité d’acquérir des aliments appropriés par
+   des moyens socialement acceptables est limitée ou incertaine »[12]. par
+   opposition, la sécurité alimentaire « est assurée lorsque tous les
+   êtres humains ont à tout moment un accès matériel, social et économique
+   à une alimentation suffisante, sûre et nutritive qui répond à leurs
+--
+   une vie saine et active »[13]. néanmoins, en france, le terme de
+   précarité alimentaire est plus volontiers utilisé que celui
+   d’insécurité alimentaire, en particulier par les associations de lutte
+   contre la pauvreté et, de ce fait, par les politiques dites « de lutte
+   contre la précarité alimentaire ». la notion de précarité intègre la
+--
+   celui qui est utilisé dans les rapports associatifs et institutionnels
+   et les textes de loi en france. mais nous utilisons aussi les termes de
+   sécurité alimentaire et insécurité alimentaire car ils ont une
+   existence officielle à l’échelon international, et que des méthodes de
+   mesure validées ont été développées pour en évaluer la prévalence.
+
+
+   l’insécurité alimentaire ne se résume pas à la pauvreté monétaire.
+
+   en france, l’insécurité alimentaire a été mesurée et étudiée pour la
+   première fois au niveau national en 2006–2007 dans l’enquête inca2 �
+   l’aide du food sufficiency indicator[16],[17] puis dans le baromètre
+--
+   inca3 en 2014–2015 à l’aide d’une version courte du household food
+   security scale module[19],[20]. les résultats sont en phase avec les
+   caractéristiques connues de l’insécurité alimentaire dans les autres
+   pays occidentaux, notamment anglo-saxons, à savoir que l’insécurité
+   alimentaire est un phénomène multidimensionnel, associé à de nombreux
+   facteurs sociodémographiques, économiques et liés aux conditions et
+   modes de vie[21]. ainsi, en france, l’insécurité alimentaire touche
+   plus souvent les jeunes et les femmes, notamment en situation de
+   monoparentalité, les personnes qui ont un faible statut
+--
+   de vie moins favorables à la santé, notamment vis-à-vis de l’usage du
+   tabac, des écrans et des consommations alimentaires (voir ci-après).
+   les personnes en situation d’insécurité alimentaire sont plus
+   nombreuses que les autres à déclarer avoir dû renoncer à des soins pour
+   des raisons financières. elles ne sont pas toutes pauvres (au regard de
+--
+
+
+   au-delà de l’insécurité alimentaire, les inégalités sociales en matière
+   d’alimentation traversent l’ensemble de la société et contribuent aux
+   inégalités sociales de santé
+
+   l’insécurité alimentaire est associée à une alimentation de plus faible
+   qualité nutritionnelle, et en particulier à des apports en fibres,
+   vitamines et minéraux moins en accord avec les recommandations
+--
+   consommation de fruits et légumes. ainsi, une analyse effectuée �
+   partir de l’enquête inca3 a montré que les adultes en situation
+   d’insécurité alimentaire consommaient en moyenne seulement 228g/j de
+   fruits et légumes (en incluant les jus et les soupes) contre 475g/j
+   pour le reste de l’échantillon, considéré en situation de sécurité
+   alimentaire[22]. pour les autres groupes d’aliments, les différences de
+   consommation entre les personnes en insécurité alimentaire et les
+   autres ne portent pas sur les mêmes groupes alimentaires selon les
+   études et les indicateurs utilisés, et ces différences, quand elles
+--
+   pour les fruits et légumes. l’étude montre aussi que la prévalence du
+   surpoids et l’obésité est plus importante chez les femmes en situation
+   d’insécurité alimentaire que chez les autres, et la prévalence de
+   maigreur plus importante chez les hommes en situation d’insécurité
+   alimentaire que chez les autres.
+--
+   si les recherches, notamment celles basées sur les données du bsn
+   2008[23], montrent que les déséquilibres alimentaires sont plus
+   prononcés lorsqu’ils sont analysés à l’aune de l’insécurité alimentaire
+   qu’à l’aune de la pauvreté monétaire, elles montrent aussi (recherches
+   basées sur inca2[24]), que même au sein de la population considérée
+   comme en sécurité alimentaire (toutes les personnes qui ne sont pas en
+   insécurité alimentaire), il existe un gradient de la qualité
+   nutritionnelle de l’alimentation, en grande partie expliqué par un
+   gradient social de la consommation de fruits et légumes. des
+--
+   spécifique des utilisateurs de l’aide alimentaire, la prévalence de
+   l’obésité et des pathologies associées est plus importante dans les
+   populations pauvres et/ou en situation d’insécurité alimentaire que
+   dans le reste de la population. en fait, l’obésité, et les pathologies
+   qui lui sont associées telles que l’hypertension et le diabète touchent
+--
+
+
+   en france, le nombre de personnes en situation d’insécurité alimentaire
+   est bien plus important que le nombre d’utilisateurs de l’aide
+   alimentaire.
+
+   la prévalence de l’insécurité alimentaire en france a été estimée dans
+   l’étude nationale sur les consommations alimentaires individuelles
+   inca3, réalisée en france métropolitaine en 2014–2015 par l’anses[32] �
+   l’aide d’un questionnaire internationalement validé de mesure de
+   l’insécurité alimentaire (en 6 questions)[33]. les résultats indiquent
+   que 12% de l’échantillon des enfants et 11% de l’échantillon des
+   adultes, correspondant environ à 8 millions de personnes en france,
+   étaient en situation d’insécurité alimentaire au moment de l’enquête.
+   notons que ce chiffre est probablement sous-estimé car les personnes en
+   situation de précarité ou d’exclusion sont difficiles à atteindre dans
+--
+   alimentation saine vous permettant de faire 3 repas par jour ? », ce
+   qui est en phase avec les résultats de l’étude inca3 sur la prévalence
+   de l’insécurité alimentaire en france.
+
+   de plus, des agriculteurs sont présents parmi les utilisateurs de
+--
+   situations dans un seul et même échantillon représentatif de la
+   population et d’avoir utilisé une méthode internationalement validée
+   d’évaluation de l’insécurité alimentaire, il y aurait près de 4 fois
+   moins d’utilisateurs de l’aide alimentaire que de personnes en
+   situation d’insécurité alimentaire (3,3% vs 12% de la population
+   adulte). le fait que, dans leur grande majorité, les personnes en
+   insécurité alimentaire n’aient pas recours aux dispositifs d’aide
+   alimentaire met en évidence l’inadéquation d’une réponse basée sur la
+   distribution de denrées alimentaires.
+--
+   économiques, nutritionnelles, sociales, éthiques et organisationnelles.
+   en effet, l’aide alimentaire ne touche pas toutes les personnes en
+   situation d’insécurité alimentaire, manque de produits frais, offre un
+   choix limité à l’usager (voire aucun choix), est inégale dans ses
+   conditions d’accès, crée une relation asymétrique qui met à mal
+--
+   associatif, et la multiplicité des initiatives locales solidaires, ont
+   démontré la non-résilience du système et son incapacité à garantir la
+   sécurité alimentaire au plus grand nombre[46].
+
+   l’insécurité alimentaire est une réalité en france. elle concerne 12 %
+   de la population. elle ne se résume ni à la pauvreté monétaire, ni au
+   recours à l’aide alimentaire. au-delà de l’insécurité alimentaire, des
+   inégalités sociales en matière d’alimentation sont à l’œuvre et
+   contribuent aux inégalités sociales de santé. pour les prévenir, il est
+   donc important d’engager des actions et des politiques de promotion de
+   la sécurité alimentaire qui ne ciblent pas uniquement le réseau de
+   l’aide alimentaire et pas uniquement les plus précaires.
+
+
+2. limites structurelles du système actuel d’aide alimentaire pour lutter
+contre l’insécurité alimentaire en france
+
+2.1. l’organisation de l’aide alimentaire en france
+
+   en france, la prévention de l’insécurité alimentaire est l’objet des
+   politiques dites « de lutte contre la précarité alimentaire », qui
+   s’appuient sur la filière de l’aide alimentaire – et la soutiennent
+--
+   comme nous le verrons, cette structuration a des effets induits qui
+   remettent en cause la capacité du système à résoudre réellement le
+   problème de l’insécurité alimentaire en france. finalement, ces
+   politiques s’attachent uniquement, et en outre de manière
+   superficielle, aux symptômes de l’insécurité alimentaire et jamais �
+   ses causes profondes. par ailleurs, elles induisent l’idée que cette
+   filière est « durable » car elle permet d’éviter du gaspillage, une des
+--
+
+3. potentiel des dispositifs conventionnels et alternatifs pour promouvoir
+une sécurité alimentaire durable
+
+3.1. identification et analyse du potentiel des dispositifs existants
+--
+   nous proposons dans ce rapport une analyse du potentiel des différents
+   types de dispositifs (conventionnels et alternatifs) pour promouvoir
+   une sécurité alimentaire durable. pour cela, nous avons effectué un
+   recensement (non exhaustif) d’exemples de dispositifs existants sur le
+   territoire français à partir des ressources de la plateforme
+--
+   sociétal, économique, politique et législatif)[95]. une liste de
+   critères a ainsi été retenue (encadré 3), constituant les bases du
+   cahier des charges d’un dispositif favorable à une sécurité alimentaire
+   durable. un dispositif respectant l’ensemble de ces critères devrait
+   favoriser la sécurité alimentaire durable, que nous avons définie
+   ainsi : la sécurité alimentaire durable existe lorsque tous les
+   individus ont un accès (économique, physique et social) égalitaire �
+   une alimentation durable de manière coordonnée et pérenne.
+--
+
+   encadré 3 : proposition de critères que devrait remplir un dispositif
+   favorable à une sécurité alimentaire durable
+
+   un dispositif favorable à une sécurité alimentaire durable garantit
+   l’accès
+     * économique
+--
+   et limites communs aux différents cas de figure. il est à noter que
+   cette lecture des avantages et limites des dispositifs est une analyse
+   de leur potentiel pour promouvoir une sécurité alimentaire durable, et
+   non de leur impact. en effet, à notre connaissance, il n’existe que
+   très peu d’études ayant évalué l’impact de dispositifs sur l’insécurité
+--
+   les dispositifs ciblant (uniquement) l’empowerment individuel (ateliers
+   cuisine, ateliers de sensibilisation…) ont pour principale limite de ne
+   pas agir sur le premier facteur d’insécurité alimentaire :
+   l’accessibilité économique. ils correspondent donc plutôt à des actions
+   complémentaires d’accompagnement.
+--
+
+
+3.5. place de la sécurité alimentaire durable dans les débats sur le revenu
+minimum
+
+--
+   de bons alimentaires (supplemental nutrition assistance program, snap)
+   avec les coûts et l’impact d’un revenu minimum, universel ou pas, sur
+   l’insécurité alimentaire[125]. pour remédier aux limites du programme
+   snap en termes de non-recours, d’inéligibilité, ou de montants
+   insuffisants pour nombre d’utilisateurs, l’auteur exploite un
+   questionnaire interrogeant la population en situation de précarité sur
+   le budget nécessaire pour atteindre la sécurité alimentaire. il propose
+   que le budget alloué au snap, augmenté du montant nécessaire pour
+   couvrir ces besoins, soit affecté à l’allocation d’un revenu minimum.
+   l’auteur conclut qu’avec une allocation universelle, le taux
+   d’insécurité alimentaire diminuerait de 88,8%. avec une allocation
+   ciblant les revenus inférieurs à 4 fois le montant du seuil de
+   pauvreté, la diminution est d’ordre similaire (88,5%), mais le coût
+--
+
+
+4. quel dispositif pour une sécurité alimentaire durable ?
+
+4.1. principes directeurs pour une sécurité alimentaire durable
+
+   sur la base de l’analyse des dysfonctionnements du système actuel
+--
+   conventionnels et alternatifs (partie 3), nous proposons dans ce
+   rapport des principes directeurs pour un dispositif et un contexte
+   politique favorables à une sécurité alimentaire durable (figure 2).
+
+   trois niveaux sont à prendre en considération : les cibles d’action du
+   dispositif, l’organisation du dispositif et un contexte politique
+   démocratique favorable à l’instauration d’une sécurité alimentaire
+   durable. les cibles d’action et l’organisation relèvent de
+   l’opérationnalité et de la mise en œuvre d’une réponse à l’insécurité
+   alimentaire, tandis que l’échelle politique relève des principes et
+   messages à porter afin d’évoluer vers des conditions favorables à une
+   sécurité alimentaire durable. les questions d’opérationnalité et de
+   contexte politique évoluent à des rythmes différents (temporalités),
+   mais nécessitent d’être travaillées simultanément car elles sont
+--
+   économiquement viable et équitable.
+
+   sécurité alimentaire : « la sécurité alimentaire est assurée lorsque
+   tous les êtres humains ont à tout moment un accès matériel, social et
+   économique à une alimentation suffisante, sûre et nutritive qui répond
+   à leurs besoins alimentaires et à leurs préférences et qui leur permet
+   de mener une vie saine et active (comité de la sécurité alimentaire
+   mondiale, 2012).
+
+   l’insécurité alimentaire : il y a insécurité alimentaire « lorsque la
+   disponibilité d’aliments sûrs et adéquats sur le plan nutritionnel ou
+   la possibilité d’acquérir des aliments appropriés par des moyens
+--
+   nutritional state for difficult-to-sample populations, 1990).
+
+   sécurité alimentaire durable : suivant les définitions précédentes et
+   les différentes strates du modèle socio écologique des déterminants de
+   comportements de santé, la sécurité alimentaire durable existe lorsque
+   tous les individus ont un accès (économique, physique et social)
+   égalitaire à une alimentation durable de manière coordonnée et pérenne.
+--
+       alimentaires, aide monétaire directe…). les contraintes budgétaires
+       étant une des premières problématiques pour une grande majorité des
+       personnes en situation d’insécurité alimentaire, agir sur
+       l’accessibilité économique est un élément incontournable à inclure,
+       quel que soit le dispositif.
+--
+       comportements plus en phase avec les principes de l’alimentation
+       durable[129]. pour qu’ils puissent devenir de véritables outils de
+       promotion de la sécurité alimentaire durable, un certain nombre de
+       prérequis est probablement nécessaire[130].
+
+--
+   principes de l’alimentation durable. il pourrait ainsi participer �
+   l’empowerment des personnes et des groupes dans le cadre d’un
+   dispositif visant à promouvoir une sécurité alimentaire durable, pour
+   une reprise en main sur les approvisionnements alimentaires afin que
+   ceux-ci soient plus équilibrés, mais aussi plus durables.
+--
+     * un accès égalitaire au dispositif afin que chaque personne puisse
+       trouver facilement des solutions adaptées en fonction de sa
+       situation d’insécurité alimentaire. pour éviter le non-recours, il
+       est nécessaire [ins: de :ins] [ins: favoriser :ins] [ins: la mise
+       en place de démarches :ins] [ins: «  :ins] [ins: d :ins] [ins:
+--
+   caractéristiques des territoires, permettant un accès pratique et
+   égalitaire à une offre alimentaire de qualité afin de lutter contre les
+   situations d’insécurité alimentaire et d’en prévenir l’émergence,
+   notamment en cas de crise.
+
+--
+   en termes de pérennité du dispositif (non dépendance au bénévolat, aux
+   dons…) et de pérennité de l’impact (accès au dispositif non limité dans
+   le temps, complétude de l’aide…) pour garantir une sécurité alimentaire
+   durable. la capacité d’anticipation, d’adaptation et la résilience du
+   dispositif au regard des changements de contexte sont des éléments
+--
+   d’approvisionnements, constitution de stocks-tampon…) permettant de
+   s’adapter rapidement et d’être en mesure de maintenir une réponse
+   ininterrompue aux situations d’insécurité alimentaire.
+
+   en ligne avec le récent avis n° 89 du cna (encadré 5), qui recommande
+--
+   fondamental » et « l’amélioration des dispositifs d’aide alimentaire
+   existants », et par analogie avec le système de santé, nous pensons
+   que, pour promouvoir l’émergence d’une sécurité alimentaire durable, le
+   dispositif doit intégrer une approche curative (incluant une réponse �
+   l’urgence) et une approche préventive, avec un objectif de réduction
+--
+   la ssa propose comme ligne directrice et comme fondement le fait
+   d’aller vers un dispositif universel d’accès à une alimentation durable
+   pour garantir une sécurité alimentaire durable. cette dynamique
+   nécessite de penser simultanément des dispositifs de « transition » et
+   une construction de dispositifs de « transformation » des systèmes
+--
+   celle d’une transition et celle d’une transformation alimentaire.
+
+   la transformation vise à atteindre la sécurité alimentaire durable,
+   c’est-à-dire à garantir un accès égalitaire (économique, physique et
+   social) de l’ensemble de la population à une alimentation durable de
+--
+   diminution du poids des systèmes alimentaires dans le changement
+   climatique et à la promotion de la santé des êtres humains présents et
+   à venir ainsi que celle de la planète. ainsi, la sécurité alimentaire
+   durable implique la prise en compte des besoins alimentaires
+   (individuels et collectifs) tout en obligeant à un changement de
+--
+
+   en lien avec les principes directeurs que nous avons identifiés (partie
+   4.1.) pour promouvoir une sécurité alimentaire durable, la ssa
+   comprendrait un axe préventif et un axe curatif (figure 4). l’axe
+   préventif aurait vocation universelle et concernerait l’ensemble de la
+--
+   coordination des dispositifs de l’axe « curatif » est nécessaire mais
+   elle n’est pas suffisante pour favoriser le changement d’échelle pour
+   aller vers une sécurité alimentaire durable. une mission centrale de
+   cette coordination serait d’associer les opérateurs actuels de l’aide
+   alimentaire de façon à ce qu’ils soient inclus aux côtés des autres
+--
+   alimentaire, qui apporte une solution partielle aux plus précaires sans
+   réussir à les atteindre tous[184] vers un dispositif universel de
+   prévention de l’insécurité alimentaire. pour ce dispositif universel,
+   la proposition d’une sécurité sociale de l’alimentation incluant un axe
+   curatif et un axe préventif apparait comme une piste répondant aux
+   principes directeurs que nous avons identifiés pour garantir une
+   sécurité alimentaire durable à l’échelle du territoire, et possiblement
+   à l’échelle européenne, et de façon pérenne. cependant bien des aspects
+   de cette ssa, en particulier le volet économique, restent à finaliser
+--
+encadrÉs
+
+   encadré 1. crise sanitaire et insécurité alimentaire en france
+   (synthèse des constats de l’avis n° 89 du conseil national de
+   l’alimentation)
+--
+
+   encadré 3. proposition de critères que devrait remplir un dispositif
+   favorable à une sécurité alimentaire durable
+
+   encadré 4. opticourses, un programme de promotion de la santé sur
+--
+
+   figure 2. principes directeurs pour un dispositif et un contexte
+   politique favorables à une sécurité alimentaire durable (et
+   définitions)
+
+--
+
+6.5. annexe 5 – des habitantes et des professionnelles du secteur social
+s’expriment sur l’insécurité alimentaire dans leur quartier
+
+   de nombreuses idées sont discutées actuellement pour améliorer l’accès
+--
+   participantes[195] ont échangé sur la question de l’accès �
+   l’alimentation dans leur quartier et sur les moyens, existants ou �
+   inventer, pour lutter contre l’insécurité alimentaire. les conclusions
+   définitives du projet seront disponibles fin 2021, mais il nous a
+   semblé important de rendre compte sans tarder des graves situations
+   d’insécurité alimentaire et d’indignité relatées dans ces groupes de
+   discussion.
+
+--
+   alimentaire et l’inadaptation de cette aide à la diversité des
+   attentes, besoins et possibilités des personnes en situation
+   d’insécurité alimentaire, sont connus depuis longtemps et ont fait
+   l’objet d’analyses détaillées et de préconisations, notamment en
+   2014 dans le cadre d’une étude financée par le programme ministériel du
+--
+   [13] il s’agit d’une des nombreuses définitions de la sécurité
+   alimentaire, telles qu’exposées dans le document du comité de la
+   sécurité alimentaire mondiale : « s’entendre sur la terminologie ».
+   rome (italie), 39^e session. 15–20 octobre 2012.
+   http://www.fao.org/3/md776f/md776f.pdf
+--
+   10 et 11 février, jof n° 6, p. 6.
+
+   [15] dominique paturel. insécurité alimentaire et précarité
+   alimentaire. etats généraux de l’alimentation, atelier 12, ministère de
+   l’agriculture et de l’alimentation. fra., oct 2017, paris, france. 5 p.
+--
+   [20] caillavet f, dufour a, lucas e, pierrard l, schneider e, volatier
+   jl, huneau jf, dubuisson c. consommations alimentaires et apports
+   nutritionnels des adultes en situation d’insécurité alimentaire dans
+   l’enquête individuelle nationale des consommations alimentaires 3.
+   journées francophones de nutrition. rennes 27–29 novembre 2019.
+
+   [21] caillavet f, castetbon k, darmon n. « insécurité alimentaire »
+   pages 203–226, in expertise collective inserm « inégalités sociales de
+   santé en lien avec l’alimentation et l’activité physique ». (editions
+--
+   [22] caillavet f, dufour a, lucas e, pierrard l, schneider e, volatier
+   jl, huneau jf, dubuisson c. consommations alimentaires et apports
+   nutritionnels des adultes en situation d’insécurité alimentaire dans
+   l’enquête individuelle nationale des consommations alimentaires 3.
+   journées francophones de nutrition. rennes 27–29 novembre 2019.
+--
+   https://www.ers.usda.gov/media/8282/short2012.pdf . les 6 items
+   traduits de la version courte du hfssm, incluses dans le questionnaire
+   relatif à l’insécurité alimentaire utilisé dans l’enquête inca3 (en
+   face à face), étaient les suivants :
+
+--
+   collaboration de france caillavet. inégalités sociales et alimentation.
+   quels sont les besoins et les attentes en termes d’alimentation des
+   personnes en situation d’insécurité alimentaire et comment les
+   dispositifs d’aide alimentaire peuvent y répondre au mieux ? dec 2014,
+   rapport d’une étude réalisée par la fors-recherche sociale, financée
+--
+   [92] https://www.programme-malin.com/malin-cest-quoi/
+
+   [93] op. cit., comité de la sécurité alimentaire mondiale :
+   « s’entendre sur la terminologie ». rome (italie), 39^e session.
+   15–20 octobre 2012. http://www.fao.org/3/md776f/md776f.pdf
+--
+
+   [184] pour rappel, les données de l’étude inca3 indiquent que seule une
+   personne sur 4 en situation d’insécurité alimentaire en france a fait
+   appel à une aide alimentaire durant le mois précédant l’enquête. voir
+   note 40 page 18 de ce rapport.
+--
+   s’appuyant sur la parole des premiers concernés, de dresser les grandes
+   lignes de ce que pourrait être un nouveau dispositif de réponse �
+   l’insécurité alimentaire. le projet, qui se déroule sur deux
+   territoires de la métropole aix-marseille-provence (marseille et
+   martigues-port-de-bouc), est en cours et donnera lieu à un rapport
+--
+   collaboration de france caillavet. inégalités sociales et alimentation.
+   quels sont les besoins et les attentes en termes d’alimentation des
+   personnes en situation d’insécurité alimentaire et comment les
+   dispositifs d’aide alimentaire peuvent y répondre au mieux ? dec 2014,
+   rapport d’une étude réalisée par la fors-recherche sociale, financée

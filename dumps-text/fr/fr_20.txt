@@ -11,6 +11,9 @@
      *
      *
      *
+     *
+     *
+     *
 
      * La CGT
           + Qui sommes-nous ?
@@ -98,6 +101,9 @@
                o Info retraites
 
    Se Syndiquer Ressources militantes
+     *
+     *
+     *
      *
      *
      *
@@ -221,10 +227,11 @@ Abonnez vous à la newsletter
    Contactez la CGT
    Press room
      * [vector_fb.svg]
-     * [vector_tw.svg]
-     * [header-linkedin-white.svg]
+     * [logo-twitter-svg-new.svg]
+     * [logo-telegram-svg-new.svg]
      * [vector_yt.svg]
      * [instagram-white.svg]
+     * [logo-twitch-svg-new.svg]
      * [rss.svg]
 
    La CGT © 2022 - Tous droits réservés - Mentions légales - Réalisé par

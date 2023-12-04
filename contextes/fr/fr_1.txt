@@ -1,15 +1,15 @@
+     3qualité des aliments et sécurité sanitaire
 
-
-   4facteurs d'insécurité alimentaire
-
+     4facteurs d'insécurité alimentaire
    (button) afficher / masquer la sous-section facteurs d'insécurité
+   alimentaire
 --
 
-   5intervention et rôle de l'état dans l'agriculture en vue de la
+   5intervention et rôle de l'État dans l'agriculture en vue de la
    sécurité alimentaire
 
    (button) afficher / masquer la sous-section intervention et rôle de
-   l'état dans l'agriculture en vue de la sécurité alimentaire
+   l'État dans l'agriculture en vue de la sécurité alimentaire
      * 5.1inspection des denrées alimentaires
 
 
@@ -23,3 +23,221 @@
 sécurité alimentaire
 
    [ ] 42 langues
+--
+   ne doit pas être confondu avec sécurité sanitaire des aliments.
+
+   « la sécurité alimentaire existe lorsque tous les êtres humains ont, �
+   tout moment, la possibilité physique, sociale et économique de se
+   procurer une nourriture suffisante, saine et nutritive leur permettant
+   de satisfaire leurs besoins et préférences alimentaires pour mener une
+   vie saine et active »^[1] est la définition formelle du concept de
+   sécurité alimentaire selon le comité de la sécurité alimentaire
+   mondiale. cette définition a été adoptée par un consensus international
+   depuis le sommet mondial de l'alimentation réuni à rome en 1996.
+
+   on considère classiquement que la sécurité alimentaire comporte quatre
+   dimensions ou "piliers" :
+    1. accès (capacité de produire sa propre alimentation et donc de
+--
+       régimes alimentaires).
+
+   ainsi définie, la sécurité alimentaire a une dimension plutôt
+   technique. elle se distingue de ce fait des notions d'autosuffisance
+   alimentaire, de souveraineté alimentaire et de droit à l'alimentation
+   qui apportent des dimensions plus politiques ou juridiques^[2]. la
+   sécurité alimentaire (food security en anglais) intègre, dans le
+   "pilier qualité", la sureté alimentaire (food safety en anglais) ou
+   encore la sécurité sanitaire des aliments, qui a trait à l'hygiène et �
+--
+   économique, offre et prestation de services, spatio-temporelle, sociale
+   et personnelle. ces cinq dimensions d'accès doivent être rassemblées
+   afin d'assurer la sécurité alimentaire des individus^[3].
+
+   la précarité alimentaire, appelée aussi insécurité alimentaire,
+   correspond au niveau le plus fragile de sécurité alimentaire.
+
+historique[modifier | modifier le code]
+
+   la sécurité alimentaire s'inscrit dans le contexte de l'émergence du
+   droit à l'alimentation tel que formulé dans la déclaration universelle
+   des droits de l'homme et du concept de sécurité et remonte aux
+--
+   négociations pour la création de la société des nations^[4].
+
+   selon le comité de la sécurité alimentaire mondiale, le concept de
+   sécurité alimentaire est apparu dans les années 1970, dans un contexte
+   de flambée des prix des céréales sur les marchés internationaux liée �
+   une succession de mauvaises récoltes, de diminution des stocks et de
+--
+   depuis les marchés internationaux. c'est ainsi qu'a été mise en avant,
+   au cours des années 80, la notion d'accès à l'alimentation comme
+   déterminant majeur de la sécurité alimentaire. dès 1986, la définition
+   de la sécurité alimentaire proposée par la banque mondiale dans son
+   rapport la pauvreté et la faim place en priorité la question de l'accès
+   et donc de la pauvreté dans la définition : « accès par chaque
+--
+   quasi inchangée depuis.
+
+   À l'ordre du jour du comité pour la sécurité alimentaire mondiale de
+   2012 figurait une proposition d'évolution de la définition de la
+   sécurité alimentaire pour intégrer la notion de sécurité
+   nutritionnelle^[1]. une telle proposition avait pour but de prendre en
+   compte les acquis des sciences de la nutrition qui montrent depuis des
+   décennies que la malnutrition, notamment infantile, principale
+   manifestation de l'insécurité alimentaire aujourd'hui, ne résulte pas
+   seulement d'une insuffisante qualité voire quantité de nourriture, mais
+   aussi et souvent d'un état de santé (diarrhées, paludisme, etc.) et de
+   soins insuffisants (par méconnaissance ou incapacité). la proposition
+   de parler désormais de « sécurité alimentaire et nutritionnelle », même
+   si elle est déjà adoptée par divers pays, n'a pas encore fait l'objet
+   d'un consensus international.
+
+   enfin, divers travaux sont en cours pour intégrer, dans la définition
+   de la sécurité alimentaire, des préoccupations de durabilité
+   environnementale et sociale des systèmes alimentaires et relatives aux
+   nouvelles pathologies nutritionnelles dites « de pléthore » (obésité et
+   diabète associé, maladies cardiovasculaires, certains cancers, etc.)
+   qui touchent désormais tous les pays du monde. est ainsi proposée la
+   notion de « sécurité alimentaire et nutritionnelle durable »^[7].
+
+   le nombre de personnes touchées par une « insécurité alimentaire
+   chronique » est en augmentation depuis 2015. en 2019, la fao recense
+   821 millions de personnes dans cette situation. selon l'organisation :
+--
+   totale de céréales est passée de 420 à 1 176 millions de tonnes par an.
+
+   la sécurité alimentaire demeure pourtant d'actualité au début du
+   xxi^e siècle. en dépit d'une moindre natalité dans la majorité des
+   pays, certains estiment qu'il devrait y avoir environ 8,9 milliards
+--
+   une offre suffisante et un moindre gaspillage sont deux conditions au
+   recul de la famine et de la malnutrition, mais cela ne suffit pas �
+   établir la sécurité alimentaire pour tous. « qui produit la nourriture
+   et pour qui » ?, « qui a accès aux informations nécessaires à la
+   production agricole » ? « qui a un pouvoir d'achat suffisant pour
+--
+
+   l'agriculture péri-urbaine ou l'agriculture urbaine peuvent également
+   aider à résoudre le problème de la sécurité alimentaire, en permettant
+   aux citadins à revenus limités de cultiver des légumes ou des fruits
+   par exemple, en pleine ville. nombre de déchets alimentaires peuvent
+--
+   aliments et des aliments pour animaux »).
+
+   bien que les conditions de sécurité alimentaire (alimentation
+   diversifiée et abondante) atteignent un niveau inégalé dans les pays
+   occidentaux et que la qualité des aliments n'a jamais été aussi bien
+--
+   augmentation^[23].
+
+facteurs d'insécurité alimentaire[modifier | modifier le code]
+
+   plusieurs facteurs entrent en ligne de compte. si on reprend la
+   définition de la sécurité alimentaire et de ses 4 dimensions, les
+   facteurs de risque d'une insécurité se situent au niveau de
+   l'individu :
+--
+       autochtones^[24].
+
+   tous ces facteurs peuvent créer de l'insécurité alimentaire chez des
+   individus.
+
+--
+   ces facteurs de risques se cumulent avec les conséquences de la
+   pollution chimique, de la déforestation, de la dégradation des sols
+   sous toutes ses formes pour mettre en danger la sécurité alimentaire
+   mondiale.
+
+--
+   quelques décennies, de nourrir une population qui continue d'augmenter.
+   la nouvelle et artificielle aisance alimentaire dans des pays autrefois
+   touchés par l'insécurité alimentaire semble en effet, par un effet
+   d'optimisme social, conduire à une natalité énergique.
+
+--
+   région donnée, au sein d'une communauté ou d'une collectivité »^[28].
+   de ce fait, elle a un impact considérable sur les différents moteurs du
+   développement et la sécurité alimentaire n’en est pas épargnée. par
+   exemple, l'épidémie ebola dont l’oms affiche un bilan d’environ « 7000
+   morts »^[29] dans les trois pays d'afrique de l'ouest les plus
+--
+   agricoles^[30]. les prix des denrées alimentaires comme le manioc par
+   exemple, ont doublé ; au total, quelque 1,3 million de personnes
+   pourraient être concernées par une situation d’insécurité alimentaire
+   dans la région.
+
+--
+
+   la fao publie un guide sur la bonne gouvernance des régimes
+   fonciers^[31]. le 11 mai 2012 le comité de la sécurité alimentaire
+   mondiale (en) de la fao adopte des directives^[32] pour une
+   « gouvernance responsable des régimes fonciers applicables aux terres,
+   aux pêches et aux forêts dans le contexte de la sécurité alimentaire
+   nationale » qui a notamment pour but de protéger les producteurs locaux
+   contre l'accaparement des terres, la « colonisation des sols »
+--
+   d’après frédérick clerson, enseignant en politique agroalimentaire �
+   l’université laval, une des plus grandes interventions de l’État pour
+   la sécurité alimentaire est le programme américain des food stamps
+   (supplemental nutrition assistance program (snap) "programme d'aide �
+   l'alimentation supplémentaire"). il ajoute : « le plus grand projet
+--
+
+   soutenir les populations les plus vulnérables dans la lutte contre
+   l'insécurité alimentaire fait partie intégrante des priorités de
+   nombreuses ong humanitaire^[41]. conflits armés, inondations de grande
+   ampleurs, tempêtes, sécheresses... lors des crises, des interventions
+--
+
+   de nombreuses ong basées en france sont reconnues pour leur expertise
+   en matière de sécurité alimentaire et agissent à l'international, comme
+   action contre la faim, care, oxfam, solidarités international ou encore
+   acted ou encore le secours islamique france (sif) et le secours
+--
+notes et références[modifier | modifier le code]
+
+    1. ↑ ^a et b comité de la sécurité alimentaire mondiale, s'entendre
+       sur la terminologie, csa, 39^e session, 15-20 octobre 2012, 17 p.
+       (lire en ligne)
+    2. ↑ n. bricas, sécurité alimentaire in poulain j.p. (ed.)
+       dictionnaire des cultures alimentaires, paris, puf, 2012,
+       1226-1230 p. (isbn 978-2-13-055875-0)
+--
+       16 janvier 2019
+   19. ↑ eurepgap
+   20. ↑ paul benkimoun, démocratie et sécurité alimentaire. la peur aux
+       ventres, textuel, 2000, p. 19-31
+   21. ↑ gil rivière-wekstein, panique dans l'assiette. ils se nourrissent
+--
+   29. ↑ « le bilan de l'épidémie d'ebola approche 7 000 morts en afrique
+       de l'ouest », francetv info,‎ 29 novembre 2014 (lire en ligne)
+   30. ↑ « ebola, l'agriculture et la sécurité alimentaire en 10
+       questions », 2014 (consulté le 25 novembre 2014)
+   31. ↑ fao, bonne gouvernance des régimes fonciers et de
+--
+   40. ↑ information sur les bactéries indésirables dans les denrées
+       alimentaires, suisse, 2 p. (lire en ligne), p. 2
+   41. ↑ « sécurité alimentaire | solidaire », sur www.solidaire-info.org
+       (consulté le 1^er octobre 2022)
+   42. ↑ « objectif 2 : Éliminer la faim, assurer la sécurité alimentaire,
+       améliorer la nutrition et promouvoir l’agriculture durable », sur
+       développement durable (consulté le 1^er octobre 2022)
+--
+
+   sur les autres projets wikimedia :
+     * sécurité alimentaire, sur wikiquote
+
+articles connexes[modifier | modifier le code]
+--
+     * (en) site officiel du programme alimentaire mondial ;
+     * (fr) site du réseau de prévention des crises alimentaires ;
+     * activités du cirad sur la sécurité alimentaire
+     * les cours en ligne sur la sécurité alimentaire de la fao
+
+     * icône décorative alimentation et gastronomie
+--
+   =210025761 ».
+   catégorie :
+     * sécurité alimentaire
+
+   catégories cachées :
