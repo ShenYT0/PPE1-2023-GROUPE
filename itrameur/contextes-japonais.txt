@@ -1,6 +1,6 @@
-&lt;lang="japonais"&gt;
-&lt;page="jp-1"&gt;
-        &lt;text&gt;
+<lang="japonais">
+<page="jp-1">
+        <text>
           + 9.6日本産食品
           + 9.7日本国外産食品
      * 10各国における輸入国別の食品違反件数
@@ -271,6 +271,6 @@
      * アカウンタビリティ
      * 消費主義
 
-&lt;/text&gt;
-        &lt;/page&gt; §
-&lt;/lang&gt;
+</text>
+        </page> §
+</lang>

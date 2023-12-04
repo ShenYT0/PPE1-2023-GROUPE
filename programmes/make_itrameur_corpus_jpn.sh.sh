@@ -16,7 +16,8 @@ for file in ../"$1"/"$2"/*; do
         echo "<page=\"$filename_no_ext\">
         <text>" >> "../itrameur/$1-$2.txt"
 
-        cat "$file" >>  "../itrameur/$1-$2.txt"
+        #cat "$file" >>  "../itrameur/$1-$2.txt"
+        sed -e 's/&/\&amp;/g' -e 's/</\&lt;/g' -e 's/>/\&gt;/g' "$file" >> "../itrameur/$1-$2.txt"
 
         echo "</text>
         </page> §" >> "../itrameur/$1-$2.txt"
@@ -25,4 +26,4 @@ done
 
 echo "</lang>" >> "../itrameur/$1-$2.txt"
 
-sed -i -e 's/&/\&amp;/g' -e 's/</\&lt;/g' -e 's/>/\&gt;/g' "../itrameur/$1-$2.txt"
+#sed -i -e 's/&/\&amp;/g' -e 's/</\&lt;/g' -e 's/>/\&gt;/g' "../itrameur/$1-$2.txt"
