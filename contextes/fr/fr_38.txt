@@ -1,0 +1,39 @@
+     * formation professionnelle
+     * catalogue des formations
+     * sécurité alimentaire, santé et nutrition
+
+     * alimentation
+     * agroécologie
+
+sécurité alimentaire, santé et nutrition
+
+   sécurité et qualité alimentaire
+--
+contexte
+
+   ce module se penche sur les problématiques de sécurité alimentaire et
+   nutritionnelle, qui sont en plein bouleversement, tant au nord qu’aux
+   suds :
+--
+       systèmes de notation des entreprises agro-alimentaires sur leurs
+       efforts nutritionnels apparaissent.
+     * les instances de gouvernance globale de la sécurité alimentaire et
+       nutritionnelle évoluent : réforme du comité de la sécurité
+       alimentaire mondiale (csa ou cfs), création du mouvement « scaling
+--
+       sud (sous nutrition, « sur » nutrition, toxicité, etc.)
+     * identifier les actions possibles favorables à l’amélioration de la
+       sécurité alimentaire et nutritionnelle à différents niveaux des
+       systèmes alimentaires
+     * expliquer les  les enjeux institutionnels et politiques des
+       solutions proposées et discuter de leurs atouts / inconvénients
+     * analyser et proposer différentes stratégies et/ou dispositifs
+       innovants en vue d’améliorer la sécurité alimentaire et
+       nutritionnelle
+
+--
+   professionnel de niveau master ou avec quelques années d'expérience en
+   ong/organisations internationales/collectivités
+   territoriales/entreprise (r&d), chefs de projet "sécurité alimentaire
+   et nutrition"; chargé(e)s de mission "alimentation"; responsables de
+   stratégies alimentaires et nutritionnelles...

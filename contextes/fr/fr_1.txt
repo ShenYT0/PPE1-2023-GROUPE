@@ -1,0 +1,25 @@
+
+
+   4facteurs d'insécurité alimentaire
+
+   (button) afficher / masquer la sous-section facteurs d'insécurité
+--
+
+   5intervention et rôle de l'état dans l'agriculture en vue de la
+   sécurité alimentaire
+
+   (button) afficher / masquer la sous-section intervention et rôle de
+   l'état dans l'agriculture en vue de la sécurité alimentaire
+     * 5.1inspection des denrées alimentaires
+
+
+
+   6intervention et rôle des ong humanitaires dans la sécurité alimentaire
+
+
+--
+   [ ] basculer la table des matières
+
+sécurité alimentaire
+
+   [ ] 42 langues
