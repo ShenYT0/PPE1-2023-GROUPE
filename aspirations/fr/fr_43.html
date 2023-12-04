@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr" class="html--dxpr-theme-sticky-footer" prefix="content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#">
+<head>
+  <link rel="profile" href="http://www.w3.org/1999/xhtml/vocab" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+<style>/* cyrillic-ext */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url(/sites/default/files/dxpr_theme/fonts/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZZMkidh18Smxg.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url(/sites/default/files/dxpr_theme/fonts/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZZMkido18Smxg.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url(/sites/default/files/dxpr_theme/fonts/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZZMkidg18Smxg.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url(/sites/default/files/dxpr_theme/fonts/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZZMkidv18Smxg.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url(/sites/default/files/dxpr_theme/fonts/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZZMkidj18Smxg.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url(/sites/default/files/dxpr_theme/fonts/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZZMkidi18Smxg.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url(/sites/default/files/dxpr_theme/fonts/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZZMkids18Q.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(/sites/default/files/dxpr_theme/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwmhduz8A.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(/sites/default/files/dxpr_theme/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwkxduz8A.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(/sites/default/files/dxpr_theme/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwmxduz8A.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(/sites/default/files/dxpr_theme/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlBduz8A.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(/sites/default/files/dxpr_theme/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwmBduz8A.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(/sites/default/files/dxpr_theme/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwmRduz8A.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(/sites/default/files/dxpr_theme/fonts/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdu.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/sites/default/files/dxpr_theme/fonts/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNa7lqDY.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/sites/default/files/dxpr_theme/fonts/6xK3dSBYKcSV-LCoeQqfX1RYOo3qPK7lqDY.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/sites/default/files/dxpr_theme/fonts/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNK7lqDY.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/sites/default/files/dxpr_theme/fonts/6xK3dSBYKcSV-LCoeQqfX1RYOo3qO67lqDY.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/sites/default/files/dxpr_theme/fonts/6xK3dSBYKcSV-LCoeQqfX1RYOo3qN67lqDY.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/sites/default/files/dxpr_theme/fonts/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNq7lqDY.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/sites/default/files/dxpr_theme/fonts/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7l.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<link rel="shortcut icon" href="https://www.solidaire-info.org/sites/default/files/favico.png" type="image/png" />
+<meta name="generator" content="Drupal 7 (https://www.drupal.org)" />
+<link rel="canonical" href="https://www.solidaire-info.org/domaines/s%C3%A9curit%C3%A9-alimentaire" />
+<link rel="shortlink" href="https://www.solidaire-info.org/node/103" />
+  <title>Sécurité alimentaire | Solidaire</title>
+  <style>ul.dropdown-menu {display: none;}</style>
+  <link rel="stylesheet" href="https://www.solidaire-info.org/sites/default/files/css/css_lQaZfjVpwP_oGNqdtWCSpJT1EMqXdMiU84ekLLxQnc4.css" media="all" />
+<link rel="stylesheet" href="https://www.solidaire-info.org/sites/default/files/css/css_jXDDO-F6sT45CmfL03-UGxAiepzcYFpTCvXgbHfiLAs.css" media="all" />
+<link rel="stylesheet" href="https://www.solidaire-info.org/sites/default/files/css/css_EvAiOqRI0setmkAdiMI6JwYJ_KczZP-8__ALeSVLz-c.css" media="all" />
+<link rel="stylesheet" href="https://www.solidaire-info.org/sites/default/files/css/css_jtHeUcoBEXEjn4A5fQSKIrBMaP-Hs4Q-LqhufDxrTBA.css" media="all" />
+<link rel="stylesheet" href="https://www.solidaire-info.org/sites/default/files/css/css_YS2E4z-nyUhB4M-ppEVaEL4JAly1cRD_Frap1z4hsmI.css" media="all" />
+<link rel="stylesheet" href="https://www.solidaire-info.org/sites/default/files/css/css_FIXBRPsfMXCJ1XrxpKVEQZ4jJzE5ksh9_WRN8SiEmmk.css" media="all" />
+  <!-- HTML5 element support for IE6-8 -->
+  <!--[if lt IE 9]>
+    <script src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.4.min.js"></script>
+<script>window.jQuery || document.write("<script src='/profiles/cms/modules/contrib/jquery_update/replace/jquery/2.2/jquery.min.js'>\x3C/script>")</script>
+<script src="https://www.solidaire-info.org/sites/default/files/js/js_GOikDsJOX04Aww72M-XK1hkq4qiL_1XgGsRdkL0XlDo.js"></script>
+<script src="//ajax.aspnetcdn.com/ajax/jquery.ui/1.10.2/jquery-ui.min.js"></script>
+<script>window.jQuery.ui || document.write("<script src='/profiles/cms/modules/contrib/jquery_update/replace/ui/ui/minified/jquery-ui.min.js'>\x3C/script>")</script>
+<script src="https://www.solidaire-info.org/sites/default/files/js/js_kMg7W1sZANW-JVt-y1p4g6o0k68QXbUoYrBuKkRfQvo.js"></script>
+<script src="https://www.solidaire-info.org/sites/default/files/js/js_97VzoWnH0AhHnKQGIldTVUQsH-0UAjaOCWkga2iIqD8.js"></script>
+<script src="https://www.googletagmanager.com/gtag/js?id=UA-12525899-3"></script>
+<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments)};gtag("js", new Date());gtag("set", "developer_id.dMDhkMT", true);gtag("config", "UA-12525899-3", {"groups":"default","linker":{"domains":["www.solidaire-info.org","www.portail-solidarite.org","www.tdf-humanitaire.net"]},"anonymize_ip":true});</script>
+<script src="https://www.solidaire-info.org/sites/default/files/js/js_GvUrasMsL9Ej2RIk7XJygR6gS5ybo3rlLQzxjqPgfDw.js"></script>
+<script src="https://www.solidaire-info.org/sites/default/files/js/js_tI9-JgGyTCt4uC5V_RXYTawoaOJIUCsYKX37wo12S9c.js"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","setHasJsCookie":0,"ajaxPageState":{"theme":"dxpr_theme","theme_token":"DAqibgWMJbH1taEcoTmvBJy8gSERsq729XxXpmn93jg","js":{"sites\/all\/modules\/dxpr_builder\/dxpr_builder\/vendor\/jquery.parallax\/jquery.parallax.js":1,"sites\/all\/modules\/dxpr_builder\/dxpr_builder\/dxpr_frontend.min.js":1,"sites\/all\/modules\/dxpr_builder\/dxpr_builder\/vendor\/jquery.waypoints\/lib\/jquery.waypoints.min.js":1,"profiles\/cms\/themes\/bootstrap\/js\/bootstrap.js":1,"\/\/ajax.aspnetcdn.com\/ajax\/jQuery\/jquery-2.2.4.min.js":1,"0":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"profiles\/cms\/modules\/contrib\/jquery_update\/js\/jquery_browser.js":1,"\/\/ajax.aspnetcdn.com\/ajax\/jquery.ui\/1.10.2\/jquery-ui.min.js":1,"1":1,"sites\/all\/modules\/back_to_top\/js\/back_to_top.js":1,"sites\/all\/modules\/dxpr_builder\/dxpr_builder\/vendor\/underscore\/underscore-min.js":1,"public:\/\/languages\/fr_d3fIW1QRAkbSG9t817eHtdjqxNUW3ubTV6pg_HRCUGA.js":1,"profiles\/cms\/modules\/contrib\/behavior_weights\/behavior_weights.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"https:\/\/www.googletagmanager.com\/gtag\/js?id=UA-12525899-3":1,"2":1,"sites\/all\/themes\/dxpr_theme\/js\/minified\/dxpr-theme-multilevel-mobile-nav.min.js":1,"sites\/all\/themes\/dxpr_theme\/js\/minified\/dxpr-theme-header.min.js":1,"sites\/all\/themes\/dxpr_theme\/vendor\/bootstrap3\/js\/bootstrap.min.js":1,"sites\/all\/themes\/dxpr_theme\/js\/minified\/classie.min.js":1},"css":{"modules\/system\/system.base.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"sites\/all\/themes\/dxpr_theme\/vendor\/bootstrap3\/css\/bootstrap.min.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"profiles\/cms\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/back_to_top\/css\/back_to_top.css":1,"profiles\/cms\/modules\/contrib\/ctools\/css\/ctools.css":1,"profiles\/cms\/modules\/contrib\/tagclouds\/tagclouds.css":1,"profiles\/cms\/modules\/contrib\/image_hover_effects\/css\/image-hover-effects.css":1,"sites\/all\/modules\/dxpr_builder\/dxpr_builder\/css\/social.css":1,"sites\/all\/modules\/dxpr_builder\/dxpr_builder\/css\/icon-helpers.css":1,"sites\/all\/modules\/dxpr_builder\/dxpr_builder\/vendor\/font-awesome\/css\/font-awesome.min.css":1,"sites\/all\/modules\/dxpr_builder\/dxpr_builder\/css\/dxpr_builder.css":1,"sites\/all\/themes\/dxpr_theme\/css\/vendor-extensions\/bootstrap-3.css":1,"sites\/all\/themes\/dxpr_theme\/css\/vendor-extensions\/bootstrap-theme.css":1,"sites\/all\/themes\/dxpr_theme\/css\/base\/forms.css":1,"sites\/all\/themes\/dxpr_theme\/css\/base\/layout.css":1,"sites\/all\/themes\/dxpr_theme\/css\/base\/page-title.css":1,"sites\/all\/themes\/dxpr_theme\/css\/base\/typography.css":1,"sites\/all\/themes\/dxpr_theme\/css\/helpers\/helper-classes.css":1,"sites\/all\/themes\/dxpr_theme\/css\/components\/dxpr-theme-secondary-header.css":1,"sites\/all\/themes\/dxpr_theme\/css\/components\/dxpr-theme-header.css":1,"sites\/all\/themes\/dxpr_theme\/css\/components\/dxpr-theme-header--top.css":1,"sites\/all\/themes\/dxpr_theme\/css\/components\/dxpr-theme-header--side.css":1,"sites\/all\/themes\/dxpr_theme\/css\/components\/dxpr-theme-header--mobile.css":1,"sites\/all\/themes\/dxpr_theme\/css\/base\/footer-menu.css":1,"sites\/default\/files\/dxpr-theme-themesettings-dxpr_theme.css":1}},"rs":{"global":{"url":"https:\/\/www.solidaire-info.org\/sites\/default\/files\/","dir":"\/profiles\/cms\/modules\/sooperthemes_premium\/revslider"}},"dxpr_builder":{"currentPath":"node\/103","defaultSiteLanguage":"fr","dxpr_ajaxurl":"https:\/\/www.solidaire-info.org\/?q=dxpr_builder_ajaxurl","dxpr_baseurl":"https:\/\/www.solidaire-info.org\/sites\/all\/modules\/dxpr_builder\/dxpr_builder\/","dxpr_e_ajaxurl":"https:\/\/www.solidaire-info.org\/?q=dxpr_builder_e_ajaxurl","dxpr_lang":"fr","offsetSelector":".dxpr-theme-header--sticky, .dxpr-theme-header--fixed","uid":0,"entityLangCode":"fr","entityLanguage":"French"},"back_to_top":{"back_to_top_button_trigger":"100","back_to_top_button_text":"Back to top","#attached":{"library":[["system","ui"]]}},"googleanalytics":{"account":["UA-12525899-3"],"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip","trackDomainMode":2,"trackCrossDomains":["www.solidaire-info.org","www.portail-solidarite.org","www.tdf-humanitaire.net"]},"dxpr_theme":{"headerHeight":"100","headerOffset":"30","headerMobileHeight":"60","breadcrumbsSeparator":"\/","dxpr_themePath":"sites\/all\/themes\/dxpr_theme\/"},"bootstrap":{"anchorsFix":"1","anchorsSmoothScrolling":"1","formHasError":1,"popoverEnabled":"1","popoverOptions":{"animation":1,"html":0,"placement":"top","selector":"","trigger":"click","triggerAutoclose":1,"title":"","content":"","delay":0,"container":"body"},"tooltipEnabled":"1","tooltipOptions":{"animation":1,"html":0,"placement":"auto top","selector":"","trigger":"hover focus","delay":0,"container":"body"}}});</script>
+</head>
+<body class="navbar-is-static-top html not-front not-logged-in no-sidebars page-node page-node- page-node-103 node-type-cb-drag-drop-page body--dxpr-theme-header-top body--dxpr-theme-header-not-overlay body--dxpr-theme-header-normal">
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Aller au contenu principal</a>
+  </div>
+    <script>
+  var dxpr_themeNavBreakpoint = 1200;
+  var dxpr_themeWindowWidth = window.innerWidth;
+  if (dxpr_themeWindowWidth > dxpr_themeNavBreakpoint) {
+    document.body.className += ' body--dxpr-theme-nav-desktop';
+  }
+  else {
+    document.body.className += ' body--dxpr-theme-nav-mobile';
+  }
+  </script>    
+<header id="secondary-header" role="banner" class="dxpr-theme-secondary-header hidden-sm hidden-md hidden-md clearfix">
+  <div class="container secondary-header-container">
+    <div class="row container-row"><div class="col-sm-12 container-col">                    <div class="region region-secondary-header">
+    <section id="block-block-1" class="block block-block clearfix">
+
+      
+  <h5 style="text-align: right;"><span style="color:#FFFFFF;"><strong>Solidaire</strong>, le portail&nbsp; pour s'orienter et construire son projet humanitaire et solidaire | </span><a href="https://www.facebook.com/solidaireinfo" target="_blank"><span style="color:#FFFFFF;">Facebook</span></a><span style="color:#FFFFFF;"> | </span><a href="https://www.youtube.com/user/TDFHumanitaire" target="_blank"><span style="color:#FFFFFF;">Youtube</span></a></h5>
+
+</section>
+  </div>
+                    </div></div>  </div>
+</header>
+
+<header id="navbar" role="banner" class="navbar dxpr-theme-header dxpr-theme-header--top dxpr-theme-header--logo-right-menu-left dxpr-theme-header--normal dxpr-theme-header--sticky dxpr-theme-header--hover-background" data-spy="affix" data-offset-top="30">
+  <div class="container navbar-container">
+    <div class="row container-row"><div class="col-sm-12 container-col">        <div class="navbar-header">
+                    <div class="wrap-branding">
+                      <a class="logo navbar-btn" href="/" title="Accueil">
+              <img src="https://www.solidaire-info.org/sites/default/files/SOLIDAIRE-LOGO_0.png" id="logo" alt="Accueil" />
+            </a>
+          
+                    </div>
+          
+                      <a id="dxpr-theme-menu-toggle" href="#" class="three-dash"><span></span><div class="screenreader-text element-invisible">Toggle menu</div  ></a>
+                  </div>
+
+                  <nav role="navigation" id="dxpr-theme-main-menu" class="dxpr-theme-main-menu  dxpr-theme-mobile-header-open-ltr">
+                                        <div class="region region-navigation">
+    <section id="block-system-main-menu" class="block block-system block-menu clearfix">
+
+      
+  <ul class="menu nav"><li class="first expanded dropdown"><a title="" data-target="#" class="dropdown-toggle nolink" tabindex="0">M'informer</a><ul class="dropdown-menu"><li class="first expanded"><a href="/minformer/mieux-conna%C3%AEtre-le-secteur" class="dxpr-theme-megamenu__heading">Mieux connaître le secteur</a><ul class="dxpr-theme-megamenu"><li class="first leaf"><a href="/mieux-conna%C3%AEtre-le-secteur/acteurs" title="">Les acteurs</a></li>
+<li class="last leaf"><a href="/mieux-conna%C3%AEtre-le-secteur/domaines" title="">Les domaines</a></li>
+</ul></li>
+<li class="last expanded"><a href="/minformer/engagements" title="" class="dxpr-theme-megamenu__heading">Mieux connaître les engagements</a><ul class="dxpr-theme-megamenu"><li class="first leaf"><a href="/le-b%C3%A9n%C3%A9volat" title="">Le bénévolat</a></li>
+<li class="leaf"><a href="/le-salariat" title="">Le salariat</a></li>
+<li class="leaf"><a href="/le-stage" title="">Le stage</a></li>
+<li class="last leaf"><a href="/le-volontariat" title="">Le volontariat</a></li>
+</ul></li>
+</ul></li>
+<li class="expanded dropdown"><a title="" data-target="#" class="dropdown-toggle nolink" tabindex="0">Mon Projet</a><ul class="dropdown-menu"><li class="first last expanded"><a href="/mon-projet/mieux-me-conna%C3%AEtre" class="dxpr-theme-megamenu__heading">Mieux me connaître</a><ul class="dxpr-theme-megamenu"><li class="first leaf"><a href="/mieux-me-conna%C3%AEtre/analyser-mes-motivations" title="">Analyser mes motivations</a></li>
+<li class="last leaf"><a href="/mieux-me-conna%C3%AEtre/trouver-lengagement-solidaire-qui-me-correspond">Trouver l&#039;engagement qui me correspond</a></li>
+</ul></li>
+</ul></li>
+<li class="last expanded dropdown"><a title="" data-target="#" class="dropdown-toggle nolink" tabindex="0">Me Professionnaliser</a><ul class="dropdown-menu"><li class="first last expanded"><a href="/me-professionnaliser/en-faire-mon-m%C3%A9tier" class="dxpr-theme-megamenu__heading">En faire mon métier</a><ul class="dxpr-theme-megamenu"><li class="first leaf"><a href="/me-professionnaliser/en-faire-mon-m%C3%A9tier/les-formations">Les formations</a></li>
+<li class="leaf"><a href="/me-professionnaliser/en-faire-mon-m%C3%A9tier/metiers" title="">Les métiers</a></li>
+<li class="last leaf"><a href="/me-professionnaliser/en-faire-mon-m%C3%A9tier/ou-trouver-les-offres-demploi" title="">Où trouver les offres d&#039;emploi ?</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+  </div>
+                      </nav>
+            </div></div>  </div>
+</header>
+
+<div class="wrap-containers">
+
+  
+    <div class="page-title-full-width-container dxpr-theme-no-margin" id="page-title-full-width-container">
+    <header role="banner" id="page-title" class="container page-title-container">
+                  <h1 class="page-title">Sécurité alimentaire</h1>
+                      </header> <!-- /#page-title -->
+      </div>
+
+  
+  
+    <div class="main-container clearfix">
+    <div>
+      
+      <section>
+        <a id="main-content"></a>
+                                                                                  <div class="region region-content">
+    <section id="block-system-main" class="block block-system clearfix">
+
+      
+  <article id="node-103" class="node node-cb-drag-drop-page clearfix" about="/domaines/s%C3%A9curit%C3%A9-alimentaire" typeof="sioc:Item foaf:Document">
+
+    <header>
+            <span property="dc:title" content="Sécurité alimentaire" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>  </header>
+    <div class="content">
+  
+  <div class="field-cb-body">
+    <div class="az-element az-container dxpr" data-az-type="node|cb_drag_drop_page" data-az-name="103|cb_body" data-az-human-readable="Y2JfYm9keSBvbiBwYWdlICYjMDM5O1PDqWN1cml0w6kgYWxpbWVudGFpcmUmIzAzOTs=" data-az-mode="dynamic">
+<div class="az-element az-section" style='padding-top: 100px; padding-bottom: 300px; background-image: url("https://www.solidaire-info.org/sites/default/files/1471176.jpg?fid=54"); background-repeat: no-repeat; background-size: cover; background-attachment: fixed; background-position: 0% 127px;' data-az-id="fafneD" data-azat-pid="fafneD" id="fafneD" data-azb="az_section" data-azat-effect="parallax" data-azat-parallax_speed="30" data-azat-parallax_mode="fixed" data-azat-style="padding-top:100px;padding-bottom:300px;background-image: url(https://www.solidaire-info.org/sites/default/files/1471176.jpg?fid=54);background-repeat: no-repeat;background-size: cover;"><div class="az-ctnr container" data-azcnt="true"><div class="az-element az-row row   az-row--sm" style="" id="AXrBjZ"><div class="az-element az-ctnr az-column    col-sm-12" style="" id="fNCMsb"><div class="az-element az-text" style="" id="nnNVey"></div></div></div></div></div><div class="az-element az-section" style="" data-az-id="iCGjEE" data-azat-pid="iCGjEE" id="iCGjEE" data-azb="az_section"><div class="az-ctnr container" data-azcnt="true"><div class="az-element az-row row   az-row--sm" style="margin-left:0px;margin-right:0px;padding-left:0px;padding-right:0px;" id="LNEeTg"><div class="az-element az-ctnr az-column    col-sm-2" style="margin-top:0px;margin-bottom:0px;margin-left:0px;margin-right:0px;padding-top:0px;padding-bottom:0px;padding-left:0px;padding-right:0px;" id="mxtSXy"></div><div class="az-element az-ctnr az-column    col-sm-8" style="margin-top:-160px;margin-bottom:60px;margin-left:0px;margin-right:0px;padding-top:0px;padding-bottom:0px;padding-left:0px;padding-right:0px;background-color:#ffffff;" id="JBRBPY"><div class="az-element az-text dxpr-theme-util-background-white" style="padding-top:60px;padding-bottom:15px;padding-left:60px;padding-right:60px;" id="RQYgtU"><h1>S&eacute;curit&eacute; alimentaire</h1><p class="lead">DOMAINES.&nbsp;Sur la plan&egrave;te, 795 millions de personnes souffrent encore de la faim, soit 216 millions de moins qu&rsquo;en 1990. Si ces progr&egrave;s sont encourageants, notamment au vue d&rsquo;un contexte r&eacute;cent difficile, la s&eacute;curit&eacute; alimentaire reste un enjeu de solidarit&eacute; crucial.</p><section data-quickedit-field-id="node/21/body/und/full"><p class="lead" style="text-align: center;">Contexte&nbsp;</p><p><br></p><p><strong>D&eacute;finition. Qu&rsquo;est-ce que la s&eacute;curit&eacute; alimentaire&nbsp;?</strong></p><p>D&rsquo;apr&egrave;s la d&eacute;finition de la&nbsp;<a data-cke-saved-href="http://www.fao.org/docrep/003/w3613f/w3613f00.htm" href="http://www.fao.org/docrep/003/w3613f/w3613f00.htm">Conf&eacute;rence Mondiale de l&rsquo;Alimentation</a>&nbsp;de 1996&nbsp;:&nbsp;&laquo; la s&eacute;curit&eacute; alimentaire existe lorsque tous les &ecirc;tres humains ont, &agrave; tout moment, un acc&egrave;s physique et &eacute;conomique &agrave; une nourriture suffisante, saine et nutritive leur permettant [&hellip;] de mener une vie saine et active &raquo;.</p><p>En 2015,&nbsp;<a data-cke-saved-href="http://www.fao.org/news/story/fr/item/288345/icode/" href="http://www.fao.org/news/story/fr/item/288345/icode/">795 millions</a>&nbsp;d&rsquo;individus ne b&eacute;n&eacute;ficient pas de s&eacute;curit&eacute; alimentaire dans le monde et n&rsquo;ont pas acc&egrave;s &agrave; une quantit&eacute; minimale de nourriture de qualit&eacute;. Une malnutrition peut &ecirc;tre fatale sans traitement&nbsp;(graves carences nutritionnelles, troubles physiologiques et psychologiques). La&nbsp;<a data-cke-saved-href="http://www.fao.org/french/newsroom/news/2002/9703-fr.html" href="http://www.fao.org/french/newsroom/news/2002/9703-fr.html">Food and Agriculture Organisation</a>&nbsp;(FAO) confirme que 25000 personnes meurent chaque jour de faim. La malnutrition aig&uuml;e touche aussi les enfants&nbsp;: 6 millions d&rsquo;enfants de moins de 5 ans meurent chaque ann&eacute;e dans le monde.</p><p>Il est important de pr&eacute;ciser que la faim touche aussi les pays d&eacute;velopp&eacute;s. En 2014, selon le rapport d&rsquo;activit&eacute;s de la&nbsp;<a data-cke-saved-href="http://www.banquealimentaire.org/sites/default/files/2_rapannuel_ba_2014_180615_bd.pdf" href="http://www.banquealimentaire.org/sites/default/files/2_rapannuel_ba_2014_180615_bd.pdf">Banque Alimentaire et les chiffres de la Direction G&eacute;n&eacute;rale de la Coh&eacute;sion Sociale&nbsp;</a>: 6 millions de personnes en France sont en situation de pr&eacute;carit&eacute; alimentaire et 3,9 millions de personnes ont b&eacute;n&eacute;fici&eacute; de l&rsquo;aide alimentaire. Il ne s&rsquo;agit pas ici d&rsquo;un probl&egrave;me de disponibilit&eacute; des produits, mais plut&ocirc;t de pouvoir d&rsquo;achat et de pauvret&eacute;.</p><p>Pour se rendre compte de l&rsquo;&eacute;tat d&rsquo;ins&eacute;curit&eacute; alimentaire dans le monde,&nbsp; consultez la&nbsp;<a data-cke-saved-href="http://www.fao.org/hunger/fr/" href="http://www.fao.org/hunger/fr/">carte FAO</a>&nbsp;de l&rsquo;Organisation des Nations Unies pour l&rsquo;alimentation et l&rsquo;agriculture.</p></section><section data-quickedit-field-id="node/21/field_evolution/und/full"><hr><p class="lead" style="text-align: center;">Evolution&nbsp;</p><p>En 2000, au Si&egrave;ge de l&rsquo;ONU, le sommet du mill&eacute;naire constitua le plus grand rassemblement de chefs d'&Eacute;tat et de gouvernement de tous les temps. Ils d&eacute;finirent huit OMD&nbsp;(Objectifs du Mill&eacute;naire pour le D&eacute;veloppement), l&rsquo;objectif n&deg;1 &eacute;tant de r&eacute;duire de moiti&eacute; le pourcentage de personnes souffrant de la faim d&rsquo;ici 2015. Objectif tenu puisqu&rsquo;en 2015, plus de la moiti&eacute; des pays (72 pays sur 129) l&rsquo;ont atteint (<a data-cke-saved-href="http://www.fao.org/hunger/fr/" href="http://www.fao.org/hunger/fr/">Rapport SOFI</a>, derni&egrave;re &eacute;dition du rapport annuel des Nations Unies &laquo;&nbsp;L'&Eacute;tat de l'ins&eacute;curit&eacute; alimentaire dans le monde&nbsp;&raquo;, 2015).</p><p>Pourtant l&rsquo;ins&eacute;curit&eacute; alimentaire n&rsquo;est pas r&eacute;solue et reste un probl&egrave;me mondial majeur. En 2007/2008, une crise alimentaire mondiale a ainsi explos&eacute;&nbsp;: une hausse du prix des denr&eacute;es a pr&eacute;cipit&eacute; des millions de foyers pauvres dans l&rsquo;ins&eacute;curit&eacute; alimentaire en provoquant de violentes &laquo; &eacute;meutes de la faim &raquo;.&nbsp;</p></section><section data-quickedit-field-id="node/21/field_domaines_acteurs/und/full"><hr><p class="lead" style="text-align: center;">Acteurs&nbsp;</p><p>Les probl&eacute;matiques li&eacute;es aux domaines de la nutrition et de la s&eacute;curit&eacute; alimentaire sont in&eacute;vitablement prises en compte par&nbsp;:</p><ul><li><strong>les <a data-cke-saved-href="/node/89" href="/node/89">associations/ONG </a>internationales</strong>&nbsp;&agrave; vocation humanitaire. Elles m&egrave;nent de nombreux programmes pour lutter contre la malnutrition (d&eacute;pistage, traitement, suivi) et l&rsquo;ins&eacute;curit&eacute; alimentaire (aide alimentaire, aide financi&egrave;re, relance agricole, activit&eacute;s g&eacute;n&eacute;ratrices de revenus&hellip;) dans leurs pays d&rsquo;intervention.&nbsp;Par exemple, l&rsquo;ONG&nbsp;<a data-cke-saved-href="http://www.actioncontrelafaim.org/fr" href="http://www.actioncontrelafaim.org/fr">Action contre la Faim</a>&nbsp;&oelig;uvre aupr&egrave;s des populations vuln&eacute;rables, sous-aliment&eacute;es et sous-nutries via des interventions multisectorielles. Le secteur de la s&eacute;curit&eacute; alimentaire apporte une assistance pour r&eacute;pondre aux besoins alimentaires imm&eacute;diats, pour pr&eacute;venir les crises alimentaires et construire des capacit&eacute;s des communaut&eacute;s sur le long-terme, ainsi que favoriser le rel&egrave;vement des populations &agrave; l&rsquo;issue d&rsquo;une crise alimentaire. Les interventions sont ainsi tr&egrave;s vari&eacute;es. Elles comprennent l&rsquo;assistance alimentaire, les activit&eacute;s agricoles, les activit&eacute;s g&eacute;n&eacute;ratrices de revenus en milieu rural ou urbain, ainsi que la surveillance. D&rsquo;apr&egrave;s leur&nbsp;<a data-cke-saved-href="http://fr.calameo.com/read/0014430662ac0bc67c1a1" href="http://fr.calameo.com/read/0014430662ac0bc67c1a1">rapport d&rsquo;activit&eacute;</a>, le secteur de la s&eacute;curit&eacute; alimentaire d&rsquo;ACF a port&eacute; assistance &agrave; 12 millions de personnes entre 2011 et 2015.</li><li><strong>les <a data-cke-saved-href="/node/87" href="/node/87">&Eacute;tats</a>, <a data-cke-saved-href="/node/88" href="/node/88">collectivit&eacute;s territoriales</a>, <a data-cke-saved-href="/node/83" href="/node/83">institutions internationales</a> et <a data-cke-saved-href="/node/181" href="/node/181">fondations</a></strong><a data-cke-saved-href="/node/181" href="/node/181">&nbsp;</a>: allouent des fonds pour la mise en place de ces programmes.&nbsp;On retrouve par exemple le&nbsp;<a data-cke-saved-href="http://www.fao.org/home/fr/" href="http://www.fao.org/home/fr/">FAO</a>&nbsp;(Organisation des Nations-Unies pour l&rsquo;alimentation et l&rsquo;agriculture) ou le&nbsp;<a data-cke-saved-href="https://www.ifad.org/" href="https://www.ifad.org/">Fonds international de d&eacute;veloppement agricole</a>.</li><li><strong>les instituts de recherche et bureaux d&rsquo;&eacute;tudes</strong>&nbsp;ont un r&ocirc;le d&rsquo;expert primordial. Dans le secteur priv&eacute;, on trouve des soci&eacute;t&eacute;s d&rsquo;exploitation, d&rsquo;agro-alimentaire et d&rsquo;agro-industrie agissant au niveau national et international.</li></ul><p><br></p><p>Quelques exemples :&nbsp;<a data-cke-saved-href="http://www.actioncontrelafaim.org/fr/content/securite-alimentaire-et-moyens-dexistence" href="http://www.actioncontrelafaim.org/fr/content/securite-alimentaire-et-moyens-dexistence">Action contre la Faim</a>&nbsp;(ACF),&nbsp;<a data-cke-saved-href="http://fr.wfp.org/" href="http://fr.wfp.org/">Programme Alimentaire Mondial des Nations Unies</a>&nbsp;(PAM)</p></section><section data-quickedit-field-id="node/21/field_domaine_metier/und/full"><hr><p class="lead" style="text-align: center;">M&eacute;tiers&nbsp;</p><p>Pour mettre en place des programmes nutritionnels ou de s&eacute;curit&eacute; alimentaire, les organisations humanitaires recherchent des<strong> comp&eacute;tences en analyse et en gestion de projet pour le secteur de la sant&eacute;, de la nutrition ou encore de l&rsquo;agriculture. </strong>Ces m&eacute;tiers peuvent &ecirc;tre exerc&eacute;s dans le secteur priv&eacute; ou humanitaire, en s&rsquo;adaptant aux diff&eacute;rents contextes d&rsquo;intervention.</p><p>Les associations comme les Banques Alimentaires ou les Restos du C&oelig;ur agissant en France recrutent des b&eacute;n&eacute;voles tout au long de l&rsquo;ann&eacute;e pour venir en appui &agrave; leurs actions.</p><p>Le domaine de la nutrition a besoin d&rsquo;une<strong> forte composante m&eacute;dicale</strong>. Les associations/ONG recherchent des professionnels de la sant&eacute; comme des m&eacute;decins, infirmi&egrave;res, psychologues, psychomotriciens, pu&eacute;ricultrice, sages-femmes&hellip;</p><p><a data-cke-saved-href="/node/545" href="/node/545">Retrouvez plus d'informations sur les formations et emplois de ce&nbsp;domaine de la s&eacute;curit&eacute; alimentaire dans la&nbsp;rubrique "En faire mon m&eacute;tier"</a></p></section></div><div class="az-element az-row row   az-row--sm" style="margin-top:0px;margin-bottom:0px;border-top-width:0px;border-bottom-width:0px;padding-top:0px;padding-bottom:0px;" id="PToVNu"><div class="az-element az-ctnr az-column    col-sm-12" style="" id="HKkPJc"><div class="az-element az-icon text-center" id="lVStlN"><i class="az-icon-content glyphicon glyphicon-search fa-2x stbe-util-icon-circle undefined undefined  fa-flip-horizontal " style="color:#01b0ef;border-color:#01b0ef;border-style:solid;background-color:#fffffe;color: undefined;background-color: undefined;"></i></div><div class="az-element az-text" style="" id="ZVvPMV"><p class="lead" style="text-align: center;">En savoir plus</p><hr><strong>A lire</strong><ul><li>Allons-nous mourir de faim ? Comprendre la crise alimentaire mondiale, F. Mouchon (Calmann-Levy, 2008)</li><li>Atlas de l'alimentation dans le monde, E. Millstone, T. Lang (Autrement, 2003)</li><li>G&eacute;opolitique de la faim. Faim et responsabilit&eacute;, Action contre la faim (PUF, 2004)</li><li>Nourrir l'humanit&eacute; : les grands probl&egrave;mes de l'agriculture mondiale au XXIe si&egrave;cle, B. Parmentier (La D&eacute;couverte, 2007)</li></ul></div></div></div></div><div class="az-element az-ctnr az-column    col-sm-2" style="" id="BHHdqb"></div></div></div></div>
+</div>  </div>
+  </div>
+    <footer>
+              </footer>
+    </article>
+
+</section>
+  </div>
+      </section>
+
+      
+    </div>
+  </div>
+
+    <div class="container content-bottom-container">
+    <div class="row container-row"><div class="col-sm-12 container-col">      <div class="content-bottom">  <div class="region region-content-bottom">
+    <section id="block-bean-acf-content" class="block block-bean clearfix">
+
+      
+  <div class="entity entity-bean bean-cb-drag-drop-block clearfix" about="/block/acf-content">
+        <div class="content">
+    
+  <div class="field-cb-block-content">
+    <div class="az-element az-container dxpr" data-az-type="bean|cb_drag_drop_block" data-az-name="21|field_cb_block_content" data-az-human-readable="ZmllbGRfY2JfYmxvY2tfY29udGVudCBvbiBiZWFuICYjMDM5O0FDRiBjb250ZW50JiMwMzk7" data-az-mode="static">
+<div id="b2" class="az-element az-section  " style="" data-az-id="b2" data-azb="az_section"><div class="az-ctnr container" data-azcnt="true"><div class="az-element az-row row" style=""><div class="az-element az-ctnr az-column  col-sm-2" style=""></div><div class="az-element az-ctnr az-column  col-sm-8" style=""><div class="az-element az-row row" style=""><div class="az-element az-ctnr az-column  col-sm-3" style=""><div class="az-element az-image "><a href="/node/546" target="_self"><img src="https://www.solidaire-info.org/sites/default/files/portfolio/acf-logo.png?fid=232" alt="" title="" style="width: 100%;"></a></div></div><div class="az-element az-ctnr az-column  col-sm-9" style=""><ul class="az-element st-social stbe-social-links " style=""><li class="stbe-social-links__item"><a href="https://www.facebook.com/actioncontrelafaim/"><i class="fa fa- fa-facebook stbe-util-icon-circle stbe-util-icon-fx stbe-util-fx-pulse" style="color: ;background-color: #d8d8d8;" data-toggle="tooltip" data-placement="top" title="" data-original-title="facebook"></i></a></li><li class="stbe-social-links__item"><a href="https://twitter.com/ACF_France"><i class="fa fa- fa-twitter stbe-util-icon-circle stbe-util-icon-fx stbe-util-fx-pulse" style="color: ;background-color: #d8d8d8;" data-toggle="tooltip" data-placement="top" title="" data-original-title="twitter"></i></a></li></ul><div class="az-element az-text" style=""><p class="lead">Cet article &agrave; &eacute;t&eacute; &eacute;crit en collaboration avec <a data-cke-saved-href="http://www.actioncontrelafaim.org/" href="http://www.actioncontrelafaim.org/" target="_blank">Action Contre la Faim</a>.&nbsp;</p><p>Organisation non gouvernementale, fond&eacute;e en France en 1979. Son but est d&rsquo;&eacute;radiquer la faim de mani&egrave;re globale, durable et efficace dans le monde.</p><div class="btn btn-primary"><a data-cke-saved-href="/node/546" href="/node/546"><span style="color:#FFFFFF;">EN SAVOIR PLUS</span></a></div><h2><br></h2></div></div></div></div><div class="az-element az-ctnr az-column  col-sm-2" style=""></div></div></div></div>
+</div>  </div>
+  </div>
+</div>
+
+</section>
+<section id="block-views-contenu-dragndrop-bloc-domaines" class="block block-views clearfix">
+
+        <h2 class="block-title">Découvrez les autres domaines de la solidarité</h2>
+    
+  <div class="view view-contenu-dragndrop view-id-contenu_dragndrop view-display-id-bloc_domaines view-dom-id-8e6cc931d7ee8cac018251ea6ab8df06">
+        
+  
+  
+      <div class="view-content">
+      
+
+<div id="views-bootstrap-grid-1" class="views-bootstrap-grid-plugin-style">
+  
+          <div class="row">
+                  <div class=" col-xs-12 col-lg-3">
+              
+          <div><a href="/domaines/commerce-%C3%A9quitable" class="ihe-overlay ihe-overlay--fade-in" data-hover="+"><img typeof="foaf:Image" class="img-responsive" src="https://www.solidaire-info.org/sites/default/files/styles/bootstrap3_col4_square/public/photo-1422-min.jpg?itok=LQW4b9vX" width="7360" height="4912" alt="" title="Padurariu Alexandru - CC" /></a></div>    
+          <strong class="glazed-util-text-uppercase"><a href="/domaines/commerce-%C3%A9quitable">Commerce équitable</a></strong>            </div>
+
+                                      <div class=" col-xs-12 col-lg-3">
+              
+          <div><a href="/domaines/crises-et-catastrophes" class="ihe-overlay ihe-overlay--fade-in" data-hover="+"><img typeof="foaf:Image" class="img-responsive" src="https://www.solidaire-info.org/sites/default/files/styles/bootstrap3_col4_square/public/DSC_0425-min.JPG?itok=10g5_Nc8" width="2000" height="2000" alt="" title="Folkert Gorter - CC" /></a></div>    
+          <strong class="glazed-util-text-uppercase"><a href="/domaines/crises-et-catastrophes">Crises et catastrophes</a></strong>            </div>
+
+                                                                                      <div class=" col-xs-12 col-lg-3">
+              
+          <div><a href="/domaines/culture" class="ihe-overlay ihe-overlay--fade-in" data-hover="+"><img typeof="foaf:Image" class="img-responsive" src="https://www.solidaire-info.org/sites/default/files/styles/bootstrap3_col4_square/public/8022570375_5093480dc3_o_0.jpg?itok=OkoKVye-" width="4288" height="2848" alt="" title="Frederic NOY - CC" /></a></div>    
+          <strong class="glazed-util-text-uppercase"><a href="/domaines/culture">Culture</a></strong>            </div>
+
+                                                                                      <div class=" col-xs-12 col-lg-3">
+              
+          <div><a href="/domaines/d%C3%A9veloppement-rural-et-agronomie" class="ihe-overlay ihe-overlay--fade-in" data-hover="+"><img typeof="foaf:Image" class="img-responsive" src="https://www.solidaire-info.org/sites/default/files/styles/bootstrap3_col4_square/public/p14-min.jpg?itok=HNy8Yc2M" width="3264" height="2448" alt="" title="elizabeth lies - CC" /></a></div>    
+          <strong class="glazed-util-text-uppercase"><a href="/domaines/d%C3%A9veloppement-rural-et-agronomie">Développement rural et agronomie</a></strong>            </div>
+
+                                                              <div class="clearfix visible-lg-block"></div>
+                                                      <div class=" col-xs-12 col-lg-3">
+              
+          <div><a href="/domaines/droit-international-humanitaire-droits-de-lhomme-et-plaidoyer" class="ihe-overlay ihe-overlay--fade-in" data-hover="+"><img typeof="foaf:Image" class="img-responsive" src="https://www.solidaire-info.org/sites/default/files/styles/bootstrap3_col4_square/public/3489395-min.jpg?itok=DPwLQkmO" width="3504" height="2336" alt="" title="MothersFightingForOthers - CC" /></a></div>    
+          <strong class="glazed-util-text-uppercase"><a href="/domaines/droit-international-humanitaire-droits-de-lhomme-et-plaidoyer">Droit International Humanitaire - Droits de l&#039;Homme et Plaidoyer</a></strong>            </div>
+
+                                                                                      <div class=" col-xs-12 col-lg-3">
+              
+          <div><a href="/domaines/eau-hygi%C3%A8ne-et-assainissement" class="ihe-overlay ihe-overlay--fade-in" data-hover="+"><img typeof="foaf:Image" class="img-responsive" src="https://www.solidaire-info.org/sites/default/files/styles/bootstrap3_col4_square/public/8070min.jpg?itok=NUO5k8AX" width="4272" height="2848" alt="" title="EU/ECHO/Martin Karimi - CC" /></a></div>    
+          <strong class="glazed-util-text-uppercase"><a href="/domaines/eau-hygi%C3%A8ne-et-assainissement">Eau, Hygiène et Assainissement</a></strong>            </div>
+
+                                                                                      <div class=" col-xs-12 col-lg-3">
+              
+          <div><a href="/domaines/%C3%A9ducatif" class="ihe-overlay ihe-overlay--fade-in" data-hover="+"><img typeof="foaf:Image" class="img-responsive" src="https://www.solidaire-info.org/sites/default/files/styles/bootstrap3_col4_square/public/8022577966.jpg?itok=bwjGw3xh" width="4288" height="2848" alt="" title="Padurariu Alexandru - CC" /></a></div>    
+          <strong class="glazed-util-text-uppercase"><a href="/domaines/%C3%A9ducatif">Éducatif</a></strong>            </div>
+
+                                                                                      <div class=" col-xs-12 col-lg-3">
+              
+          <div><a href="/domaines/education-%C3%A0-la-citoyennet%C3%A9-et-%C3%A0-la-solidarit%C3%A9-internationale" class="ihe-overlay ihe-overlay--fade-in" data-hover="+"><img typeof="foaf:Image" class="img-responsive" src="https://www.solidaire-info.org/sites/default/files/styles/bootstrap3_col4_square/public/8162093146_f91202b6d7_o-min.jpg?itok=wxRHP_eX" width="5184" height="3456" alt="" title="Luke Price - CC" /></a></div>    
+          <strong class="glazed-util-text-uppercase"><a href="/domaines/education-%C3%A0-la-citoyennet%C3%A9-et-%C3%A0-la-solidarit%C3%A9-internationale">Education à la citoyenneté et à la solidarité internationale</a></strong>            </div>
+
+                                                              <div class="clearfix visible-lg-block"></div>
+                                                      <div class=" col-xs-12 col-lg-3">
+              
+          <div><a href="/domaines/humanitaire-d%C3%A9veloppement-urgence" class="ihe-overlay ihe-overlay--fade-in" data-hover="+"><img typeof="foaf:Image" class="img-responsive" src="https://www.solidaire-info.org/sites/default/files/styles/bootstrap3_col4_square/public/802257.jpg?itok=Z8umc_qh" width="4288" height="2848" alt="" title="Frederic NOY, Chad / Darfurian refugees from Sudan / Treguine camp - CC" /></a></div>    
+          <strong class="glazed-util-text-uppercase"><a href="/domaines/humanitaire-d%C3%A9veloppement-urgence">Humanitaire, Développement, Urgence</a></strong>            </div>
+
+                                                                                      <div class=" col-xs-12 col-lg-3">
+              
+          <div><a href="/domaines/insertion" class="ihe-overlay ihe-overlay--fade-in" data-hover="+"><img typeof="foaf:Image" class="img-responsive" src="https://www.solidaire-info.org/sites/default/files/styles/bootstrap3_col4_square/public/RedCrossvolunteerandshelteree.jpg?itok=pcWeMyuV" width="2700" height="1800" alt="" title="Andrea Booher - CC" /></a></div>    
+          <strong class="glazed-util-text-uppercase"><a href="/domaines/insertion">Insertion</a></strong>            </div>
+
+                                                                                      <div class=" col-xs-12 col-lg-3">
+              
+          <div><a href="/domaines/microfinance" class="ihe-overlay ihe-overlay--fade-in" data-hover="+"><img typeof="foaf:Image" class="img-responsive" src="https://www.solidaire-info.org/sites/default/files/styles/bootstrap3_col4_square/public/raindrops.JPG?itok=9pbEVIxi" width="4288" height="2848" alt="" title="MorgueFILE - CC" /></a></div>    
+          <strong class="glazed-util-text-uppercase"><a href="/domaines/microfinance">Microfinance</a></strong>            </div>
+
+                                                                                      <div class=" col-xs-12 col-lg-3">
+              
+          <div><a href="/domaines/protection" class="ihe-overlay ihe-overlay--fade-in" data-hover="+"><img typeof="foaf:Image" class="img-responsive" src="https://www.solidaire-info.org/sites/default/files/styles/bootstrap3_col4_square/public/68878min.jpg?itok=7uK-R59V" width="3072" height="2304" alt="" title="Susana Perez-Diaz EU/ECHO - CC" /></a></div>    
+          <strong class="glazed-util-text-uppercase"><a href="/domaines/protection">Protection</a></strong>            </div>
+
+                                                              <div class="clearfix visible-lg-block"></div>
+                                                      <div class=" col-xs-12 col-lg-3">
+              
+          <div><a href="/domaines/protection-de-lenvironnement" class="ihe-overlay ihe-overlay--fade-in" data-hover="+"><img typeof="foaf:Image" class="img-responsive" src="https://www.solidaire-info.org/sites/default/files/styles/bootstrap3_col4_square/public/leaf-spring-leaves-plants-min.jpg?itok=tTG19bl3" width="5472" height="3648" alt="" title="Karolina Grabowska STAFFAGE - CC" /></a></div>    
+          <strong class="glazed-util-text-uppercase"><a href="/domaines/protection-de-lenvironnement">Protection de l&#039;environnement</a></strong>            </div>
+
+                                                                                      <div class=" col-xs-12 col-lg-3">
+              
+          <div><a href="/domaines/renforcement-de-capacit%C3%A9s" class="ihe-overlay ihe-overlay--fade-in" data-hover="+"><img typeof="foaf:Image" class="img-responsive" src="https://www.solidaire-info.org/sites/default/files/styles/bootstrap3_col4_square/public/picjumbo-min.jpg?itok=_u9MVLWb" width="3888" height="2592" alt="" title="VIKTOR HANACEK - CC" /></a></div>    
+          <strong class="glazed-util-text-uppercase"><a href="/domaines/renforcement-de-capacit%C3%A9s">Renforcement de capacités</a></strong>            </div>
+
+                                                                                      <div class=" col-xs-12 col-lg-3">
+              
+          <div><a href="/domaines/sant%C3%A9-m%C3%A9dical-param%C3%A9dical" class="ihe-overlay ihe-overlay--fade-in" data-hover="+"><img typeof="foaf:Image" class="img-responsive" src="https://www.solidaire-info.org/sites/default/files/styles/bootstrap3_col4_square/public/123846.jpg?itok=C_VS-qek" width="1600" height="1069" alt="" title="Timothy La Rose, UNICEF Guinea - CC" /></a></div>    
+          <strong class="glazed-util-text-uppercase"><a href="/domaines/sant%C3%A9-m%C3%A9dical-param%C3%A9dical">Santé, médical, paramédical</a></strong>            </div>
+
+                                                                                      <div class=" col-xs-12 col-lg-3">
+              
+          <div><a href="/domaines/s%C3%A9curit%C3%A9-alimentaire" class="ihe-overlay ihe-overlay--fade-in active" data-hover="+"><img typeof="foaf:Image" class="img-responsive" src="https://www.solidaire-info.org/sites/default/files/styles/bootstrap3_col4_square/public/1471176.jpg?itok=-s75nlmu" width="5616" height="3744" alt="" title="Chris Ford - CC" /></a></div>    
+          <strong class="glazed-util-text-uppercase"><a href="/domaines/s%C3%A9curit%C3%A9-alimentaire" class="active">Sécurité alimentaire</a></strong>            </div>
+
+                                                              <div class="clearfix visible-lg-block"></div>
+                                                      <div class=" col-xs-12 col-lg-3">
+              
+          <div><a href="/domaines/social-m%C3%A9dico-social" class="ihe-overlay ihe-overlay--fade-in" data-hover="+"><img typeof="foaf:Image" class="img-responsive" src="https://www.solidaire-info.org/sites/default/files/styles/bootstrap3_col4_square/public/15301-min.jpg?itok=VYiK6xTF" width="5760" height="3840" alt="" title="Jessica Lea/Department for International Development - CC" /></a></div>    
+          <strong class="glazed-util-text-uppercase"><a href="/domaines/social-m%C3%A9dico-social">Social, médico-social</a></strong>            </div>
+
+                                                                                      <div class=" col-xs-12 col-lg-3">
+              
+          <div><a href="/domaines/tourisme-solidaire" class="ihe-overlay ihe-overlay--fade-in" data-hover="+"><img typeof="foaf:Image" class="img-responsive" src="https://www.solidaire-info.org/sites/default/files/styles/bootstrap3_col4_square/public/picjumboIMG-min.jpg?itok=rUWe8iWD" width="3530" height="2353" alt="" title="VIKTOR HANACEK - CC" /></a></div>    
+          <strong class="glazed-util-text-uppercase"><a href="/domaines/tourisme-solidaire">Tourisme Solidaire</a></strong>            </div>
+
+                                                                                  </div>
+    
+  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>
+</section>
+  </div>
+</div>
+    </div></div>  </div>
+  </div><!-- end wrap-containers -->
+
+<!-- /#Sticky Footer -->
+<footer class="dxpr-theme-footer clearfix">
+  <div class="dxpr-theme-fluid footer-container">
+              <div class="region region-footer">
+    <section id="block-bean-big-footer" class="block block-bean clearfix">
+
+      
+  <div class="entity entity-bean bean-cb-drag-drop-block clearfix" about="/block/big-footer">
+        <div class="content">
+    
+  <div class="field-cb-block-content">
+    <div class="az-element az-container dxpr" data-az-type="bean|cb_drag_drop_block" data-az-name="3|field_cb_block_content" data-az-human-readable="ZmllbGRfY2JfYmxvY2tfY29udGVudCBvbiBiZWFuICYjMDM5O0JpZyBGb290ZXImIzAzOTs=" data-az-mode="dynamic">
+<div id="gbkny4445i" class="az-element az-section" style="padding-top:40px;padding-bottom:40px;" data-az-id="gbkny4445i" data-azb="az_section" data-azat-style="padding-top:40px;padding-bottom:40px;"><div class="az-ctnr container" data-azcnt="true"><div class="az-element az-row row   az-row--sm az-row--equal-height" style=""><div class="az-element az-ctnr az-column    col-sm-3" style="border-top-width:0px;border-bottom-width:0px;border-left-width:0px;border-right-width:1px;padding-right:30px;border-color:#313542;border-style:solid;"><div class="az-element az-image"><img class="az-image-content " src="https://www.solidaire-info.org/sites/default/files/logo-footer_0.png?fid=203" alt="" title="" style="opacity:0.85;"></div><div class="az-element az-text" style=""><span style="color:#ffffff;"><strong>Solidaire</strong></span>, le portail de la solidarit&eacute;, est anim&eacute; par un r&eacute;seau d&rsquo;ONG, d&rsquo;associations et d&rsquo;organismes d&rsquo;orientation. C&rsquo;est l&rsquo;outil de r&eacute;f&eacute;rence pour l&rsquo;information et l&rsquo;orientation de ceux qui d&eacute;sirent s&rsquo;engager, en France ou &agrave; l&rsquo;international&nbsp;: humanitaire, environnement, sant&eacute;, social&hellip;</div><ul class="az-element st-social stbe-social-links" style="margin-top:30px;"><li class="stbe-social-links__item"><a href="https://www.facebook.com/portailsolidarite/" target="_blank"><i class="fa fa-2x fa-facebook stbe-util-icon- stbe-util-fx-" style="" data-toggle="tooltip" data-placement="top auto" title="" data-original-title="facebook"></i></a></li><li class="stbe-social-links__item"><a href="https://www.youtube.com/user/TDFHumanitaire" target="_blank"><i class="fa fa-2x fa-youtube stbe-util-icon- stbe-util-fx-" style="" data-toggle="tooltip" data-placement="top auto" title="" data-original-title="youtube"></i></a></li></ul></div><div class="az-element az-ctnr az-column    col-sm-3" style="border-top-width:0px;border-bottom-width:0px;border-left-width:0px;border-right-width:1px;padding-left:30px;padding-right:30px;border-color:#313542;border-style:solid;"><div class="az-element az-text" style=""><h4>CREDITS</h4></div><div class="az-element az-cms-element" style=""><div class="view view-about view-id-about view-display-id-block view-dom-id-97550ea78e4c5dbf882b9b838eda3750">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul><li class="views-row views-row-1 views-row-odd views-row-first">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/propos">A Propos</a></span>  </div></li>
+          <li class="views-row views-row-2 views-row-even">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/conditions-dutilisation">Conditions d'utilisation</a></span>  </div></li>
+          <li class="views-row views-row-3 views-row-odd">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/cr%C3%A9dits">Cr&eacute;dits</a></span>  </div></li>
+          <li class="views-row views-row-4 views-row-even views-row-last">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/espace-pro">Espace Pro</a></span>  </div></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></div></div><div class="az-element az-ctnr az-column    col-sm-3" style="border-top-width:0px;border-bottom-width:0px;border-left-width:0px;border-right-width:1px;padding-left:30px;padding-right:30px;border-color:#313542;border-style:solid;"><div class="az-element az-text" style=""><h4>CONTACT</h4></div><div class="az-element az-cms-element" style=""><div class="entity entity-bean bean-content-block clearfix" about="/block/social-footer">
+        <div class="content">
+    
+  <div class="field-block-content">
+    <ul><li><a href="https://www.facebook.com/solidaireinfo" target="_blank">Suivez-nous sur Facebook</a></li>
+	<li><a href="https://www.youtube.com/user/TDFHumanitaire" target="_blank">La cha&icirc;ne&nbsp;Youtube</a></li>
+	<li><a href="https://www.facebook.com/solidaireinfo">Contactez-nous sur Messenger</a></li>
+</ul></div>
+  </div>
+</div>
+</div></div><div class="az-element az-ctnr az-column    col-sm-3" style="border-top-width:0px;padding-left:30px;"><div class="az-element az-text" style=""><h4>NOS PARTENAIRES</h4></div><div class="az-element az-cms-element  hover-style-b42" style="padding-top:4px;padding-bottom:20px;opacity:0.86;"><div class="view view-cms-portfolio view-id-cms_portfolio view-display-id-block_4x3 glazed-util-no-gutter view-dom-id-e5cbd189fd41be0a8d3cd8218de434cc">
+        
+  
+  
+      <div class="view-content">
+      
+
+<div id="views-bootstrap-grid-1" class="views-bootstrap-grid-plugin-style">
+  
+          <div class="row">
+                  <div class=" col-xs-12 col-lg-3">
+              
+          <a href="/work/action-contre-la-faim" class="ihe-overlay ihe-overlay--zoom-in" data-hover="+"><img typeof="foaf:Image" class="img-responsive" src="https://www.solidaire-info.org/sites/default/files/styles/bootstrap3_col6_square/public/portfolio/acf-logo_0.png?itok=_kqSxUqS" width="1140" height="1140" alt="Action contre la Faim" title="Action contre la Faim Logo"></a>            </div>
+
+                                      <div class=" col-xs-12 col-lg-3">
+              
+          <a href="/work/bioforce" class="ihe-overlay ihe-overlay--zoom-in" data-hover="+"><img typeof="foaf:Image" class="img-responsive" src="https://www.solidaire-info.org/sites/default/files/styles/bootstrap3_col6_square/public/portfolio/BIOFORCE_LOGO_12.jpg?itok=j2EC5fi-" width="960" height="1137" alt="Logo Bioforce" title="Logo Bioforce"></a>            </div>
+
+                                                                                      <div class=" col-xs-12 col-lg-3">
+              
+          <a href="/work/cidj" class="ihe-overlay ihe-overlay--zoom-in" data-hover="+"><img typeof="foaf:Image" class="img-responsive" src="https://www.solidaire-info.org/sites/default/files/styles/bootstrap3_col6_square/public/portfolio/cidj-logo.png?itok=hnE1uzMB" width="1140" height="1140" alt="Logo CIDJ" title="Logo CIDJ"></a>            </div>
+
+                                                                                      <div class=" col-xs-12 col-lg-3">
+              
+          <a href="/work/d%C3%A9l%C3%A9gation-catholique-pour-la-coop%C3%A9ration" class="ihe-overlay ihe-overlay--zoom-in" data-hover="+"><img typeof="foaf:Image" class="img-responsive" src="https://www.solidaire-info.org/sites/default/files/styles/bootstrap3_col6_square/public/portfolio/dcc-logo.png?itok=ROa4skWU" width="1140" height="1140" alt="Logo La DCC" title="Logo La DCC"></a>            </div>
+
+                                                              <div class="clearfix visible-lg-block"></div>
+                                                      <div class=" col-xs-12 col-lg-3">
+              
+          <a href="/work/france-volontaires" class="ihe-overlay ihe-overlay--zoom-in" data-hover="+"><img typeof="foaf:Image" class="img-responsive" src="https://www.solidaire-info.org/sites/default/files/styles/bootstrap3_col6_square/public/fvolcarre.jpg?itok=xA32-hiy" width="101" height="100" alt="France Volontaires" title="France Volontaires"></a>            </div>
+
+                                                                                      <div class=" col-xs-12 col-lg-3">
+              
+          <a href="/work/handicap-international-%E2%80%93-humanit%C3%A9-inclusion" class="ihe-overlay ihe-overlay--zoom-in" data-hover="+"><img typeof="foaf:Image" class="img-responsive" src="https://www.solidaire-info.org/sites/default/files/styles/bootstrap3_col6_square/public/hi.jpg?itok=HLoJ9ijv" width="1140" height="1140" alt="Handicap International Logo 2018" title="Handicap International Logo 2018"></a>            </div>
+
+                                                                                      <div class=" col-xs-12 col-lg-3">
+              
+          <a href="/work/m%C3%A9decins-du-monde" class="ihe-overlay ihe-overlay--zoom-in" data-hover="+"><img typeof="foaf:Image" class="img-responsive" src="https://www.solidaire-info.org/sites/default/files/styles/bootstrap3_col6_square/public/portfolio/mdm-logo.png?itok=K52ynP7W" width="1140" height="1140" alt="Logo M&eacute;decins du Monde" title="Logo M&eacute;decins du Monde"></a>            </div>
+
+                                                                                      <div class=" col-xs-12 col-lg-3">
+              
+          <a href="/work/passerelles-et-comp%C3%A9tences" class="ihe-overlay ihe-overlay--zoom-in" data-hover="+"><img typeof="foaf:Image" class="img-responsive" src="https://www.solidaire-info.org/sites/default/files/styles/bootstrap3_col6_square/public/portfolio/logo-passerelles-competences.png?itok=05vFQHFM" width="354" height="135" alt="Logo Passerelles et Comp&eacute;tences" title="Passerelles et Comp&eacute;tences"></a>            </div>
+
+                                                              <div class="clearfix visible-lg-block"></div>
+                                                      <div class=" col-xs-12 col-lg-3">
+              
+          <a href="/work/premi%C3%A8re-urgence-internationale" class="ihe-overlay ihe-overlay--zoom-in" data-hover="+"><img typeof="foaf:Image" class="img-responsive" src="https://www.solidaire-info.org/sites/default/files/styles/bootstrap3_col6_square/public/portfolio/pui-logo.png?itok=6ovp-HQ5" width="1140" height="1140" alt="Logo Premi&egrave;re Urgence Internationale" title="Logo Premi&egrave;re Urgence Internationale"></a>            </div>
+
+                                                                                      <div class=" col-xs-12 col-lg-3">
+              
+          <a href="/work/secours-islamique-france" class="ihe-overlay ihe-overlay--zoom-in" data-hover="+"><img typeof="foaf:Image" class="img-responsive" src="https://www.solidaire-info.org/sites/default/files/styles/bootstrap3_col6_square/public/portfolio/si-logo.png?itok=fZb6C-w9" width="1140" height="1140" alt="Logo Secours Islamique France" title="Logo Secours Islamique France"></a>            </div>
+
+                                                                                      <div class=" col-xs-12 col-lg-3">
+              
+          <a href="/work/service-de-coop%C3%A9ration-au-d%C3%A9veloppement" class="ihe-overlay ihe-overlay--zoom-in" data-hover="+"><img typeof="foaf:Image" class="img-responsive" src="https://www.solidaire-info.org/sites/default/files/styles/bootstrap3_col6_square/public/portfolio/scd-logo.png?itok=61Ln6QU6" width="1140" height="1140" alt="Logo SCD" title="Logo SCD"></a>            </div>
+
+                                                                                      <div class=" col-xs-12 col-lg-3">
+              
+          <a href="/work/solidarit%C3%A9s-international" class="ihe-overlay ihe-overlay--zoom-in" data-hover="+"><img typeof="foaf:Image" class="img-responsive" src="https://www.solidaire-info.org/sites/default/files/styles/bootstrap3_col6_square/public/portfolio/sol-logo.png?itok=6RzxDlHF" width="1140" height="1140" alt="Logo Solidarit&eacute;s International" title="Logo Solidarit&eacute;s International"></a>            </div>
+
+                                                              <div class="clearfix visible-lg-block"></div>
+                                                      <div class=" col-xs-12 col-lg-3">
+              
+          <a href="/work/solidarit%C3%A9s-jeunesses" class="ihe-overlay ihe-overlay--zoom-in" data-hover="+"><img typeof="foaf:Image" class="img-responsive" src="https://www.solidaire-info.org/sites/default/files/styles/bootstrap3_col6_square/public/solj-logo.png?itok=TbheHtaR" width="1140" height="1140" alt="Logo Solidarit&eacute;s Jeunesse" title="Logo Solidarit&eacute;s Jeunesse"></a>            </div>
+
+                                                                                  </div>
+    
+  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div></div></div></div></div></div><style><!-- .hover-style-gbwf2ul06y:hover  { opacity:1 !important;} --></style>
+</div>  </div>
+  </div>
+</div>
+
+</section>
+  </div>
+      </div>
+</footer>
+
+  <script src="https://www.solidaire-info.org/sites/default/files/js/js_FH_zrzdiQG7H5KDXbLm-0C8QDHbeayfj8_YlulDsRlY.js"></script>
+<script src="https://www.solidaire-info.org/sites/default/files/js/js_MRdvkC2u4oGsp5wVxBG1pGV5NrCPW3mssHxIn6G9tGE.js"></script>
+</body>
+</html>

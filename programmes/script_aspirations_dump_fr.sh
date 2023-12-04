@@ -18,7 +18,7 @@ lineno=1
 nb=1
 while read -r ASPIR
 do
-	curl $ASPIR > ../../aspirations/francais/fr_$lineno.html
-    w3m $ASPIR > ../../dumps-text/francais/fr_$lineno.txt
+	curl -s $ASPIR > ../aspirations/fr/fr_$lineno.html
+    lynx -dump -nolist -assume_charset=utf-8 --display_charset=utf-8 $ASPIR > ../dumps-text/fr/fr_$lineno.txt
 	lineno=$(expr $lineno + 1)
 done < "$URLS"
