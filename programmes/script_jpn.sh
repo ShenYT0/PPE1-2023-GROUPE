@@ -46,12 +46,13 @@ do
 
     if [ $code == "200" ] #-eq 200
     then
-        lynx -dump -nolist "../aspirations/japonais/jp-$var.html" > "../dumps-text/japonais/jp-$var.txt" #dump
-        cat "../dumps-text/japonais/jp-$var.txt" | python3 ./tokenize_japanese.py > "../dumps-text/japonais/jp-$var.txt"
-        compte=$(grep -i -o "食の安全" "../dumps-text/japonais/jp-$var.txt" | wc -l)
+        lynx -dump -nolist "../aspirations/japonais/jp-$var.html" > "../dumps-text/japonais/tmp.txt" #dump
+        cat "../dumps-text/japonais/tmp.txt" | python3 ./tokenize_japanese.py > "../dumps-text/japonais/jp-$var.txt"
+        rm "../dumps-text/japonais/tmp.txt"
+        compte=$(grep -i -o "食 の 安全" "../dumps-text/japonais/jp-$var.txt" | wc -l)
         dump="<a href=\"../dumps-text/japonais/jp-$var.txt\">dump-text</a>"
 
-        grep -i -C 3 "食の安全" "../dumps-text/japonais/jp-$var.txt" > "../contextes/japonais/jp-$var.txt"
+        grep -i -C 3 "食 の 安全" "../dumps-text/japonais/jp-$var.txt" > "../contextes/japonais/jp-$var.txt"
         #grep -A 1 -B 1 --color "食の安全" "../dumps-text/japonais/jp-$var.txt" > "../contextes/japonais/jp-$var.txt"
         contexte="<a href=\"../contextes/japonais/jp-$var.txt\">contexte</a>"
 
@@ -71,7 +72,8 @@ do
                     </tr>
                 ">>"../concordances/japonais/jp-$var.html"
         
-        grep -E -T -i "食の安全" ../contextes/japonais/jp-$var.txt | sed -E 's/(.*)(食の安全)(.*)/<tr><td>\1<\/td><td>\2<\/td><td>\3<\/td><\/tr>/'>>"../concordances/japonais/jp-$var.html"
+        # grep -E -T -i "食 の 安全" ../contextes/japonais/jp-$var.txt | sed -E 's/(.*)(食 の 安全)(.*)/<tr><td>\1<\/td><td>\2<\/td><td>\3<\/td><\/tr>/'>>"../concordances/japonais/jp-$var.html"
+        grep -i -P "(\w+\W){0,5}食 の 安全(\w+\W){0,5}" ../contextes/japonais/jp-$var.txt | sed -E 's/(.*)(食 の 安全)(.*)/<tr><td>\1<\/td><td>\2<\/td><td>\3<\/td><\/tr>/'>>"../concordances/japonais/jp-$var.html"
         echo "
             </table>
             </body>
