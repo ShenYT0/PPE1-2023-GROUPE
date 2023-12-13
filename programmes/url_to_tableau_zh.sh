@@ -77,7 +77,7 @@ do
 					    <th>cible</th>
 					    <th>droit</th>
 				    </tr>
-	    " >> ../concordances/chinois/zh_$lineno.html
+	    " > ../concordances/chinois/zh_$lineno.html
 
     ggrep -E -T -i "食品安全" ../contextes/chinois/zh_$lineno.txt | sed -E "s/(.*)(食品安全)(.*)/<tr><td>\1<\/td><td>\2<\/td><td>\3<\/td><\/tr>/">>"../concordances/chinois/zh_$lineno.html"
     echo "
