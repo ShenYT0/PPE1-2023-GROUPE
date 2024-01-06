@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 URLS=$1
 lineno=1
 
