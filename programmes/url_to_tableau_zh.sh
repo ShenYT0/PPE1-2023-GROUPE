@@ -77,7 +77,7 @@ do
 				    <tr>
 				        <th>gauche</th>
 					    <th>cible</th>
-					    <th>droit</th>
+					    <th>droite</th>
 				    </tr>
 	    " > ../concordances/chinois/zh_$lineno.html
 
