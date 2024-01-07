@@ -1,0 +1,287 @@
+<!DOCTYPE HTML>
+<!--
+	Escape Velocity by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Scripts - sécurité alimentaire</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header" class="wrapper">
+
+					<!-- Logo -->
+						<div id="logo">
+							<h1><a href="index.html">Sécurité alimentaire</a></h1>
+							<p>食品安全, 食の安全</p>
+						</div>
+
+					<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li class="current"><a href="index.html">ACCUEIL</a></li>
+							<li>
+								<a href="#">TABLEAUX</a>
+								<ul>
+									<li><a href="#">français</a></li>
+									<li><a href="./tableau_zh/tableau_zh.html">chinois</a></li>
+									<li><a href="#">japonais</a></li>
+								</ul>
+							</li>
+							<li><a href="iTrameur.html">ITRAMEUR</a></li>
+							<li><a href="Nuage & conclusion.html">NUAGE & CONLUSION</a></li>
+							<li><a href="Scripts.html">SCRIPTS</a></li>
+						</ul>
+					</nav>
+
+				</section>
+
+			<!-- Main -->
+				<div id="main" class="wrapper style2">
+					<div class="title">Scripts</div>
+					<div class="container">
+
+						<!-- Content -->
+							<div id="content">
+								<article class="box post">
+									<header class="style1">
+										<h2>Scripts du corpus français</h2>
+									</header>
+									<style>
+										.collapsible {
+											cursor: pointer;
+											padding: 18px;
+											width: 100%;
+											border: none;
+											text-align: left;
+											outline: none;
+											font-size: 16.5px;
+											color: white;
+											display: flex; /* 添加这一行以启用 Flex 布局 */
+											align-items: center;
+											margin-bottom: 30px; /* 添加这一行以在按钮之间设置底部外边距 */
+										}
+										.content {
+											padding: 0 18px;
+											max-height: 0;
+											overflow: hidden;
+											transition: max-height 0.2s ease-out;
+											font-size: 18px; 
+											display: flex;
+											flex-direction: column; /* 将子元素垂直排列 */
+										}
+										
+									</style>
+									<button class="collapsible" onclick="toggleContent('scripts-fr')">Traitement des URLs</button>
+									<pre id="scripts-fr" class="content">
+										<p>这里添加script内容</p>
+									</pre>
+									<script>
+										function toggleContent(contentId) {
+											var content = document.getElementById(contentId);
+											content.style.maxHeight = content.style.maxHeight === '0px' ? content.scrollHeight + 'px' : '0px';
+										}
+									</script>
+								</article>
+							</div>
+
+
+
+							<div id="content">
+								<article class="box post">
+									<header class="style1">
+										<h2>Scripts du corpus chinois</h2>
+									</header>
+									<button class="collapsible" onclick="toggleContent('scripts-zh')">Traitement des URLs & Concordances</button>
+									<pre id="scripts-zh" class="content">
+										<code>#!/usr/bin/env bash
+
+URLS=$1
+lineno=1
+
+if [ ! -f $URLS ]
+then
+	echo "On a besoins d'un fichier comme argument."
+	exit
+fi 
+
+echo "
+
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;meta charset=\"utf-8\"&gt;
+		&lt;meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"&gt;
+		&lt;title&gt;tableau chinois&lt;/title&gt;
+		&lt;link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css\"&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+
+		&lt;table class=\"table is-bordered is-striped is-narrow is-hoverable is-fullwidth\"&gt;
+			&lt;tr&gt;
+				&lt;th&gt;numéro&lt;/th&gt;
+				&lt;th&gt;urls&lt;/th&gt;
+				&lt;th&gt;code HTTP&lt;/th&gt;
+				&lt;th&gt;encodage&lt;/th&gt;
+				&lt;th&gt;HTML&lt;/th&gt;
+				&lt;th&gt;dump-text&lt;/th&gt;
+				&lt;th&gt;occurrences&lt;/th&gt;
+				&lt;th&gt;contextes&lt;/th&gt;
+				&lt;th&gt;concordances&lt;/th&gt;
+			&lt;/tr&gt;
+" > tableau_zh.html
+
+while read -r URL
+do 
+	CODE=$(curl -s -I -L -w "%{http_code}" -o /dev/null $URL)
+	#ENCODAGE=$(curl -s -I -L -w "%{content_type}" -o /dev/null $URL | ggrep -P -o "charset=\S+" | cut -d"=" -f2 | tail -n 1)
+	
+	ASPIR=$(curl $URL) 
+	DUMP=$(w3m $URL) 
+	echo "$ASPIR" > ../aspirations/chinois/zh_$lineno.html
+	echo "$DUMP" > ../dumps-text/chinois/zh_$lineno.txt 
+	
+	ENCODAGE=$(curl -s -I -L -w "%{content_type}" -o /dev/null $URL)
+	if [ "$ENCODAGE" = "text/html" ]
+	then
+		ENCODAGE=$(ggrep -P -o "charset=\S+" ../aspirations/chinois/zh_$lineno.html | sort | uniq | tail -n 1 | cut -d"=" -f2 | cut -d"\"" -f1 | tail -n 1)
+		if [ ! $ENCODAGE ]
+		then
+			ENCODAGE=$()
+			ENCODAGE=$(ggrep -P -o "charset=\S+" ../aspirations/chinois/zh_$lineno.html | sort | uniq | tail -n 1 | cut -d"=" -f2 | cut -d"\"" -f2 | cut -d"\"" -f1)
+		fi 
+	else
+	ENCODAGE=$(echo $ENCODAGE | ggrep -P -o "charset=\S+" | cut -d"=" -f2 | tail -n 1)
+fi
+
+OCCU=$(cat ../dumps-text/chinois/zh_$lineno.txt | egrep -o "食品安全" | wc -l)
+echo "$lineno\t$URL\t$CODE\t$ENCODAGE\t$OCCU" >> tableaux_zh.txt
+
+CONTEXTE=$(cat ../dumps-text/chinois/zh_$lineno.txt | egrep -B2 -A2 "食品安全" )
+echo "$CONTEXTE" > ../contextes/chinois/zh_$lineno.txt
+
+echo "
+	&lt;html&gt;
+		&lt;head&gt;
+		&lt;meta charset=\"utf-8\"&gt;
+			&lt;meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"&gt;
+			&lt;title&gt;Concordances&lt;/title&gt;
+			&lt;link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css\"&gt;
+		&lt;/head&gt;
+		&lt;body&gt;
+			&lt;table class=\"table\"&gt;
+				&lt;tr&gt;
+					&lt;th&gt;gauche&lt;/th&gt;
+					&lt;th&gt;cible&lt;/th&gt;
+					&lt;th&gt;droit&lt;/th&gt;
+				&lt;/tr&gt;
+	" > ../concordances/chinois/zh_$lineno.html
+
+ggrep -E -T -i "食品安全" ../contextes/chinois/zh_$lineno.txt | sed -E "s/(.*)(食品安全)(.*)/&lt;tr&gt;&lt;td&gt;\1&lt;\/td&gt;&lt;td&gt;\2&lt;\/td&gt;&lt;td&gt;\3&lt;\/td&gt;&lt;\/tr&gt;/">>"../concordances/chinois/zh_$lineno.html"
+echo "
+			&lt;/table&gt;
+		&lt;/body&gt;
+	&lt;/html&gt;
+	" >> ../concordances/chinois/zh_$lineno.html
+
+echo "
+			&lt;tr&gt;
+				&lt;td&gt;$lineno&lt;/td&gt;
+				&lt;td&gt;&lt;a href=\"$URL\"&gt;$URL&lt;/a&gt;&lt;/td&gt;
+				&lt;td&gt;$CODE&lt;/td&gt;
+				&lt;td&gt;$ENCODAGE&lt;/td&gt;
+				&lt;td&gt;&lt;a href=\"../aspirations/chinois/zh_$lineno.html\"&gt;html&lt;/a&gt;&lt;/td&gt;
+				&lt;td&gt;&lt;a href=\"../dumps-text/chinois/zh_$lineno.txt\"&gt;text&lt;/a&gt;&lt;/td&gt;
+				&lt;td&gt;$OCCU&lt;/td&gt;
+				&lt;td&gt;&lt;a href=\"../contextes/chinois/zh_$lineno.txt\"&gt;contexte&lt;/a&gt;&lt;/td&gt;
+				&lt;td&gt;&lt;a href=\"../concordances/chinois/zh_$lineno.html\"&gt;condordances&lt;/a&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+	" >> tableau_zh.html
+
+	lineno=$(expr $lineno + 1 )
+done < "$URLS"
+
+echo "
+		&lt;/table&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+" >> tableau_zh.html
+											
+
+										</code>
+									</pre>
+
+									<button class="collapsible" onclick="toggleContent('remplace-zh')">remplacer "食品 安全" par "食品安全"</button>
+									<pre id="remplace-zh" class="content">
+										<code>def remplace食品安全(source, destination) :<br>&Tab;with open(source) as s : <br>&Tab;&Tab;content = s.read()<br>&Tab;modified_content = content.replace('食品 安全', '食品安全')<br>&Tab;with open(destination, 'w') as d :<br>&Tab;&Tab;d.write(modified_content)
+										<br>def main():<br>&Tab;remplace食品安全("contextes-chinois_tok.txt", "contextes-chinois_tok_col.txt")
+										<br>if __name__ == "__main__":<br>&Tab;main()
+										</code>
+									</pre>
+
+									<button class="collapsible" onclick="toggleContent('stopwords-zh')">stopwords</button>
+									<pre id="stopwords-zh" class="content">
+										<code>with open('cn_stopwords.txt', 'r', encoding='utf-8') as file:<br>&Tab;stopwords = set([line.strip() for line in file if line.strip() != ''])
+										<br>with open('contextes-chinois_tok_col.txt', 'r', encoding='utf-8') as file:<br>&Tab;words = file.read().split()
+										<br>filtered_words = [word for word in words if word not in stopwords]
+										<br>with open('contextes-chinois_stop.txt', 'w', encoding='utf-8') as file:<br>&Tab;for word in filtered_words:<br>&Tab;&Tab;file.write(word + " ") 
+										</code>
+									</pre>
+
+									<button class="collapsible" onclick="toggleContent('wordcloud-zh')">nuage de mots</button>
+									<pre id="wordcloud-zh" class="content" style="white-space: normal;">
+										<code>wordcloud_cli --text contextes-chinois_stop.txt --fontfile 苹方简.ttf --mask mask_pomme.jpg --background white --color blue --imagefile nuage_zh.jpg</code>
+									</pre>
+
+								</article>
+							</div>
+
+
+
+							<div id="content">
+								<article class="box post">
+									<header class="style1">
+										<h2>Scripts du corpus japonais</h2>
+									</header>
+									<button class="collapsible" onclick="toggleContent('scripts-jp')">Traitement des URLs</button>
+									<pre id="scripts-jp" class="content">
+										<p>这里添加script内容</p>
+									</pre>
+								</article>
+							</div>
+					</div>
+				</div>
+
+			
+
+			<!-- Footer -->
+			<section id="footer" class="wrapper">
+				<div class="container">
+					<div id="copyright">
+						<ul>
+							<li>&copy; 2023/2024 - Sécurité Alimentaire - SHEN Yuntian • ZHANG Yu • ZHANG Weiqi</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
+
