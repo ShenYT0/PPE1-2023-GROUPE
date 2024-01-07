@@ -33,8 +33,11 @@ https://github.com/CourantenCourant
 2. Tableaux : ()
 Tableaux de français dans : ./tableaux/tableau_fr.html_
 
-3. Scripts :
+3. Scripts : ()
 Aspiration, dumps-text : script_aspirations_dump_fr.sh
 Contexte : lynx_to_contexte_fr.sh_
 Traitement des urls et création du tableau : url_to_tableau_fr.sh
+Concordancier : concordancier_fr.sh
+Création du corpus itrameur : make_itrameur_contexte_fr.sh
+Stopwords en français : stopwords_fr.py
 _
