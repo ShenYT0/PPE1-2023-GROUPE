@@ -25,7 +25,7 @@ To do list :
 1. Page d'accueil : 
 
 Présentation personnelle : ()
-Chargé de l'analyse du corpus français et de la rédaction des présentations. En tant qu'étudiant en TAL, la sécurité alimentaire est au coeur de ses préoccupation : après tout, rien ne nous empêche d'être un bon vivant...
+Chargé de l'analyse du corpus français et de la rédaction des présentations. En tant qu'étudiant en TAL, la sécurité alimentaire est au coeur de ses préoccupations : après tout, rien ne nous empêche d'être bon vivant...
 
 Mon github : ()
 https://github.com/CourantenCourant
