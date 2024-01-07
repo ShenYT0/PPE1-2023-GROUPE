@@ -2,166 +2,574 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <title>Tableau JPN</title>
 </head>
 <body>
-	<table class="table">
+    <div class=table-responsive>
+	<table class="table table-info table-hover table-sm">
         <tr>
             <th>num</th>
             <th>url</th>
             <th>requête</th>
             <th>encodage</th>
-			<th>nombre d'occurence</th>
+            <th>aspiration</th>
+            <th>dump-text</th>
+            <th>compte</th>
+            <th>contexte</th>
+            <th>concordance</th>
         </tr>
+
 		<tr>
-			<td>1</td><td>https://fr.wikipedia.org/wiki/S%C3%A9curit%C3%A9_alimentaire</td><td>UTF-8</td><td>200</td><td>      52</td>
+			<td>1</td>
+			<td><a href="https://fr.wikipedia.org/wiki/S%C3%A9curit%C3%A9_alimentaire">https://fr.wikipedia.org/wiki/S%C3%A9curit%C3%A9_alimentaire</td>
+			<td>200</td>
+			<td>UTF-8</td>
+			<td><a href=../aspirations/fr/fr_1.html>aspiration</a></td>
+			<td><a href=../dumps-text/fr/fr_1.txt>dump-text</a></td>
+			<td>      52</td>
+			<td><a href=../contextes/fr/fr_1.txt>contexte</a></td>
+			<td><a href=../concordances/fr/fr_1.html>concordance</a></td>
 		</tr>
 		<tr>
-			<td>2</td><td>https://www.banquemondiale.org/fr/topic/agriculture/brief/food-security-update/what-is-food-security</td><td>UTF-8</td><td>200</td><td>      16</td>
+			<td>2</td>
+			<td><a href="https://www.banquemondiale.org/fr/topic/agriculture/brief/food-security-update/what-is-food-security">https://www.banquemondiale.org/fr/topic/agriculture/brief/food-security-update/what-is-food-security</td>
+			<td>200</td>
+			<td>UTF-8</td>
+			<td><a href=../aspirations/fr/fr_2.html>aspiration</a></td>
+			<td><a href=../dumps-text/fr/fr_2.txt>dump-text</a></td>
+			<td>      16</td>
+			<td><a href=../contextes/fr/fr_2.txt>contexte</a></td>
+			<td><a href=../concordances/fr/fr_2.html>concordance</a></td>
 		</tr>
 		<tr>
-			<td>3</td><td>https://agriculture.gouv.fr/mots-cles/securite-alimentaire</td><td>UTF-8</td><td>200</td><td>       5</td>
+			<td>3</td>
+			<td><a href="https://agriculture.gouv.fr/mots-cles/securite-alimentaire">https://agriculture.gouv.fr/mots-cles/securite-alimentaire</td>
+			<td>200</td>
+			<td>UTF-8</td>
+			<td><a href=../aspirations/fr/fr_3.html>aspiration</a></td>
+			<td><a href=../dumps-text/fr/fr_3.txt>dump-text</a></td>
+			<td>       5</td>
+			<td><a href=../contextes/fr/fr_3.txt>contexte</a></td>
+			<td><a href=../concordances/fr/fr_3.html>concordance</a></td>
 		</tr>
 		<tr>
-			<td>4</td><td>https://kapitalis.com/tunisie/2023/12/04/rapport-smiar-la-securite-alimentaire-en-tunisie-a-lepreuve-de-la-secheresse/</td><td>UTF-8</td><td>200</td><td>       6</td>
+			<td>4</td>
+			<td><a href="https://kapitalis.com/tunisie/2023/12/04/rapport-smiar-la-securite-alimentaire-en-tunisie-a-lepreuve-de-la-secheresse/">https://kapitalis.com/tunisie/2023/12/04/rapport-smiar-la-securite-alimentaire-en-tunisie-a-lepreuve-de-la-secheresse/</td>
+			<td>200</td>
+			<td>UTF-8</td>
+			<td><a href=../aspirations/fr/fr_4.html>aspiration</a></td>
+			<td><a href=../dumps-text/fr/fr_4.txt>dump-text</a></td>
+			<td>       3</td>
+			<td><a href=../contextes/fr/fr_4.txt>contexte</a></td>
+			<td><a href=../concordances/fr/fr_4.html>concordance</a></td>
 		</tr>
 		<tr>
-			<td>5</td><td>https://www.consilium.europa.eu/fr/policies/food-security-and-affordability/</td><td></td><td>403</td><td>       0</td>
+			<td>5</td>
+			<td><a href="https://www.consilium.europa.eu/fr/policies/food-security-and-affordability/">https://www.consilium.europa.eu/fr/policies/food-security-and-affordability/</td>
+			<td>403</td>
+			<td></td>
+			<td><a href=../aspirations/fr/fr_5.html>aspiration</a></td>
+			<td><a href=../dumps-text/fr/fr_5.txt>dump-text</a></td>
+			<td>       0</td>
+			<td><a href=../contextes/fr/fr_5.txt>contexte</a></td>
+			<td><a href=../concordances/fr/fr_5.html>concordance</a></td>
 		</tr>
 		<tr>
-			<td>6</td><td>https://www.ukrinform.fr/rubric-ato/3791213-la-guerre-dagression-russe-contre-lukraine-a-provoque-un-impact-negatif-sur-la-securite-alimentaire-au-niveau-mondial.html</td><td></td><td>200</td><td>       6</td>
+			<td>6</td>
+			<td><a href="https://www.ukrinform.fr/rubric-ato/3791213-la-guerre-dagression-russe-contre-lukraine-a-provoque-un-impact-negatif-sur-la-securite-alimentaire-au-niveau-mondial.html">https://www.ukrinform.fr/rubric-ato/3791213-la-guerre-dagression-russe-contre-lukraine-a-provoque-un-impact-negatif-sur-la-securite-alimentaire-au-niveau-mondial.html</td>
+			<td>200</td>
+			<td></td>
+			<td><a href=../aspirations/fr/fr_6.html>aspiration</a></td>
+			<td><a href=../dumps-text/fr/fr_6.txt>dump-text</a></td>
+			<td>       6</td>
+			<td><a href=../contextes/fr/fr_6.txt>contexte</a></td>
+			<td><a href=../concordances/fr/fr_6.html>concordance</a></td>
 		</tr>
 		<tr>
-			<td>7</td><td>https://www.rts.ch/info/monde/13993692-linsecurite-alimentaire-sest-encore-aggravee-en-2022-dans-le-monde.html</td><td>UTF-8</td><td>200</td><td>       7</td>
+			<td>7</td>
+			<td><a href="https://www.rts.ch/info/monde/13993692-linsecurite-alimentaire-sest-encore-aggravee-en-2022-dans-le-monde.html">https://www.rts.ch/info/monde/13993692-linsecurite-alimentaire-sest-encore-aggravee-en-2022-dans-le-monde.html</td>
+			<td>200</td>
+			<td>UTF-8</td>
+			<td><a href=../aspirations/fr/fr_7.html>aspiration</a></td>
+			<td><a href=../dumps-text/fr/fr_7.txt>dump-text</a></td>
+			<td>       7</td>
+			<td><a href=../contextes/fr/fr_7.txt>contexte</a></td>
+			<td><a href=../concordances/fr/fr_7.html>concordance</a></td>
 		</tr>
 		<tr>
-			<td>8</td><td>https://www.radiofrance.fr/franceculture/podcasts/l-invite-e-des-matins-d-ete/le-defi-de-la-securite-alimentaire-nourrir-la-terre-nourrir-les-hommes-4441009</td><td>UTF-8</td><td>200</td><td>       8</td>
+			<td>8</td>
+			<td><a href="https://www.radiofrance.fr/franceculture/podcasts/l-invite-e-des-matins-d-ete/le-defi-de-la-securite-alimentaire-nourrir-la-terre-nourrir-les-hommes-4441009">https://www.radiofrance.fr/franceculture/podcasts/l-invite-e-des-matins-d-ete/le-defi-de-la-securite-alimentaire-nourrir-la-terre-nourrir-les-hommes-4441009</td>
+			<td>200</td>
+			<td>UTF-8</td>
+			<td><a href=../aspirations/fr/fr_8.html>aspiration</a></td>
+			<td><a href=../dumps-text/fr/fr_8.txt>dump-text</a></td>
+			<td>       8</td>
+			<td><a href=../contextes/fr/fr_8.txt>contexte</a></td>
+			<td><a href=../concordances/fr/fr_8.html>concordance</a></td>
 		</tr>
 		<tr>
-			<td>9</td><td>https://www.lepoint.fr/afrique/afrique-le-moment-opportun-pour-assurer-sa-securite-alimentaire-16-10-2023-2539589_3826.php#11</td><td>UTF-8</td><td>200</td><td>      11</td>
+			<td>9</td>
+			<td><a href="https://www.lepoint.fr/afrique/afrique-le-moment-opportun-pour-assurer-sa-securite-alimentaire-16-10-2023-2539589_3826.php#11">https://www.lepoint.fr/afrique/afrique-le-moment-opportun-pour-assurer-sa-securite-alimentaire-16-10-2023-2539589_3826.php#11</td>
+			<td>200</td>
+			<td>UTF-8</td>
+			<td><a href=../aspirations/fr/fr_9.html>aspiration</a></td>
+			<td><a href=../dumps-text/fr/fr_9.txt>dump-text</a></td>
+			<td>      11</td>
+			<td><a href=../contextes/fr/fr_9.txt>contexte</a></td>
+			<td><a href=../concordances/fr/fr_9.html>concordance</a></td>
 		</tr>
 		<tr>
-			<td>10</td><td>https://www.lyoncapitale.fr/economie/une-reforme-de-lomc-est-necessaire-pour-la-securite-alimentaire</td><td>UTF-8</td><td>200</td><td>      14</td>
+			<td>10</td>
+			<td><a href="https://www.lyoncapitale.fr/economie/une-reforme-de-lomc-est-necessaire-pour-la-securite-alimentaire">https://www.lyoncapitale.fr/economie/une-reforme-de-lomc-est-necessaire-pour-la-securite-alimentaire</td>
+			<td>200</td>
+			<td>UTF-8</td>
+			<td><a href=../aspirations/fr/fr_10.html>aspiration</a></td>
+			<td><a href=../dumps-text/fr/fr_10.txt>dump-text</a></td>
+			<td>      14</td>
+			<td><a href=../contextes/fr/fr_10.txt>contexte</a></td>
+			<td><a href=../concordances/fr/fr_10.html>concordance</a></td>
 		</tr>
 		<tr>
-			<td>11</td><td>https://www.lesechos.fr/monde/enjeux-internationaux/climat-demographie-gaspillage-la-securite-alimentaire-mondiale-sous-tension-1959621</td><td>UTF-8</td><td>200</td><td>       2</td>
+			<td>11</td>
+			<td><a href="https://www.lesechos.fr/monde/enjeux-internationaux/climat-demographie-gaspillage-la-securite-alimentaire-mondiale-sous-tension-1959621">https://www.lesechos.fr/monde/enjeux-internationaux/climat-demographie-gaspillage-la-securite-alimentaire-mondiale-sous-tension-1959621</td>
+			<td>200</td>
+			<td>UTF-8</td>
+			<td><a href=../aspirations/fr/fr_11.html>aspiration</a></td>
+			<td><a href=../dumps-text/fr/fr_11.txt>dump-text</a></td>
+			<td>       2</td>
+			<td><a href=../contextes/fr/fr_11.txt>contexte</a></td>
+			<td><a href=../concordances/fr/fr_11.html>concordance</a></td>
 		</tr>
 		<tr>
-			<td>12</td><td>https://www.capital.fr/economie-politique/maroc-son-sous-sol-renferme-un-tresor-garant-de-la-securite-alimentaire-mondiale-1483244</td><td>UTF-8</td><td>200</td><td>      10</td>
+			<td>12</td>
+			<td><a href="https://www.capital.fr/economie-politique/maroc-son-sous-sol-renferme-un-tresor-garant-de-la-securite-alimentaire-mondiale-1483244">https://www.capital.fr/economie-politique/maroc-son-sous-sol-renferme-un-tresor-garant-de-la-securite-alimentaire-mondiale-1483244</td>
+			<td>200</td>
+			<td>UTF-8</td>
+			<td><a href=../aspirations/fr/fr_12.html>aspiration</a></td>
+			<td><a href=../dumps-text/fr/fr_12.txt>dump-text</a></td>
+			<td>      10</td>
+			<td><a href=../contextes/fr/fr_12.txt>contexte</a></td>
+			<td><a href=../concordances/fr/fr_12.html>concordance</a></td>
 		</tr>
 		<tr>
-			<td>13</td><td>https://agriculture.gouv.fr/environnement-et-securite-alimentaire-le-cas-de-la-riziculture-vietnamienne-analyse-ndeg-193</td><td>UTF-8</td><td>200</td><td>      12</td>
+			<td>13</td>
+			<td><a href="https://agriculture.gouv.fr/environnement-et-securite-alimentaire-le-cas-de-la-riziculture-vietnamienne-analyse-ndeg-193">https://agriculture.gouv.fr/environnement-et-securite-alimentaire-le-cas-de-la-riziculture-vietnamienne-analyse-ndeg-193</td>
+			<td>200</td>
+			<td>UTF-8</td>
+			<td><a href=../aspirations/fr/fr_13.html>aspiration</a></td>
+			<td><a href=../dumps-text/fr/fr_13.txt>dump-text</a></td>
+			<td>      12</td>
+			<td><a href=../contextes/fr/fr_13.txt>contexte</a></td>
+			<td><a href=../concordances/fr/fr_13.html>concordance</a></td>
 		</tr>
 		<tr>
-			<td>14</td><td>https://www.geo.fr/environnement/partout-sur-terre-securite-alimentaire-menacee-par-vagues-de-chaleur-recoltes-canicules-marines-penurie-215858</td><td>UTF-8</td><td>200</td><td>      20</td>
+			<td>14</td>
+			<td><a href="https://www.geo.fr/environnement/partout-sur-terre-securite-alimentaire-menacee-par-vagues-de-chaleur-recoltes-canicules-marines-penurie-215858">https://www.geo.fr/environnement/partout-sur-terre-securite-alimentaire-menacee-par-vagues-de-chaleur-recoltes-canicules-marines-penurie-215858</td>
+			<td>200</td>
+			<td>UTF-8</td>
+			<td><a href=../aspirations/fr/fr_14.html>aspiration</a></td>
+			<td><a href=../dumps-text/fr/fr_14.txt>dump-text</a></td>
+			<td>      20</td>
+			<td><a href=../contextes/fr/fr_14.txt>contexte</a></td>
+			<td><a href=../concordances/fr/fr_14.html>concordance</a></td>
 		</tr>
 		<tr>
-			<td>15</td><td>https://www.cirad.fr/les-actualites-du-cirad/actualites/2023/miser-sur-les-legumineuses-pour-la-securite-alimentaire-en-afrique</td><td>UTF-8</td><td>200</td><td>       5</td>
+			<td>15</td>
+			<td><a href="https://www.cirad.fr/les-actualites-du-cirad/actualites/2023/miser-sur-les-legumineuses-pour-la-securite-alimentaire-en-afrique">https://www.cirad.fr/les-actualites-du-cirad/actualites/2023/miser-sur-les-legumineuses-pour-la-securite-alimentaire-en-afrique</td>
+			<td>200</td>
+			<td>UTF-8</td>
+			<td><a href=../aspirations/fr/fr_15.html>aspiration</a></td>
+			<td><a href=../dumps-text/fr/fr_15.txt>dump-text</a></td>
+			<td>       5</td>
+			<td><a href=../contextes/fr/fr_15.txt>contexte</a></td>
+			<td><a href=../concordances/fr/fr_15.html>concordance</a></td>
 		</tr>
 		<tr>
-			<td>16</td><td>https://www.afd.fr/fr/actualites/securite-alimentaire-encourager-echanges-entre-pays-africains</td><td>UTF-8</td><td>200</td><td>       6</td>
+			<td>16</td>
+			<td><a href="https://www.afd.fr/fr/actualites/securite-alimentaire-encourager-echanges-entre-pays-africains">https://www.afd.fr/fr/actualites/securite-alimentaire-encourager-echanges-entre-pays-africains</td>
+			<td>200</td>
+			<td>UTF-8</td>
+			<td><a href=../aspirations/fr/fr_16.html>aspiration</a></td>
+			<td><a href=../dumps-text/fr/fr_16.txt>dump-text</a></td>
+			<td>       6</td>
+			<td><a href=../contextes/fr/fr_16.txt>contexte</a></td>
+			<td><a href=../concordances/fr/fr_16.html>concordance</a></td>
 		</tr>
 		<tr>
-			<td>17</td><td>https://www.euractiv.fr/section/asie/opinion/la-securite-alimentaire-nouveau-moteur-de-la-cooperation-entre-le-kazakhstan-et-lue/</td><td>UTF-8</td><td>200</td><td>      11</td>
+			<td>17</td>
+			<td><a href="https://www.euractiv.fr/section/asie/opinion/la-securite-alimentaire-nouveau-moteur-de-la-cooperation-entre-le-kazakhstan-et-lue/">https://www.euractiv.fr/section/asie/opinion/la-securite-alimentaire-nouveau-moteur-de-la-cooperation-entre-le-kazakhstan-et-lue/</td>
+			<td>200</td>
+			<td>UTF-8</td>
+			<td><a href=../aspirations/fr/fr_17.html>aspiration</a></td>
+			<td><a href=../dumps-text/fr/fr_17.txt>dump-text</a></td>
+			<td>      11</td>
+			<td><a href=../contextes/fr/fr_17.txt>contexte</a></td>
+			<td><a href=../concordances/fr/fr_17.html>concordance</a></td>
 		</tr>
 		<tr>
-			<td>18</td><td>https://www.icrc.org/fr/document/la-securite-alimentaire-en-temps-de-conflit-arme</td><td></td><td>200</td><td>      13</td>
+			<td>18</td>
+			<td><a href="https://www.icrc.org/fr/document/la-securite-alimentaire-en-temps-de-conflit-arme">https://www.icrc.org/fr/document/la-securite-alimentaire-en-temps-de-conflit-arme</td>
+			<td>200</td>
+			<td></td>
+			<td><a href=../aspirations/fr/fr_18.html>aspiration</a></td>
+			<td><a href=../dumps-text/fr/fr_18.txt>dump-text</a></td>
+			<td>      13</td>
+			<td><a href=../contextes/fr/fr_18.txt>contexte</a></td>
+			<td><a href=../concordances/fr/fr_18.html>concordance</a></td>
 		</tr>
 		<tr>
-			<td>19</td><td>https://www.lesechos.fr/monde/afrique-moyen-orient/legypte-preoccupee-par-sa-securite-alimentaire-1978344</td><td>UTF-8</td><td>200</td><td>       3</td>
+			<td>19</td>
+			<td><a href="https://www.lesechos.fr/monde/afrique-moyen-orient/legypte-preoccupee-par-sa-securite-alimentaire-1978344">https://www.lesechos.fr/monde/afrique-moyen-orient/legypte-preoccupee-par-sa-securite-alimentaire-1978344</td>
+			<td>200</td>
+			<td>UTF-8</td>
+			<td><a href=../aspirations/fr/fr_19.html>aspiration</a></td>
+			<td><a href=../dumps-text/fr/fr_19.txt>dump-text</a></td>
+			<td>       3</td>
+			<td><a href=../contextes/fr/fr_19.txt>contexte</a></td>
+			<td><a href=../concordances/fr/fr_19.html>concordance</a></td>
 		</tr>
 		<tr>
-			<td>20</td><td>https://www.cgt.fr/actualites/france/industrie/conditions-de-travail/la-securite-alimentaire-necessite-des-services-de-controle-publics-efficaces</td><td>UTF-8</td><td>200</td><td>       4</td>
+			<td>20</td>
+			<td><a href="https://www.cgt.fr/actualites/france/industrie/conditions-de-travail/la-securite-alimentaire-necessite-des-services-de-controle-publics-efficaces">https://www.cgt.fr/actualites/france/industrie/conditions-de-travail/la-securite-alimentaire-necessite-des-services-de-controle-publics-efficaces</td>
+			<td>200</td>
+			<td>UTF-8</td>
+			<td><a href=../aspirations/fr/fr_20.html>aspiration</a></td>
+			<td><a href=../dumps-text/fr/fr_20.txt>dump-text</a></td>
+			<td>       4</td>
+			<td><a href=../contextes/fr/fr_20.txt>contexte</a></td>
+			<td><a href=../concordances/fr/fr_20.html>concordance</a></td>
 		</tr>
 		<tr>
-			<td>21</td><td>https://www.euractiv.fr/section/agriculture-alimentation/news/leak-la-reduction-des-pesticides-ne-pesera-pas-sur-la-securite-alimentaire-selon-la-commission/</td><td>UTF-8</td><td>200</td><td>       6</td>
+			<td>21</td>
+			<td><a href="https://www.euractiv.fr/section/agriculture-alimentation/news/leak-la-reduction-des-pesticides-ne-pesera-pas-sur-la-securite-alimentaire-selon-la-commission/">https://www.euractiv.fr/section/agriculture-alimentation/news/leak-la-reduction-des-pesticides-ne-pesera-pas-sur-la-securite-alimentaire-selon-la-commission/</td>
+			<td>200</td>
+			<td>UTF-8</td>
+			<td><a href=../aspirations/fr/fr_21.html>aspiration</a></td>
+			<td><a href=../dumps-text/fr/fr_21.txt>dump-text</a></td>
+			<td>       6</td>
+			<td><a href=../contextes/fr/fr_21.txt>contexte</a></td>
+			<td><a href=../concordances/fr/fr_21.html>concordance</a></td>
 		</tr>
 		<tr>
-			<td>22</td><td>https://www.diplomatie.gouv.fr/fr/politique-etrangere-de-la-france/developpement/autres-secteurs-d-importance/securite-alimentaire-nutrition-et-agriculture-durable/actualites-et-evenements-lies-a-la-securite-alimentaire-et-a-l-agriculture/article/securite-alimentaire-nutrition-et-agriculture-durable-la-strategie-francaise-22</td><td>UTF-8</td><td>200</td><td>       0</td>
+			<td>22</td>
+			<td><a href="https://www.diplomatie.gouv.fr/fr/politique-etrangere-de-la-france/developpement/autres-secteurs-d-importance/securite-alimentaire-nutrition-et-agriculture-durable/actualites-et-evenements-lies-a-la-securite-alimentaire-et-a-l-agriculture/article/securite-alimentaire-nutrition-et-agriculture-durable-la-strategie-francaise-22">https://www.diplomatie.gouv.fr/fr/politique-etrangere-de-la-france/developpement/autres-secteurs-d-importance/securite-alimentaire-nutrition-et-agriculture-durable/actualites-et-evenements-lies-a-la-securite-alimentaire-et-a-l-agriculture/article/securite-alimentaire-nutrition-et-agriculture-durable-la-strategie-francaise-22</td>
+			<td>200</td>
+			<td>UTF-8</td>
+			<td><a href=../aspirations/fr/fr_22.html>aspiration</a></td>
+			<td><a href=../dumps-text/fr/fr_22.txt>dump-text</a></td>
+			<td>       0</td>
+			<td><a href=../contextes/fr/fr_22.txt>contexte</a></td>
+			<td><a href=../concordances/fr/fr_22.html>concordance</a></td>
 		</tr>
 		<tr>
-			<td>23</td><td>https://www.oecd.org/fr/agriculture/sujets/securite-alimentaire/</td><td></td><td>403</td><td>       0</td>
+			<td>23</td>
+			<td><a href="https://www.oecd.org/fr/agriculture/sujets/securite-alimentaire/">https://www.oecd.org/fr/agriculture/sujets/securite-alimentaire/</td>
+			<td>403</td>
+			<td></td>
+			<td><a href=../aspirations/fr/fr_23.html>aspiration</a></td>
+			<td><a href=../dumps-text/fr/fr_23.txt>dump-text</a></td>
+			<td>       0</td>
+			<td><a href=../contextes/fr/fr_23.txt>contexte</a></td>
+			<td><a href=../concordances/fr/fr_23.html>concordance</a></td>
 		</tr>
 		<tr>
-			<td>24</td><td>https://dicoagroecologie.fr/dictionnaire/securite-alimentaire/</td><td>UTF-8</td><td>200</td><td>       7</td>
+			<td>24</td>
+			<td><a href="https://dicoagroecologie.fr/dictionnaire/securite-alimentaire/">https://dicoagroecologie.fr/dictionnaire/securite-alimentaire/</td>
+			<td>200</td>
+			<td>UTF-8</td>
+			<td><a href=../aspirations/fr/fr_24.html>aspiration</a></td>
+			<td><a href=../dumps-text/fr/fr_24.txt>dump-text</a></td>
+			<td>       7</td>
+			<td><a href=../contextes/fr/fr_24.txt>contexte</a></td>
+			<td><a href=../concordances/fr/fr_24.html>concordance</a></td>
 		</tr>
 		<tr>
-			<td>25</td><td>https://fondation-farm.org/securite-alimentaire-souverainete-alimentaire-tout-comprendre/</td><td>UTF-8</td><td>200</td><td>      43</td>
+			<td>25</td>
+			<td><a href="https://fondation-farm.org/securite-alimentaire-souverainete-alimentaire-tout-comprendre/">https://fondation-farm.org/securite-alimentaire-souverainete-alimentaire-tout-comprendre/</td>
+			<td>200</td>
+			<td>UTF-8</td>
+			<td><a href=../aspirations/fr/fr_25.html>aspiration</a></td>
+			<td><a href=../dumps-text/fr/fr_25.txt>dump-text</a></td>
+			<td>      43</td>
+			<td><a href=../contextes/fr/fr_25.txt>contexte</a></td>
+			<td><a href=../concordances/fr/fr_25.html>concordance</a></td>
 		</tr>
 		<tr>
-			<td>26</td><td>https://www.consilium.europa.eu/fr/policies/food-security-and-affordability/</td><td></td><td>403</td><td>       0</td>
+			<td>26</td>
+			<td><a href="https://www.consilium.europa.eu/fr/policies/food-security-and-affordability/">https://www.consilium.europa.eu/fr/policies/food-security-and-affordability/</td>
+			<td>403</td>
+			<td></td>
+			<td><a href=../aspirations/fr/fr_26.html>aspiration</a></td>
+			<td><a href=../dumps-text/fr/fr_26.txt>dump-text</a></td>
+			<td>       0</td>
+			<td><a href=../contextes/fr/fr_26.txt>contexte</a></td>
+			<td><a href=../concordances/fr/fr_26.html>concordance</a></td>
 		</tr>
 		<tr>
-			<td>27</td><td>https://commission.europa.eu/topics/food-safety_fr</td><td>UTF-8</td><td>200</td><td>       8</td>
+			<td>27</td>
+			<td><a href="https://commission.europa.eu/topics/food-safety_fr">https://commission.europa.eu/topics/food-safety_fr</td>
+			<td>200</td>
+			<td>UTF-8</td>
+			<td><a href=../aspirations/fr/fr_27.html>aspiration</a></td>
+			<td><a href=../dumps-text/fr/fr_27.txt>dump-text</a></td>
+			<td>       8</td>
+			<td><a href=../contextes/fr/fr_27.txt>contexte</a></td>
+			<td><a href=../concordances/fr/fr_27.html>concordance</a></td>
 		</tr>
 		<tr>
-			<td>28</td><td>https://www.oxfamfrance.org/agriculture-et-securite-alimentaire/</td><td>UTF-8</td><td>200</td><td>      19</td>
+			<td>28</td>
+			<td><a href="https://www.oxfamfrance.org/agriculture-et-securite-alimentaire/">https://www.oxfamfrance.org/agriculture-et-securite-alimentaire/</td>
+			<td>200</td>
+			<td>UTF-8</td>
+			<td><a href=../aspirations/fr/fr_28.html>aspiration</a></td>
+			<td><a href=../dumps-text/fr/fr_28.txt>dump-text</a></td>
+			<td>       0</td>
+			<td><a href=../contextes/fr/fr_28.txt>contexte</a></td>
+			<td><a href=../concordances/fr/fr_28.html>concordance</a></td>
 		</tr>
 		<tr>
-			<td>29</td><td>https://theconversation.com/une-alimentation-culturellement-adaptee-pourrait-paver-la-voie-a-la-securite-alimentaire-dans-larctique-canadien-218305</td><td>UTF-8</td><td>200</td><td>      15</td>
+			<td>29</td>
+			<td><a href="https://theconversation.com/une-alimentation-culturellement-adaptee-pourrait-paver-la-voie-a-la-securite-alimentaire-dans-larctique-canadien-218305">https://theconversation.com/une-alimentation-culturellement-adaptee-pourrait-paver-la-voie-a-la-securite-alimentaire-dans-larctique-canadien-218305</td>
+			<td>200</td>
+			<td>UTF-8</td>
+			<td><a href=../aspirations/fr/fr_29.html>aspiration</a></td>
+			<td><a href=../dumps-text/fr/fr_29.txt>dump-text</a></td>
+			<td>      15</td>
+			<td><a href=../contextes/fr/fr_29.txt>contexte</a></td>
+			<td><a href=../concordances/fr/fr_29.html>concordance</a></td>
 		</tr>
 		<tr>
-			<td>30</td><td>https://onu-rome.delegfrance.org/Comprendre-les-enjeux-de-la-securite-alimentaire-et-de-la-nutrition</td><td></td><td>200</td><td>       0</td>
+			<td>30</td>
+			<td><a href="https://onu-rome.delegfrance.org/Comprendre-les-enjeux-de-la-securite-alimentaire-et-de-la-nutrition">https://onu-rome.delegfrance.org/Comprendre-les-enjeux-de-la-securite-alimentaire-et-de-la-nutrition</td>
+			<td>200</td>
+			<td></td>
+			<td><a href=../aspirations/fr/fr_30.html>aspiration</a></td>
+			<td><a href=../dumps-text/fr/fr_30.txt>dump-text</a></td>
+			<td>       0</td>
+			<td><a href=../contextes/fr/fr_30.txt>contexte</a></td>
+			<td><a href=../concordances/fr/fr_30.html>concordance</a></td>
 		</tr>
 		<tr>
-			<td>31</td><td>https://onu.delegfrance.org/Securite-alimentaire-nutrition-et-agriculture-durable-la-strategie-francaise</td><td></td><td>200</td><td>       0</td>
+			<td>31</td>
+			<td><a href="https://onu.delegfrance.org/Securite-alimentaire-nutrition-et-agriculture-durable-la-strategie-francaise">https://onu.delegfrance.org/Securite-alimentaire-nutrition-et-agriculture-durable-la-strategie-francaise</td>
+			<td>200</td>
+			<td></td>
+			<td><a href=../aspirations/fr/fr_31.html>aspiration</a></td>
+			<td><a href=../dumps-text/fr/fr_31.txt>dump-text</a></td>
+			<td>       0</td>
+			<td><a href=../contextes/fr/fr_31.txt>contexte</a></td>
+			<td><a href=../concordances/fr/fr_31.html>concordance</a></td>
 		</tr>
 		<tr>
-			<td>32</td><td>https://tnova.fr/societe/alimentation/vers-une-securite-alimentaire-durable-enjeux-initiatives-et-principes-directeurs/</td><td></td><td>200</td><td>     127</td>
+			<td>32</td>
+			<td><a href="https://tnova.fr/societe/alimentation/vers-une-securite-alimentaire-durable-enjeux-initiatives-et-principes-directeurs/">https://tnova.fr/societe/alimentation/vers-une-securite-alimentaire-durable-enjeux-initiatives-et-principes-directeurs/</td>
+			<td>200</td>
+			<td></td>
+			<td><a href=../aspirations/fr/fr_32.html>aspiration</a></td>
+			<td><a href=../dumps-text/fr/fr_32.txt>dump-text</a></td>
+			<td>     127</td>
+			<td><a href=../contextes/fr/fr_32.txt>contexte</a></td>
+			<td><a href=../concordances/fr/fr_32.html>concordance</a></td>
 		</tr>
 		<tr>
-			<td>33</td><td>https://www.wto.org/french/tratop_f/agric_f/food_security_f.htm</td><td></td><td>200</td><td>      13</td>
+			<td>33</td>
+			<td><a href="https://www.wto.org/french/tratop_f/agric_f/food_security_f.htm">https://www.wto.org/french/tratop_f/agric_f/food_security_f.htm</td>
+			<td>200</td>
+			<td></td>
+			<td><a href=../aspirations/fr/fr_33.html>aspiration</a></td>
+			<td><a href=../dumps-text/fr/fr_33.txt>dump-text</a></td>
+			<td>      13</td>
+			<td><a href=../contextes/fr/fr_33.txt>contexte</a></td>
+			<td><a href=../concordances/fr/fr_33.html>concordance</a></td>
 		</tr>
 		<tr>
-			<td>34</td><td>https://rrapps-bfc.org/glossaire/securite-alimentaire</td><td>UTF-8</td><td>200</td><td>       6</td>
+			<td>34</td>
+			<td><a href="https://rrapps-bfc.org/glossaire/securite-alimentaire">https://rrapps-bfc.org/glossaire/securite-alimentaire</td>
+			<td>200</td>
+			<td>UTF-8</td>
+			<td><a href=../aspirations/fr/fr_34.html>aspiration</a></td>
+			<td><a href=../dumps-text/fr/fr_34.txt>dump-text</a></td>
+			<td>       6</td>
+			<td><a href=../contextes/fr/fr_34.txt>contexte</a></td>
+			<td><a href=../concordances/fr/fr_34.html>concordance</a></td>
 		</tr>
 		<tr>
-			<td>35</td><td>https://www.ifrc.org/fr/notre-travail/catastrophes-climat-et-crises/s%C3%A9curit%C3%A9-alimentaire-et-moyens-subsistance</td><td>UTF-8</td><td>200</td><td>      14</td>
+			<td>35</td>
+			<td><a href="https://www.ifrc.org/fr/notre-travail/catastrophes-climat-et-crises/s%C3%A9curit%C3%A9-alimentaire-et-moyens-subsistance">https://www.ifrc.org/fr/notre-travail/catastrophes-climat-et-crises/s%C3%A9curit%C3%A9-alimentaire-et-moyens-subsistance</td>
+			<td>200</td>
+			<td>UTF-8</td>
+			<td><a href=../aspirations/fr/fr_35.html>aspiration</a></td>
+			<td><a href=../dumps-text/fr/fr_35.txt>dump-text</a></td>
+			<td>      14</td>
+			<td><a href=../contextes/fr/fr_35.txt>contexte</a></td>
+			<td><a href=../concordances/fr/fr_35.html>concordance</a></td>
 		</tr>
 		<tr>
-			<td>36</td><td>https://www.securite-alimentaire.com/</td><td>UTF-8</td><td>200</td><td>       0</td>
+			<td>36</td>
+			<td><a href="https://www.securite-alimentaire.com/">https://www.securite-alimentaire.com/</td>
+			<td>200</td>
+			<td>UTF-8</td>
+			<td><a href=../aspirations/fr/fr_36.html>aspiration</a></td>
+			<td><a href=../dumps-text/fr/fr_36.txt>dump-text</a></td>
+			<td>       0</td>
+			<td><a href=../contextes/fr/fr_36.txt>contexte</a></td>
+			<td><a href=../concordances/fr/fr_36.html>concordance</a></td>
 		</tr>
 		<tr>
-			<td>37</td><td>https://www.lafaimexpliquee.org/La_faim_expliquee/La_securite_alimentaire.html</td><td></td><td>200</td><td>      11</td>
+			<td>37</td>
+			<td><a href="https://www.lafaimexpliquee.org/La_faim_expliquee/La_securite_alimentaire.html">https://www.lafaimexpliquee.org/La_faim_expliquee/La_securite_alimentaire.html</td>
+			<td>200</td>
+			<td></td>
+			<td><a href=../aspirations/fr/fr_37.html>aspiration</a></td>
+			<td><a href=../dumps-text/fr/fr_37.txt>dump-text</a></td>
+			<td>      11</td>
+			<td><a href=../contextes/fr/fr_37.txt>contexte</a></td>
+			<td><a href=../concordances/fr/fr_37.html>concordance</a></td>
 		</tr>
 		<tr>
-			<td>38</td><td>https://www.cirad.fr/nos-activites-notre-impact/enseignement-et-formation/formation-professionnelle/catalogue-des-formations/securite-alimentaire-sante-et-nutrition</td><td>UTF-8</td><td>200</td><td>       7</td>
+			<td>38</td>
+			<td><a href="https://www.cirad.fr/nos-activites-notre-impact/enseignement-et-formation/formation-professionnelle/catalogue-des-formations/securite-alimentaire-sante-et-nutrition">https://www.cirad.fr/nos-activites-notre-impact/enseignement-et-formation/formation-professionnelle/catalogue-des-formations/securite-alimentaire-sante-et-nutrition</td>
+			<td>200</td>
+			<td>UTF-8</td>
+			<td><a href=../aspirations/fr/fr_38.html>aspiration</a></td>
+			<td><a href=../dumps-text/fr/fr_38.txt>dump-text</a></td>
+			<td>       7</td>
+			<td><a href=../contextes/fr/fr_38.txt>contexte</a></td>
+			<td><a href=../concordances/fr/fr_38.html>concordance</a></td>
 		</tr>
 		<tr>
-			<td>39</td><td>https://www.elysee.fr/emmanuel-macron/2023/05/20/plan-daction-de-hiroshima-pour-une-securite-alimentaire-mondiale-resiliente</td><td>UTF-8</td><td>200</td><td>      41</td>
+			<td>39</td>
+			<td><a href="https://www.elysee.fr/emmanuel-macron/2023/05/20/plan-daction-de-hiroshima-pour-une-securite-alimentaire-mondiale-resiliente">https://www.elysee.fr/emmanuel-macron/2023/05/20/plan-daction-de-hiroshima-pour-une-securite-alimentaire-mondiale-resiliente</td>
+			<td>200</td>
+			<td>UTF-8</td>
+			<td><a href=../aspirations/fr/fr_39.html>aspiration</a></td>
+			<td><a href=../dumps-text/fr/fr_39.txt>dump-text</a></td>
+			<td>      41</td>
+			<td><a href=../contextes/fr/fr_39.txt>contexte</a></td>
+			<td><a href=../concordances/fr/fr_39.html>concordance</a></td>
 		</tr>
 		<tr>
-			<td>40</td><td>https://www.alimentarium.org/fr/savoir/la-s%C3%A9curit%C3%A9-alimentaire</td><td>UTF-8</td><td>200</td><td>      14</td>
+			<td>40</td>
+			<td><a href="https://www.alimentarium.org/fr/savoir/la-s%C3%A9curit%C3%A9-alimentaire">https://www.alimentarium.org/fr/savoir/la-s%C3%A9curit%C3%A9-alimentaire</td>
+			<td>200</td>
+			<td>UTF-8</td>
+			<td><a href=../aspirations/fr/fr_40.html>aspiration</a></td>
+			<td><a href=../dumps-text/fr/fr_40.txt>dump-text</a></td>
+			<td>      14</td>
+			<td><a href=../contextes/fr/fr_40.txt>contexte</a></td>
+			<td><a href=../concordances/fr/fr_40.html>concordance</a></td>
 		</tr>
 		<tr>
-			<td>41</td><td>https://safetyculture.com/fr/themes/securite-alimentaire/</td><td>UTF-8</td><td>200</td><td>       0</td>
+			<td>41</td>
+			<td><a href="https://safetyculture.com/fr/themes/securite-alimentaire/">https://safetyculture.com/fr/themes/securite-alimentaire/</td>
+			<td>200</td>
+			<td>UTF-8</td>
+			<td><a href=../aspirations/fr/fr_41.html>aspiration</a></td>
+			<td><a href=../dumps-text/fr/fr_41.txt>dump-text</a></td>
+			<td>       0</td>
+			<td><a href=../contextes/fr/fr_41.txt>contexte</a></td>
+			<td><a href=../concordances/fr/fr_41.html>concordance</a></td>
 		</tr>
 		<tr>
-			<td>42</td><td>https://www.fondapol.org/etude/bachelier-securite-alimentaire-un-enjeu-global/</td><td>UTF-8</td><td>200</td><td>      30</td>
+			<td>42</td>
+			<td><a href="https://www.fondapol.org/etude/bachelier-securite-alimentaire-un-enjeu-global/">https://www.fondapol.org/etude/bachelier-securite-alimentaire-un-enjeu-global/</td>
+			<td>200</td>
+			<td>UTF-8</td>
+			<td><a href=../aspirations/fr/fr_42.html>aspiration</a></td>
+			<td><a href=../dumps-text/fr/fr_42.txt>dump-text</a></td>
+			<td>      30</td>
+			<td><a href=../contextes/fr/fr_42.txt>contexte</a></td>
+			<td><a href=../concordances/fr/fr_42.html>concordance</a></td>
 		</tr>
 		<tr>
-			<td>43</td><td>https://www.solidaire-info.org/domaines/s%C3%A9curit%C3%A9-alimentaire</td><td>UTF-8</td><td>200</td><td>      14</td>
+			<td>43</td>
+			<td><a href="https://www.solidaire-info.org/domaines/s%C3%A9curit%C3%A9-alimentaire">https://www.solidaire-info.org/domaines/s%C3%A9curit%C3%A9-alimentaire</td>
+			<td>200</td>
+			<td>UTF-8</td>
+			<td><a href=../aspirations/fr/fr_43.html>aspiration</a></td>
+			<td><a href=../dumps-text/fr/fr_43.txt>dump-text</a></td>
+			<td>      14</td>
+			<td><a href=../contextes/fr/fr_43.txt>contexte</a></td>
+			<td><a href=../concordances/fr/fr_43.html>concordance</a></td>
 		</tr>
 		<tr>
-			<td>44</td><td>https://www.accioncontraelhambre.org/fr/securite-alimentaire-et-moyens-dexistence-0</td><td>UTF-8</td><td>200</td><td>      13</td>
+			<td>44</td>
+			<td><a href="https://www.accioncontraelhambre.org/fr/securite-alimentaire-et-moyens-dexistence-0">https://www.accioncontraelhambre.org/fr/securite-alimentaire-et-moyens-dexistence-0</td>
+			<td>200</td>
+			<td>UTF-8</td>
+			<td><a href=../aspirations/fr/fr_44.html>aspiration</a></td>
+			<td><a href=../dumps-text/fr/fr_44.txt>dump-text</a></td>
+			<td>      13</td>
+			<td><a href=../contextes/fr/fr_44.txt>contexte</a></td>
+			<td><a href=../concordances/fr/fr_44.html>concordance</a></td>
 		</tr>
 		<tr>
-			<td>45</td><td>https://www.rtl.fr/sujet/securite-alimentaire</td><td>UTF-8</td><td>200</td><td>      17</td>
+			<td>45</td>
+			<td><a href="https://www.rtl.fr/sujet/securite-alimentaire">https://www.rtl.fr/sujet/securite-alimentaire</td>
+			<td>200</td>
+			<td>UTF-8</td>
+			<td><a href=../aspirations/fr/fr_45.html>aspiration</a></td>
+			<td><a href=../dumps-text/fr/fr_45.txt>dump-text</a></td>
+			<td>      18</td>
+			<td><a href=../contextes/fr/fr_45.txt>contexte</a></td>
+			<td><a href=../concordances/fr/fr_45.html>concordance</a></td>
 		</tr>
 		<tr>
-			<td>46</td><td>https://ccfd-terresolidaire.org/tag/securite-alimentaire/</td><td>UTF-8</td><td>200</td><td>      32</td>
+			<td>46</td>
+			<td><a href="https://ccfd-terresolidaire.org/tag/securite-alimentaire/">https://ccfd-terresolidaire.org/tag/securite-alimentaire/</td>
+			<td>200</td>
+			<td>UTF-8</td>
+			<td><a href=../aspirations/fr/fr_46.html>aspiration</a></td>
+			<td><a href=../dumps-text/fr/fr_46.txt>dump-text</a></td>
+			<td>      32</td>
+			<td><a href=../contextes/fr/fr_46.txt>contexte</a></td>
+			<td><a href=../concordances/fr/fr_46.html>concordance</a></td>
 		</tr>
 		<tr>
-			<td>47</td><td>https://www.senat.fr/lc/lc74/lc74_mono.html</td><td>UTF-8</td><td>200</td><td>      60</td>
+			<td>47</td>
+			<td><a href="https://www.senat.fr/lc/lc74/lc74_mono.html">https://www.senat.fr/lc/lc74/lc74_mono.html</td>
+			<td>200</td>
+			<td>UTF-8</td>
+			<td><a href=../aspirations/fr/fr_47.html>aspiration</a></td>
+			<td><a href=../dumps-text/fr/fr_47.txt>dump-text</a></td>
+			<td>      60</td>
+			<td><a href=../contextes/fr/fr_47.txt>contexte</a></td>
+			<td><a href=../concordances/fr/fr_47.html>concordance</a></td>
 		</tr>
 		<tr>
-			<td>48</td><td>https://blogs.worldbank.org/fr/voices/securite-alimentaire-et-nutritionnelle-dans-le-monde-vers-une-action-eclairee-transparente</td><td>UTF-8</td><td>200</td><td>      14</td>
+			<td>48</td>
+			<td><a href="https://blogs.worldbank.org/fr/voices/securite-alimentaire-et-nutritionnelle-dans-le-monde-vers-une-action-eclairee-transparente">https://blogs.worldbank.org/fr/voices/securite-alimentaire-et-nutritionnelle-dans-le-monde-vers-une-action-eclairee-transparente</td>
+			<td>200</td>
+			<td>UTF-8</td>
+			<td><a href=../aspirations/fr/fr_48.html>aspiration</a></td>
+			<td><a href=../dumps-text/fr/fr_48.txt>dump-text</a></td>
+			<td>      14</td>
+			<td><a href=../contextes/fr/fr_48.txt>contexte</a></td>
+			<td><a href=../concordances/fr/fr_48.html>concordance</a></td>
 		</tr>
 		<tr>
-			<td>49</td><td>https://eriks.fr/fr/societe/know-how-hub/blog/legislation-reglementation-securite-alimentaire/</td><td></td><td>200</td><td>      17</td>
+			<td>49</td>
+			<td><a href="https://eriks.fr/fr/societe/know-how-hub/blog/legislation-reglementation-securite-alimentaire/">https://eriks.fr/fr/societe/know-how-hub/blog/legislation-reglementation-securite-alimentaire/</td>
+			<td>200</td>
+			<td></td>
+			<td><a href=../aspirations/fr/fr_49.html>aspiration</a></td>
+			<td><a href=../dumps-text/fr/fr_49.txt>dump-text</a></td>
+			<td>      17</td>
+			<td><a href=../contextes/fr/fr_49.txt>contexte</a></td>
+			<td><a href=../concordances/fr/fr_49.html>concordance</a></td>
 		</tr>
 		<tr>
-			<td>50</td><td>https://www.inter-reseaux.org/publication/59-62-quelles-politiques-pour-les-populations-rurales-pauvres-du-sahel/securite-alimentaire-nutrition-resilience-quelques-definitions/</td><td>UTF-8</td><td>200</td><td>      49</td>
+			<td>50</td>
+			<td><a href="https://www.inter-reseaux.org/publication/59-62-quelles-politiques-pour-les-populations-rurales-pauvres-du-sahel/securite-alimentaire-nutrition-resilience-quelques-definitions/">https://www.inter-reseaux.org/publication/59-62-quelles-politiques-pour-les-populations-rurales-pauvres-du-sahel/securite-alimentaire-nutrition-resilience-quelques-definitions/</td>
+			<td>200</td>
+			<td>UTF-8</td>
+			<td><a href=../aspirations/fr/fr_50.html>aspiration</a></td>
+			<td><a href=../dumps-text/fr/fr_50.txt>dump-text</a></td>
+			<td>      49</td>
+			<td><a href=../contextes/fr/fr_50.txt>contexte</a></td>
+			<td><a href=../concordances/fr/fr_50.html>concordance</a></td>
 		</tr>
 
 	</table>
