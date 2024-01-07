@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 URLS=$1
 lineno=1
 
@@ -36,13 +38,26 @@ echo "
 while read -r URL
 do 
     CODE=$(curl -s -I -L -w "%{http_code}" -o /dev/null $URL)
-    ENCODAGE=$(curl -s -I -L -w "%{content_type}" -o /dev/null $URL | ggrep -P -o "charset=\S+" | cut -d"=" -f2 | tail -n 1)
+    #ENCODAGE=$(curl -s -I -L -w "%{content_type}" -o /dev/null $URL | ggrep -P -o "charset=\S+" | cut -d"=" -f2 | tail -n 1)
     
     ASPIR=$(curl $URL) 
     DUMP=$(w3m $URL) 
     echo "$ASPIR" > ../aspirations/chinois/zh_$lineno.html
     echo "$DUMP" > ../dumps-text/chinois/zh_$lineno.txt 
     
+    ENCODAGE=$(curl -s -I -L -w "%{content_type}" -o /dev/null $URL)
+    if [ "$ENCODAGE" = "text/html" ]
+    then
+        ENCODAGE=$(ggrep -P -o "charset=\S+" ../aspirations/chinois/zh_$lineno.html | sort | uniq | tail -n 1 | cut -d"=" -f2 | cut -d"\"" -f1 | tail -n 1)
+        if [ ! $ENCODAGE ]
+        then
+            ENCODAGE=$()
+            ENCODAGE=$(ggrep -P -o "charset=\S+" ../aspirations/chinois/zh_$lineno.html | sort | uniq | tail -n 1 | cut -d"=" -f2 | cut -d"\"" -f2 | cut -d"\"" -f1)
+        fi 
+    else
+        ENCODAGE=$(echo $ENCODAGE | ggrep -P -o "charset=\S+" | cut -d"=" -f2 | tail -n 1)
+    fi
+
     OCCU=$(cat ../dumps-text/chinois/zh_$lineno.txt | egrep -o "食品安全" | wc -l)
     echo "$lineno\t$URL\t$CODE\t$ENCODAGE\t$OCCU" >> tableaux_zh.txt
 
@@ -62,9 +77,9 @@ do
 				    <tr>
 				        <th>gauche</th>
 					    <th>cible</th>
-					    <th>droit</th>
+					    <th>droite</th>
 				    </tr>
-	    " >> ../concordances/chinois/zh_$lineno.html
+	    " > ../concordances/chinois/zh_$lineno.html
 
     ggrep -E -T -i "食品安全" ../contextes/chinois/zh_$lineno.txt | sed -E "s/(.*)(食品安全)(.*)/<tr><td>\1<\/td><td>\2<\/td><td>\3<\/td><\/tr>/">>"../concordances/chinois/zh_$lineno.html"
     echo "
