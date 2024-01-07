@@ -12,5 +12,15 @@ def main():
         for word in filtered_words:
             file.write(word + " ")  
 
+
+    with open('../img/Analyse_jpn/nuageWord.txt', 'r', encoding='utf-8') as file:
+        words_n = file.read().split()
+
+    filtered_words_n = [word for word in words_n if word not in stopwords]
+
+    with open('../img/Analyse_jpn/nuageWord_stop.txt', 'w', encoding='utf-8') as file:
+        for word in filtered_words_n:
+            file.write(word + " ")  
+
 if __name__ == "__main__":
     main()

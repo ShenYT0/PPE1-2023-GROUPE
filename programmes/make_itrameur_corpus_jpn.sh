@@ -7,6 +7,11 @@ then
     rm "../itrameur/$1-$2.txt"
 fi
 
+if [ -f "../img/Analyse_jpn/nuageWord.txt" ];
+then
+    rm "../img/Analyse_jpn/nuageWord.txt"
+fi
+
 echo "<lang=\"$2\">" >> "../itrameur/$1-$2.txt"
 
 for file in ../"$1"/"$2"/*; do
@@ -15,6 +20,8 @@ for file in ../"$1"/"$2"/*; do
         filename_no_ext=$(basename -- "$filename" | cut -f 1 -d '.')
         echo "<page=\"$filename_no_ext\">
         <text>" >> "../itrameur/$1-$2.txt"
+
+        cat "$file" >> "../img/Analyse_jpn/nuageWord.txt"
 
         #cat "$file" >>  "../itrameur/$1-$2.txt"
         sed -e 's/&/\&amp;/g' -e 's/</\&lt;/g' -e 's/>/\&gt;/g' "$file" >> "../itrameur/$1-$2.txt"
