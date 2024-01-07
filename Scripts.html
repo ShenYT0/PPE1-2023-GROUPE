@@ -10,6 +10,16 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+<!-- and it's easy to individually load additional languages -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+
+<script>hljs.highlightAll();</script>
+
 	</head>
 	<body class="no-sidebar is-preload">
 		<div id="page-wrapper">
@@ -81,7 +91,7 @@
 									</style>
 									<button class="collapsible" onclick="toggleContent('Traitement urls')">Traitement des urls et création du tableau</button>
 									<pre id="Traitement urls" class="content">
-										<code>#!/usr/bin/env bash
+										<code class="nohighlight">#!/usr/bin/env bash
 
 chemin_fichier=$1
 count=1
@@ -152,7 +162,7 @@ echo "
 									</pre>
 									<button class="collapsible" onclick="toggleContent('scripts-fr')">Aspiration, dumps-text</button>
 									<pre id="scripts-fr" class="content">
-										<code>#!/usr/bin/env bash
+										<code class="nohighlight">#!/usr/bin/env bash
 
 if [[ $# -ne 1 ]];
 then
@@ -180,7 +190,7 @@ done < "$URLS"
 									</pre>
 									<button class="collapsible" onclick="toggleContent('Contexte')">Contexte</button>
 									<pre id="Contexte" class="content">
-										<code>#!/usr/bin/env bash
+										<code class="nohighlight">#!/usr/bin/env bash
 
 #lynx每个链接，找关键词，显示前两行后两行，把结果储存到contextes文件夹里，重复50次
 
@@ -197,7 +207,7 @@ done < "$URLS"
 									
 									<button class="collapsible" onclick="toggleContent('Concordancier')">Concordancier</button>
 									<pre id="Concordancier" class="content">
-										<code>#!/usr/bin/env bash
+										<code class="nohighlight">#!/usr/bin/env bash
 
 numero_fichier=1
 
@@ -254,7 +264,7 @@ echo "&lt/lang>" >> ../itrameur/contexte-fr.txt
 									</pre>
 									<button class="collapsible" onclick="toggleContent('Stopwords')">Stopwords en français</button>
 									<pre id="Stopwords" class="content">
-										<code>#!/usr/bin/env python3
+										<code class="nohighlight">#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
 Created on Sat Jan  6 23:31:17 2024
@@ -300,7 +310,7 @@ with open('../itrameur/contextes_fr_stop.txt', 'w') as file:
 									</header>
 									<button class="collapsible" onclick="toggleContent('scripts-zh')">Traitement des URLs & Concordances</button>
 									<pre id="scripts-zh" class="content">
-										<code>#!/usr/bin/env bash
+										<code class="nohighlight">#!/usr/bin/env bash
 
 URLS=$1
 lineno=1
@@ -418,7 +428,7 @@ echo "
 
 									<button class="collapsible" onclick="toggleContent('remplace-zh')">remplacer "食品 安全" par "食品安全"</button>
 									<pre id="remplace-zh" class="content">
-										<code>def remplace食品安全(source, destination) :<br>&Tab;with open(source) as s : <br>&Tab;&Tab;content = s.read()<br>&Tab;modified_content = content.replace('食品 安全', '食品安全')<br>&Tab;with open(destination, 'w') as d :<br>&Tab;&Tab;d.write(modified_content)
+										<code class="nohighlight">def remplace食品安全(source, destination) :<br>&Tab;with open(source) as s : <br>&Tab;&Tab;content = s.read()<br>&Tab;modified_content = content.replace('食品 安全', '食品安全')<br>&Tab;with open(destination, 'w') as d :<br>&Tab;&Tab;d.write(modified_content)
 										<br>def main():<br>&Tab;remplace食品安全("contextes-chinois_tok.txt", "contextes-chinois_tok_col.txt")
 										<br>if __name__ == "__main__":<br>&Tab;main()
 										</code>
@@ -426,7 +436,7 @@ echo "
 
 									<button class="collapsible" onclick="toggleContent('stopwords-zh')">stopwords</button>
 									<pre id="stopwords-zh" class="content">
-										<code>with open('cn_stopwords.txt', 'r', encoding='utf-8') as file:<br>&Tab;stopwords = set([line.strip() for line in file if line.strip() != ''])
+										<code class="nohighlight">with open('cn_stopwords.txt', 'r', encoding='utf-8') as file:<br>&Tab;stopwords = set([line.strip() for line in file if line.strip() != ''])
 										<br>with open('contextes-chinois_tok_col.txt', 'r', encoding='utf-8') as file:<br>&Tab;words = file.read().split()
 										<br>filtered_words = [word for word in words if word not in stopwords]
 										<br>with open('contextes-chinois_stop.txt', 'w', encoding='utf-8') as file:<br>&Tab;for word in filtered_words:<br>&Tab;&Tab;file.write(word + " ") 
@@ -435,7 +445,7 @@ echo "
 
 									<button class="collapsible" onclick="toggleContent('wordcloud-zh')">nuage de mots</button>
 									<pre id="wordcloud-zh" class="content" style="white-space: normal;">
-										<code>wordcloud_cli --text contextes-chinois_stop.txt --fontfile 苹方简.ttf --mask mask_pomme.jpg --background white --color blue --imagefile nuage_zh.jpg</code>
+										<code class="nohighlight">wordcloud_cli --text contextes-chinois_stop.txt --fontfile 苹方简.ttf --mask mask_pomme.jpg --background white --color blue --imagefile nuage_zh.jpg</code>
 									</pre>
 
 								</article>
@@ -448,9 +458,229 @@ echo "
 									<header class="style1">
 										<h2>Scripts du corpus japonais</h2>
 									</header>
-									<button class="collapsible" onclick="toggleContent('scripts-jp')">Traitement des URLs</button>
-									<pre id="scripts-jp" class="content">
-										<p>这里添加script内容</p>
+									<button class="collapsible" onclick="toggleContent('scripts-jp1')">TRAITEMENT DES URLS & CONCORDANCES & TOKENNIZATION</button>
+									<pre id="scripts-jp1" class="content">
+										<pre>
+											<code>
+#!/bin/bash
+
+if [ -f &quot;../tableaux/tableau_jpn.html&quot; ];
+then
+	rm &quot;../tableaux/tableau_jpn.html&quot;
+fi
+
+echo &quot;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;meta charset=\&quot;UTF-8\&quot;&gt;
+	&lt;link href=\&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css\&quot; rel=\&quot;stylesheet\&quot; integrity=\&quot;sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN\&quot; crossorigin=\&quot;anonymous\&quot;&gt;
+	&lt;script src=\&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js\&quot; integrity=\&quot;sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL\&quot; crossorigin=\&quot;anonymous\&quot;&gt;&lt;/script&gt;
+	&lt;title&gt;Tableau JPN&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;div class=&quot;table-responsive&quot;&gt;
+	&lt;table class=\&quot;table table-info table-hover table-sm\&quot;&gt;
+		&lt;tr&gt;
+			&lt;th&gt;num&lt;/th&gt;
+			&lt;th&gt;url&lt;/th&gt;
+			&lt;th&gt;requête&lt;/th&gt;
+			&lt;th&gt;encodage&lt;/th&gt;
+			&lt;th&gt;aspiration&lt;/th&gt;
+			&lt;th&gt;dump-text&lt;/th&gt;
+			&lt;th&gt;compte&lt;/th&gt;
+			&lt;th&gt;contexte&lt;/th&gt;
+			&lt;th&gt;concordance&lt;/th&gt;
+		&lt;/tr&gt;
+&quot;&gt;&gt;&quot;../tableaux/tableau_jpn.html&quot;
+
+var=1
+while read -r line;
+do
+	if [ -f &quot;../concordances/japonais/jp-$var.html&quot; ];
+	then
+		rm &quot;../concordances/japonais/jp-$var.html&quot;
+	fi
+
+
+	code=$(curl -s -L -w &quot;%{http_code}&quot; -o &quot;../aspirations/japonais/jp-$var.html&quot; $line) #$(curl -s -I $line | head -n 1)
+	encodage=$(curl -s -I -L -w &quot;%{content_type}&quot; -o /dev/null $line | grep -P -o &quot;charset=\S+&quot; | cut -d &quot;=&quot; -f2 | tr &#x27;[:lower:]&#x27; &#x27;[:upper:]&#x27;) #$(curl -s -I $line | grep &quot;content-type:&quot;)
+
+	if [ -z &quot;$encodage&quot; ]; then
+		encodage=$(grep -oP &#x27;&lt;meta[^&gt;]+charset=[^&gt;]+&gt;&#x27; &quot;../aspirations/japonais/jp-$var.html&quot; | grep -oP &#x27;charset=(&quot;?)\K[^&quot;]+&#x27;)
+	fi
+	#curl -s -o &quot;../aspirations/japonais/jp-$var.html&quot; &quot;$line&quot; #asp
+	dump=&quot;NA&quot;
+
+	if [ $code == &quot;200&quot; ] #-eq 200
+	then
+		lynx -dump -nolist &quot;../aspirations/japonais/jp-$var.html&quot; &gt; &quot;../dumps-text/japonais/tmp.txt&quot; #dump
+		cat &quot;../dumps-text/japonais/tmp.txt&quot; | python3 ./tokenize_japanese.py &gt; &quot;../dumps-text/japonais/jp-$var.txt&quot;
+		rm &quot;../dumps-text/japonais/tmp.txt&quot;
+		compte=$(grep -E -o &quot;食(品)?\s(の\s)?安全&quot; &quot;../dumps-text/japonais/jp-$var.txt&quot; | wc -l)
+		dump=&quot;&lt;a href=\&quot;../dumps-text/japonais/jp-$var.txt\&quot;&gt;dump-text&lt;/a&gt;&quot;
+
+		grep -E -C 3 &quot;食(品)?\s(の\s)?安全&quot; &quot;../dumps-text/japonais/jp-$var.txt&quot; &gt; &quot;../contextes/japonais/jp-$var.txt&quot;
+		#grep -A 1 -B 1 --color &quot;食の安全&quot; &quot;../dumps-text/japonais/jp-$var.txt&quot; &gt; &quot;../contextes/japonais/jp-$var.txt&quot;
+		contexte=&quot;&lt;a href=\&quot;../contextes/japonais/jp-$var.txt\&quot;&gt;contexte&lt;/a&gt;&quot;
+
+		echo &quot;
+			&lt;html&gt;
+			&lt;head&gt;
+				&lt;meta charset=\&quot;UTF-8\&quot;&gt;
+				&lt;link rel=\&quot;stylesheet\&quot; href=\&quot;https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css\&quot;&gt;
+				&lt;title&gt;Concordance JPN $var&lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+				&lt;table class=\&quot;table\&quot;&gt;
+					&lt;tr&gt;
+						&lt;th&gt;gauche&lt;/th&gt;
+						&lt;th&gt;mot&lt;/th&gt;
+						&lt;th&gt;droite&lt;/th&gt;
+					&lt;/tr&gt;
+				&quot;&gt;&gt;&quot;../concordances/japonais/jp-$var.html&quot;
+		
+		# grep -E -T -i &quot;食(品)?\s(の\s)?安全&quot; ../contextes/japonais/jp-$var.txt | sed -E &#x27;s/(.*)(食(品)?\s(の\s)?安全)(.*)/&lt;tr&gt;&lt;td&gt;\1&lt;\/td&gt;&lt;td&gt;\2&lt;\/td&gt;&lt;td&gt;\3&lt;\/td&gt;&lt;\/tr&gt;/&#x27;&gt;&gt;&quot;../concordances/japonais/jp-$var.html&quot;
+		grep -P &quot;(\w+\W){0,5}(食(品)?\s(の\s)?安全)(\w+\W){0,5}&quot; ../contextes/japonais/jp-$var.txt | sed -E &#x27;s/(.*)(食(品)?\s(の\s)?安全)(.*)/&lt;tr&gt;&lt;td&gt;\1&lt;\/td&gt;&lt;td&gt;\2&lt;\/td&gt;&lt;td&gt;\3&lt;\/td&gt;&lt;\/tr&gt;/&#x27;&gt;&gt;&quot;../concordances/japonais/jp-$var.html&quot;
+		echo &quot;
+			&lt;/table&gt;
+			&lt;/body&gt;
+			&lt;/html&gt;
+			&quot;&gt;&gt;&quot;../concordances/japonais/jp-$var.html&quot;
+		concordance=&quot;&lt;a href=\&quot;../concordances/japonais/jp-$var.html\&quot;&gt;concordance&lt;/a&gt;&quot;
+	else
+		compte=&quot;&quot;
+		contexte=&quot;&quot;
+		concordance=&quot;&quot;
+	fi
+	
+	#echo -e &quot;$var\t$line\t$code\t$encodage\t&quot;
+	
+	echo &quot;
+		&lt;tr&gt;
+			&lt;td&gt;$var&lt;/td&gt;
+			&lt;td&gt;&lt;a href=\&quot;$line\&quot;&gt;$line&lt;/a&gt;&lt;/td&gt;
+			&lt;td&gt;$code&lt;/td&gt;
+			&lt;td&gt;$encodage&lt;/td&gt;
+			&lt;td&gt;&lt;a href=\&quot;../aspirations/japonais/jp-$var.html\&quot;&gt;aspiration&lt;/a&gt;&lt;/td&gt;
+			&lt;td&gt;$dump&lt;/td&gt;
+			&lt;td&gt;$compte&lt;/td&gt;
+			&lt;td&gt;$contexte&lt;/td&gt;
+			&lt;td&gt;$concordance&lt;/td&gt;
+		&lt;/tr&gt;
+	&quot;&gt;&gt;&quot;../tableaux/tableau_jpn.html&quot;
+	
+	
+	var=$(expr $var + 1)
+done &lt; &quot;../URLs/urls_jpn.txt&quot;
+
+echo &quot;
+	&lt;/table&gt;
+	&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+&quot;&gt;&gt;&quot;../tableaux/tableau_jpn.html&quot;
+
+												
+											</code>
+										</pre>
+											
+									</pre>
+
+									<button class="collapsible" onclick="toggleContent('scripts-jp2')">CREATE CROUPS POUR ITRAMEUR</button>
+									<pre id="scripts-jp2" class="content">
+										<pre>
+											<code>
+#!/bin/bash
+# $1 contextes/dumps-text
+# $2 japonais
+
+if [ -f &quot;../itrameur/$1-$2.txt&quot; ];
+then
+    rm &quot;../itrameur/$1-$2.txt&quot;
+fi
+
+if [ -f &quot;../img/Analyse_jpn/nuageWord.txt&quot; ];
+then
+    rm &quot;../img/Analyse_jpn/nuageWord.txt&quot;
+fi
+
+echo &quot;&lt;lang=\&quot;$2\&quot;&gt;&quot; &gt;&gt; &quot;../itrameur/$1-$2.txt&quot;
+
+for file in ../&quot;$1&quot;/&quot;$2&quot;/*; do
+    if [ -f &quot;$file&quot; ]; then
+        filename=$(basename &quot;$file&quot;)
+        filename_no_ext=$(basename -- &quot;$filename&quot; | cut -f 1 -d &#x27;.&#x27;)
+        echo &quot;&lt;page=\&quot;$filename_no_ext\&quot;&gt;
+        &lt;text&gt;&quot; &gt;&gt; &quot;../itrameur/$1-$2.txt&quot;
+
+        cat &quot;$file&quot; &gt;&gt; &quot;../img/Analyse_jpn/nuageWord.txt&quot;
+
+        #cat &quot;$file&quot; &gt;&gt;  &quot;../itrameur/$1-$2.txt&quot;
+        sed -e &#x27;s/&amp;/\&amp;amp;/g&#x27; -e &#x27;s/&lt;/\&amp;lt;/g&#x27; -e &#x27;s/&gt;/\&amp;gt;/g&#x27; &quot;$file&quot; &gt;&gt; &quot;../itrameur/$1-$2.txt&quot;
+
+        echo &quot;&lt;/text&gt;
+        &lt;/page&gt; §&quot; &gt;&gt; &quot;../itrameur/$1-$2.txt&quot;
+    fi
+done
+
+echo &quot;&lt;/lang&gt;&quot; &gt;&gt; &quot;../itrameur/$1-$2.txt&quot;
+
+#sed -i -e &#x27;s/&amp;/\&amp;amp;/g&#x27; -e &#x27;s/&lt;/\&amp;lt;/g&#x27; -e &#x27;s/&gt;/\&amp;gt;/g&#x27; &quot;../itrameur/$1-$2.txt&quot;
+											</code>
+										</pre>
+									</pre>
+
+									<button class="collapsible" onclick="toggleContent('scripts-jp3')">CREATE NUAGE DU MOT ET ENLEVER STOPWORDS</button>
+									<pre id="scripts-jp3" class="content">
+										<pre>
+											<code>
+def remplaceMot(source, destination) :
+	with open(source) as s :
+	content = s.read()
+	modified_content = content.replace(&#x27;食品 安全&#x27;, &#x27;食品安全&#x27;)
+	modified_content = modified_content.replace(&#x27;食 の 安全&#x27;, &#x27;食の安全&#x27;)
+	modified_content = modified_content.replace(&#x27;食品 の 安全&#x27;, &#x27;食品の安全&#x27;)
+	with open(destination, &#x27;w&#x27;) as d :
+		d.write(modified_content)
+
+def main():
+	remplaceMot(&quot;../itrameur/contextes-japonais.txt&quot;, &quot;../itrameur/Pretraitements_jpn/contextes-jpn_tok_col.txt&quot;)
+
+if __name__ == &quot;__main__&quot;:
+	main()
+											</code>
+										</pre>
+										<pre>
+											<code>
+#ce script vise à éliminer les stopwords du fichier "contextes-japonais_tok_col.txt"
+def main():
+    with open('../itrameur/Pretraitements_jpn/stopwords-ja.txt', 'r', encoding='utf-8') as file:
+        stopwords = set([line.strip() for line in file if line.strip() != ''])
+
+    with open('../itrameur/Pretraitements_jpn/contextes-jpn_tok_col.txt', 'r', encoding='utf-8') as file:
+        words = file.read().split()
+
+    filtered_words = [word for word in words if word not in stopwords]
+
+    with open('../itrameur/Pretraitements_jpn/contextes-jpn_stop.txt', 'w', encoding='utf-8') as file:
+        for word in filtered_words:
+            file.write(word + " ")  
+
+
+    with open('../img/Analyse_jpn/nuageWord.txt', 'r', encoding='utf-8') as file:
+        words_n = file.read().split()
+
+    filtered_words_n = [word for word in words_n if word not in stopwords]
+
+    with open('../img/Analyse_jpn/nuageWord_stop.txt', 'w', encoding='utf-8') as file:
+        for word in filtered_words_n:
+            file.write(word + " ")  
+    # wordcloud_cli --text ..\img\Analyse_jpn\nuageWord_stop.txt --mask ../img/Analyse_jpn/fishMask.jpg --background white --color orange --imagefile nuage_jpn.png --fontfile ../img/Analyse_jpn/fontJPN.otf
+
+if __name__ == "__main__":
+    main()
+											</code>
+										</pre>
 									</pre>
 								</article>
 							</div>
@@ -480,6 +710,11 @@ echo "
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
+	
+	
+	
+	
+	
 	</body>
 </html>
 
