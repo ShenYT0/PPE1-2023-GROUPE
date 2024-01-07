@@ -21,6 +21,7 @@ def main():
     with open('../img/Analyse_jpn/nuageWord_stop.txt', 'w', encoding='utf-8') as file:
         for word in filtered_words_n:
             file.write(word + " ")  
+    # wordcloud_cli --text ..\img\Analyse_jpn\nuageWord_stop.txt --mask ../img/Analyse_jpn/fishMask.jpg --background white --color orange --imagefile nuage_jpn.png --fontfile ../img/Analyse_jpn/fontJPN.otf
 
 if __name__ == "__main__":
     main()
