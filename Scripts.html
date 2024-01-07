@@ -79,9 +79,207 @@
 										}
 										
 									</style>
-									<button class="collapsible" onclick="toggleContent('scripts-fr')">Traitement des URLs</button>
+									<button class="collapsible" onclick="toggleContent('scripts-fr')">Aspiration, dumps-text</button>
 									<pre id="scripts-fr" class="content">
-										<p>这里添加script内容</p>
+										<code>#!/usr/bin/env bash
+
+if [[ $# -ne 1 ]];
+then
+	echo "On veut exactement un argument au script."
+	exit
+fi
+
+URLS=$1
+
+if [ ! -f $URLS ]
+then
+	echo "On attend un fichier, pas un dossier"
+	exit
+fi
+
+lineno=1
+nb=1
+while read -r ASPIR
+do
+	curl -s $ASPIR > ../aspirations/fr/fr_$lineno.html
+    lynx -dump -nolist -assume_charset=utf-8 --display_charset=utf-8 $ASPIR > ../dumps-text/fr/fr_$lineno.txt
+	lineno=$(expr $lineno + 1)
+done < "$URLS"
+										</code>
+									</pre>
+									<button class="collapsible" onclick="toggleContent('Contexte')">Contexte</button>
+									<pre id="Contexte" class="content">
+										<code>#!/usr/bin/env bash
+
+#lynx每个链接，找关键词，显示前两行后两行，把结果储存到contextes文件夹里，重复50次
+
+URLS=$1
+numero_fichier=1
+
+while read -r ASPIR
+do
+    lynx -dump -nolist -assume_charset=utf-8 --display_charset=utf-8 $ASPIR | LC_CTYPE=C tr '[:upper:]' '[:lower:]' | grep -B 2 -A 2 "sécurité alimentaire" > ../contextes/fr/fr_${numero_fichier}.txt
+	numero_fichier=$(expr "$numero_fichier" + 1)
+done < "$URLS"
+										</code>
+									</pre>
+									<button class="collapsible" onclick="toggleContent('Traitement urls')">Traitement des urls et création du tableau</button>
+									<pre id="Traitement urls" class="content">
+										<code>#!/usr/bin/env bash
+
+chemin_fichier=$1
+count=1
+
+#Give a default file if chemin_fichier not specified
+if [ -z "$1" ]; then
+	chemin_fichier="../urls/fr.txt"
+fi
+
+#Give HTML head, create HTML file
+echo -e "
+&lthtml&gt
+&lthead&gt
+	&ltmeta charset=\"UTF-8\"&gt
+    &ltlink href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css\" 
+    rel=\"stylesheet\" integrity=\"sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN\" crossorigin=\"anonymous\"&gt
+    &ltscript src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js\" 
+    integrity=\"sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL\" crossorigin=\"anonymous\"&gt&lt/script&gt
+    &lttitle&gtTableau JPN&lt/title&gt
+&lt/head&gt
+&ltbody&gt
+    &ltdiv class="table-responsive"&gt
+	&lttable class=\"table table-info table-hover table-sm\"&gt
+        &lttr&gt
+            &ltth&gtnum&lt/th&gt
+            &ltth&gturl&lt/th&gt
+            &ltth&gtrequête&lt/th&gt
+            &ltth&gtencodage&lt/th&gt
+            &ltth&gtaspiration&lt/th&gt
+            &ltth&gtdump-text&lt/th&gt
+            &ltth&gtcompte&lt/th&gt
+            &ltth&gtcontexte&lt/th&gt
+            &ltth&gtconcordance&lt/th&gt
+        &lt/tr&gt
+" > ../tableaux/tableau_fr.html
+
+#Read fr.txt line by line; output order number, website URL, HTTP response code, encoding and number of occurence
+while read -r line;
+do
+	#Fetch encoding of websites
+	web_encodage=$(curl -s "$line" | grep -Eo 'charset=".*"' | cut -d'"' -f2 | tr '[:lower:]' '[:upper:]' | uniq )
+	#Fetch HTTP response code from websites
+	web_response=$(curl -Ils "$line" | grep "HTTP/" | grep -Eo "[0-9]{3}")
+	#Fetch number of occurence of word
+	occurence_NB=$(lynx --dump --nolist -assume_charset=utf-8 --display_charset=utf-8 "$line" | LC_CTYPE=C tr '[:upper:]' '[:lower:]' | grep -o "sécurité alimentaire" | wc -l)
+	#Print results into tableau_fr.html
+	echo "		&lttr&gt
+			&lttd&gt$count&lt/td&gt
+			&lttd&gt&lta href=\"$line\"&gt$line&lt/a&gt&lt/td&gt
+			&lttd&gt$web_response&lt/td&gt
+			&lttd&gt$web_encodage&lt/td&gt
+			&lttd&gt&lta href="../aspirations/fr/fr_${count}.html">aspiration&lt/a&gt&lt/td&gt
+			&lttd&gt&lta href="../dumps-text/fr/fr_${count}.txt"&gtdump-text&lt/a&gt&lt/td&gt
+			&lttd&gt$occurence_NB&lt/td&gt
+			&lttd&gt&lta href="../contextes/fr/fr_${count}.txt"&gtcontexte&lt/a&gt&lt/td&gt
+			&lttd&gt&lta href="../concordances/fr/fr_${count}.html"&gtconcordance&lt/a&gt&lt/td&gt
+		&lt/tr&gt" >> ../tableaux/tableau_fr.html
+	count=$((count+1))
+done < "$chemin_fichier"
+
+#Give HTML end
+echo "
+	&lt/table>
+&lt/body>
+&lt/html>
+" >> ../tableaux/tableau_fr.html
+										</code>
+									</pre>
+									<button class="collapsible" onclick="toggleContent('Concordancier')">Concordancier</button>
+									<pre id="Concordancier" class="content">
+										<code>#!/usr/bin/env bash
+
+numero_fichier=1
+
+
+while [ "$numero_fichier" -lt 51 ]; do
+    echo -e "
+    &lthtml>
+    &lthead>
+        &ltmeta charset=\"UTF-8\">
+        &ltlink rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css\">
+    &lt/head>
+    &ltbody>
+        &lttable class=\"table\">
+            &lttr>
+                &ltth>gauche&lt/th>
+                &ltth>mot&lt/th>
+                &ltth>droite&lt/th>
+            &lt/tr>" > ../concordances/fr/fr_${numero_fichier}.html
+    ggrep -E -T -i "sécurité alimentaire" ../contextes/fr/fr_$numero_fichier.txt | sed -E "s/(.*)(sécurité alimentaire)(.*)/<tr><td>\1<\/td><td>\2<\/td><td>\3<\/td><\/tr>/">>"../concordances/fr/fr_$numero_fichier.html"
+    echo "
+	    &lt/table>
+    &lt/body>
+    &lt/html>" >> ../concordances/fr/fr_${numero_fichier}.html
+    numero_fichier=$((numero_fichier+1))
+done
+										</code>
+									</pre>
+									<button class="collapsible" onclick="toggleContent('Corpus iTrameur')">Création du corpus iTrameur</button>
+									<pre id="Corpus iTrameur" class="content">
+										<code>#!/usr/bin/env bash
+
+#define arguments
+contexte_dossier="../contextes/fr"
+URLS="../urls/fr.txt"
+
+#give XML start, create iTrameur contexte file
+echo "&ltlang=\"fr\">" > ../itrameur/contexte-fr.txt
+
+#give XML body
+count_contexte=1
+while read -r URL; do
+    if [ "$count_contexte" -lt 51 ]; then
+        contenu_contexte=$(cat "$contexte_dossier"/fr_"${count_contexte}".txt)
+        echo "&ltpage=$URL>
+	&lttext>$contenu_contexte&lt/text>
+&lt/page> §" >> ../itrameur/contexte-fr.txt
+        count_contexte=$(expr "$count_contexte" + 1)
+    fi
+done < "$URLS"
+
+#give XML ending
+echo "&lt/lang>" >> ../itrameur/contexte-fr.txt
+										</code>
+									</pre>
+									<button class="collapsible" onclick="toggleContent('Stopwords')">Stopwords en français</button>
+									<pre id="Stopwords" class="content">
+										<code>#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Jan  6 23:31:17 2024
+
+@author: arthurzhang
+"""
+
+from os import chdir
+chdir("/Users/arthurzhang/Cours_de_TAL/projet_encadre/PPE1-2023-GROUPE/programmes")
+
+
+# 读取停用词列表
+with open('stopwords-fr.txt', 'r') as file:
+    stopwords = set([line.strip() for line in file if line.strip() != ''])
+
+# 读取分词结果
+with open('../itrameur/contexte-fr.txt', 'r', encoding='macroman') as file:
+    words = file.read().split()
+
+# 移除停用词
+filtered_words = [word for word in words if word not in stopwords]
+
+with open('../itrameur/contextes_fr_stop.txt', 'w') as file:
+    for word in filtered_words:
+        file.write(word + " ")
+										</code>
 									</pre>
 									<script>
 										function toggleContent(contentId) {

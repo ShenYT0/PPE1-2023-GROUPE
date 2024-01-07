@@ -45,7 +45,7 @@ do
 	#Print results into tableau_fr.html
 	echo "		<tr>
 			<td>$count</td>
-			<td><a href=\"$line\">$line</td>
+			<td><a href=\"$line\">$line</a></td>
 			<td>$web_response</td>
 			<td>$web_encodage</td>
 			<td><a href="../aspirations/fr/fr_${count}.html">aspiration</a></td>
