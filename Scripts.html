@@ -79,50 +79,6 @@
 										}
 										
 									</style>
-									<button class="collapsible" onclick="toggleContent('scripts-fr')">Aspiration, dumps-text</button>
-									<pre id="scripts-fr" class="content">
-										<code>#!/usr/bin/env bash
-
-if [[ $# -ne 1 ]];
-then
-	echo "On veut exactement un argument au script."
-	exit
-fi
-
-URLS=$1
-
-if [ ! -f $URLS ]
-then
-	echo "On attend un fichier, pas un dossier"
-	exit
-fi
-
-lineno=1
-nb=1
-while read -r ASPIR
-do
-	curl -s $ASPIR > ../aspirations/fr/fr_$lineno.html
-    lynx -dump -nolist -assume_charset=utf-8 --display_charset=utf-8 $ASPIR > ../dumps-text/fr/fr_$lineno.txt
-	lineno=$(expr $lineno + 1)
-done < "$URLS"
-										</code>
-									</pre>
-									<button class="collapsible" onclick="toggleContent('Contexte')">Contexte</button>
-									<pre id="Contexte" class="content">
-										<code>#!/usr/bin/env bash
-
-#lynx每个链接，找关键词，显示前两行后两行，把结果储存到contextes文件夹里，重复50次
-
-URLS=$1
-numero_fichier=1
-
-while read -r ASPIR
-do
-    lynx -dump -nolist -assume_charset=utf-8 --display_charset=utf-8 $ASPIR | LC_CTYPE=C tr '[:upper:]' '[:lower:]' | grep -B 2 -A 2 "sécurité alimentaire" > ../contextes/fr/fr_${numero_fichier}.txt
-	numero_fichier=$(expr "$numero_fichier" + 1)
-done < "$URLS"
-										</code>
-									</pre>
 									<button class="collapsible" onclick="toggleContent('Traitement urls')">Traitement des urls et création du tableau</button>
 									<pre id="Traitement urls" class="content">
 										<code>#!/usr/bin/env bash
@@ -194,6 +150,51 @@ echo "
 " >> ../tableaux/tableau_fr.html
 										</code>
 									</pre>
+									<button class="collapsible" onclick="toggleContent('scripts-fr')">Aspiration, dumps-text</button>
+									<pre id="scripts-fr" class="content">
+										<code>#!/usr/bin/env bash
+
+if [[ $# -ne 1 ]];
+then
+	echo "On veut exactement un argument au script."
+	exit
+fi
+
+URLS=$1
+
+if [ ! -f $URLS ]
+then
+	echo "On attend un fichier, pas un dossier"
+	exit
+fi
+
+lineno=1
+nb=1
+while read -r ASPIR
+do
+	curl -s $ASPIR > ../aspirations/fr/fr_$lineno.html
+    lynx -dump -nolist -assume_charset=utf-8 --display_charset=utf-8 $ASPIR > ../dumps-text/fr/fr_$lineno.txt
+	lineno=$(expr $lineno + 1)
+done < "$URLS"
+										</code>
+									</pre>
+									<button class="collapsible" onclick="toggleContent('Contexte')">Contexte</button>
+									<pre id="Contexte" class="content">
+										<code>#!/usr/bin/env bash
+
+#lynx每个链接，找关键词，显示前两行后两行，把结果储存到contextes文件夹里，重复50次
+
+URLS=$1
+numero_fichier=1
+
+while read -r ASPIR
+do
+    lynx -dump -nolist -assume_charset=utf-8 --display_charset=utf-8 $ASPIR | LC_CTYPE=C tr '[:upper:]' '[:lower:]' | grep -B 2 -A 2 "sécurité alimentaire" > ../contextes/fr/fr_${numero_fichier}.txt
+	numero_fichier=$(expr "$numero_fichier" + 1)
+done < "$URLS"
+										</code>
+									</pre>
+									
 									<button class="collapsible" onclick="toggleContent('Concordancier')">Concordancier</button>
 									<pre id="Concordancier" class="content">
 										<code>#!/usr/bin/env bash
