@@ -39,8 +39,11 @@ do
 
 
     code=$(curl -s -L -w "%{http_code}" -o "../aspirations/japonais/jp-$var.html" $line) #$(curl -s -I $line | head -n 1)
-	encodage=$(curl -s -I -L -w "%{content_type}" -o /dev/null $line | grep -P -o "charset=\S+" | cut -d "=" -f2) #$(curl -s -I $line | grep "content-type:")
+	encodage=$(curl -s -I -L -w "%{content_type}" -o /dev/null $line | grep -P -o "charset=\S+" | cut -d "=" -f2 | tr '[:lower:]' '[:upper:]') #$(curl -s -I $line | grep "content-type:")
 
+    if [ -z "$encodage" ]; then
+        encodage=$(grep -oP '<meta[^>]+charset=[^>]+>' "../aspirations/japonais/jp-$var.html" | grep -oP 'charset=("?)\K[^"]+')
+    fi
     #curl -s -o "../aspirations/japonais/jp-$var.html" "$line" #asp
     dump="NA"
 
@@ -49,10 +52,10 @@ do
         lynx -dump -nolist "../aspirations/japonais/jp-$var.html" > "../dumps-text/japonais/tmp.txt" #dump
         cat "../dumps-text/japonais/tmp.txt" | python3 ./tokenize_japanese.py > "../dumps-text/japonais/jp-$var.txt"
         rm "../dumps-text/japonais/tmp.txt"
-        compte=$(grep -i -o "食 の 安全" "../dumps-text/japonais/jp-$var.txt" | wc -l)
+        compte=$(grep -E -o "食(品)?\s(の\s)?安全" "../dumps-text/japonais/jp-$var.txt" | wc -l)
         dump="<a href=\"../dumps-text/japonais/jp-$var.txt\">dump-text</a>"
 
-        grep -i -C 3 "食 の 安全" "../dumps-text/japonais/jp-$var.txt" > "../contextes/japonais/jp-$var.txt"
+        grep -E -C 3 "食(品)?\s(の\s)?安全" "../dumps-text/japonais/jp-$var.txt" > "../contextes/japonais/jp-$var.txt"
         #grep -A 1 -B 1 --color "食の安全" "../dumps-text/japonais/jp-$var.txt" > "../contextes/japonais/jp-$var.txt"
         contexte="<a href=\"../contextes/japonais/jp-$var.txt\">contexte</a>"
 
@@ -72,8 +75,8 @@ do
                     </tr>
                 ">>"../concordances/japonais/jp-$var.html"
         
-        # grep -E -T -i "食 の 安全" ../contextes/japonais/jp-$var.txt | sed -E 's/(.*)(食 の 安全)(.*)/<tr><td>\1<\/td><td>\2<\/td><td>\3<\/td><\/tr>/'>>"../concordances/japonais/jp-$var.html"
-        grep -i -P "(\w+\W){0,5}食 の 安全(\w+\W){0,5}" ../contextes/japonais/jp-$var.txt | sed -E 's/(.*)(食 の 安全)(.*)/<tr><td>\1<\/td><td>\2<\/td><td>\3<\/td><\/tr>/'>>"../concordances/japonais/jp-$var.html"
+        # grep -E -T -i "食(品)?\s(の\s)?安全" ../contextes/japonais/jp-$var.txt | sed -E 's/(.*)(食(品)?\s(の\s)?安全)(.*)/<tr><td>\1<\/td><td>\2<\/td><td>\3<\/td><\/tr>/'>>"../concordances/japonais/jp-$var.html"
+        grep -P "(\w+\W){0,5}(食(品)?\s(の\s)?安全)(\w+\W){0,5}" ../contextes/japonais/jp-$var.txt | sed -E 's/(.*)(食(品)?\s(の\s)?安全)(.*)/<tr><td>\1<\/td><td>\2<\/td><td>\3<\/td><\/tr>/'>>"../concordances/japonais/jp-$var.html"
         echo "
             </table>
             </body>
