@@ -41,8 +41,9 @@
      * Métiers de l'environnement
 
    Plus de sujets voyage
-   52
-   Quels sont les plus beaux marchés de Noël d’Alsace ?
+   85
+   Les destinations recommandées par CNN Travel pour éviter le tourisme de
+   masse en 2024
    Plus de destinations
 
      * Italie
@@ -218,6 +219,7 @@ Quid des canicules marines ?
    >>> Changements climatiques : "l’atlantification" de l’Arctique se
    poursuit, et c'est une très mauvaise nouvelle
    GEO (avec 6medias)
+   Ne loupez aucun article en vous abonnant à GEO sur Google News
    Découvrez nos ateliers d'artisanat !
    Découvrez nos ateliers d'artisanat !
    Outbrain
@@ -316,12 +318,6 @@ adopté
 Incendies en Australie: une nouvelle vague de chaleur redoutée
        AUSTRALIE
      *
-   Quelle est la différence entre une canicule, un pic et une vague de
-       chaleur ?
-
-Quelle est la différence entre une canicule, un pic et une vague de chaleur ?
-       MÉTÉO
-     *
    Les abeilles se donnent la mort lors des vagues de chaleur
 
 Les abeilles se donnent la mort lors des vagues de chaleur
@@ -331,6 +327,12 @@ Les abeilles se donnent la mort lors des vagues de chaleur
 
 Des coraux décimés par une vague de chaleur renaissent en Méditerranée
        MÉDITERRANÉE
+     *
+   Quelle est la différence entre une canicule, un pic et une vague de
+       chaleur ?
+
+Quelle est la différence entre une canicule, un pic et une vague de chaleur ?
+       MÉTÉO
      *
    Les vagues de chaleur concoctent une "potion diabolique" de polluants
 
@@ -366,5 +368,5 @@ Les vagues de chaleur concoctent une "potion diabolique" de polluants
      * FAQ COMMUNAUTÉ GEO
      * ÉQUIPE ÉDITORIALE
 
-   CPPAP : 0322 W 90268 - © PRISMA MEDIA - GROUPE VIVENDI 2023 TOUS DROITS
+   CPPAP : 0322 W 90268 - © PRISMA MEDIA - GROUPE VIVENDI 2024 TOUS DROITS
    RÉSERVÉS

@@ -29,7 +29,7 @@
        [loading.gif]
        Chercher
 
-   (BUTTON) EURACTIV.fr
+   (BUTTON) Euractiv FR
      * L'Expresso
      * L'Expresso
      * Newsletters
@@ -451,6 +451,7 @@ Inscrivez-vous à notre newsletter
      *
      *
      *
+     *
      __________________________________________________________________
 
 À Propos d’EURACTIV
@@ -473,7 +474,7 @@ Communication
 Réseau EURACTIV
      __________________________________________________________________
 
-   © 1999 - 2023 | Efficacité et Transparence des Acteurs Européens .
+   © 1999 - 2024 | Efficacité et Transparence des Acteurs Européens .
    EURACTIV MEDIA NETWORK BV. | Termes & conditions | Nous contacter
    (BUTTON) ×
 
@@ -482,5 +483,5 @@ Chercher
    ____________________
    (BUTTON) Close (BUTTON) Chercher
 
-   © 1999 - 2023 | Efficacité et Transparence des Acteurs Européens .
+   © 1999 - 2024 | Efficacité et Transparence des Acteurs Européens .
    EURACTIV MEDIA NETWORK BV. | Termes & conditions | Nous contacter

@@ -137,6 +137,7 @@ L'INFO
      * Ça change quoi pour toi?
      * Info Verso
      * Genève Vision
+     * Genève Vision
      * Météo
      * Infotrafic
      * Source sûre
@@ -163,7 +164,7 @@ L'INFO
        [1510736.image] Temps présent
        [7047133.image] ABE
        [9327328.image] 36.9°
-       [1510719.image] Nouvo
+       [14472508.image] Nouvo
        Histoire vivante
        Couleurs d'été
        L'actu en vidéo
@@ -218,6 +219,7 @@ L'INFO
        Suisse Good
        Ça change quoi pour toi?
        Info Verso
+       Genève Vision
        Genève Vision
        Météo
        [3198787.image] Infotrafic
@@ -365,7 +367,6 @@ Impact de la guerre en Ukraine
 La RTS
 
    Submit ____________________
-     * À propos
      * FAQ
      * Conditions générales
      * Charte de confidentialité

@@ -13,7 +13,7 @@ while read -r URL; do
     if [ "$count_dump" -lt 51 ]; then
         contenu_dump=$(cat "$dump_dossier"/fr_"${count_dump}".txt)
         echo "<page=\"$URL\">
-<text>$contenu_dump</text>
+	<text>$contenu_dump</text>
 </page> §" >> ../itrameur/dumps-text-fr.txt
         count_dump=$(expr "$count_dump" + 1)
     fi

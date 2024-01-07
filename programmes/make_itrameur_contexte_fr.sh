@@ -13,7 +13,7 @@ while read -r URL; do
     if [ "$count_contexte" -lt 51 ]; then
         contenu_contexte=$(cat "$contexte_dossier"/fr_"${count_contexte}".txt)
         echo "<page=$URL>
-<text>$contenu_contexte</text>
+	<text>$contenu_contexte</text>
 </page> §" >> ../itrameur/contexte-fr.txt
         count_contexte=$(expr "$count_contexte" + 1)
     fi
